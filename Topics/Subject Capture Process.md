@@ -9,6 +9,9 @@ parent:
   - "[[../../Private Files/_Vicon DB.base]]"
 ---
 ---
+```table-of-contents
+```
+---
 # **Notes**
 In order to develop a subject need define markers, and then segments out of those markers. Segments can be grouped together in a subject but must be defined first
 TODO - need to build a subject (a glove?) then capture to get the .VSK before determining segments
@@ -25,7 +28,12 @@ Built a marker set on the spare driving glove in Vicon case
 Rolled micropore tape (cut in half lengthways for size) applied the markers to the glove, placing three per finger as per recommendations (although apparently some)
 As well as two on the wrist
 The thumb had a mesh covering which wasn't adhesive for micropore tape so ignored thumb for this testing
-
+#### **Notes on Terminology**
+- **Subject**: node in subject resource tree, container for a capture instance (e.g. `GloveTest`)
+- **Labelling Skeleton**: marker/segment/joint definition
+- **VST**: generic template for a labelling skeleton, built during skeleton capture
+- **VSK**: subject calibrated labelling skeleton, a VST that has been calibrated to a specific subject
+### **Process**
 1. Placed glove on chair, put in capture volume (placing outside is an annoyance)
 2. Captured a very brief (barely over 100 frames) static video to get 3d data
 3. Then had to run the reconstruct pipeline to make it visible in the playback view
@@ -37,7 +45,7 @@ The thumb had a mesh covering which wasn't adhesive for micropore tape so ignore
 	   *(hold shift to select more than one and adjust properties all at once)*
 6. You then right click & save as labelling skeleton template to get the .vsk file
 		*(or save & attach to use as subject calibrated .vsk right now!)*
-7. 
+**Forgot linking & then Nexus crashed/didn't save - lost the subject/labelling skeleton**, to repeat!
 ### References
 https://help.vicon.com/download/attachments/406490967/Vicon%20Nexus%20User%20Guide.pdf
 	for Nexus workflow order
