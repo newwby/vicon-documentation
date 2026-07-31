@@ -25,12 +25,19 @@ Built a marker set on the spare driving glove in Vicon case
 Rolled micropore tape (cut in half lengthways for size) applied the markers to the glove, placing three per finger as per recommendations (although apparently some)
 As well as two on the wrist
 The thumb had a mesh covering which wasn't adhesive for micropore tape so ignored thumb for this testing
-Placed glove on chair, put in capture volume (placing outside is an annoyance) then captured a very brief (barely over 100 frames) static video to get data (.vsk file?)
-Then had to run the reconstruct pipeline to make it visible in the playback view
-Then you need to set the segment up with the labelling template builder
+
+1. Placed glove on chair, put in capture volume (placing outside is an annoyance)
+2. Captured a very brief (barely over 100 frames) static video to get 3d data
+3. Then had to run the reconstruct pipeline to make it visible in the playback view
+4. Then you need to set the segment up with the labelling template builder
 	1. name & click create
-	2. select primary
+	2. select origin, primary, secondary markers
 	3. click create again when done
+5. Set marker colours and resize!
+	   *(hold shift to select more than one and adjust properties all at once)*
+6. You then right click & save as labelling skeleton template to get the .vsk file
+		*(or save & attach to use as subject calibrated .vsk right now!)*
+7. 
 ### References
 https://help.vicon.com/download/attachments/406490967/Vicon%20Nexus%20User%20Guide.pdf
 	for Nexus workflow order
