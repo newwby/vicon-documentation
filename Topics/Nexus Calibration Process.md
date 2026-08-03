@@ -43,51 +43,48 @@ parent:
 ---
 # More calibration notes
 
-Need to add how to confirm wand is level/confirm level floor if not using marker floor plane detection (part of alternative guide and just focus on the easiest path?)
-
-**NOTE**: user needs to switch to 3d perspective after calibration feedback data processes (**note**: slow in 2.18)
-
-Don't put marker clusters too far apart or the reflections from each can cause ghost markers
-
-No disadvantage I can see to 'select all markers'
-
-During floor plane calculation ensure that there's the number of markers you expect in each cluster
-Ensure all cameras are casting rays - if not it may be a calibration issue (check world & image error)
-
-***need to watch a wand video to confirm technique***
-**[WAND DOCS](https://help.vicon.com/download/attachments/339347714/Active%20Wand%202.0%20User%20Guide%20Jun%202024.pdf)**
-- **Wand has a bubble level** to confirm the floor is flat
-- **Wand level screws** can be adjusted to assist with uneven floors
-- **Continuous mode** assists with high light pollution, large volumes or video cameras
-- **You can sync wand to cameras by turning on strobe** - should be 120fps (appears continuous)
-
-**Creating custom calibration tools (and their profiles) is possible, but outside guide scope**
-	*This does allow for calibration with markers embedded in the volume however...*
-
-**Temperature changes ([in wand docs](https://help.vicon.com/download/attachments/339347714/Active%20Wand%202.0%20User%20Guide%20Jun%202024.pdf)) impact camera calibration - confirmed!**
-
-Should calibration process doc should cover the basics & leave specialist topics (like removing reflections) to the companion, or include as side topics? What's the structure, wiki? Will this be written on Obsidian and exported?
-
-**NOTE**: There are currently 22 markers in my working box - with possibly another 20 in other, the sample data uses 40 for a full body motion track so pushing up against limits of our materials
-
-Make sure to get wide and small, move back and forwards, and look at the camera with the wand strobe lights
-Cameras blink faster when they're closer to finished
-They turn green when completed
-Are they blinking blue or purple when capturing?
-
-Make sure masking is held for a bit (runs for a bit - until the blinking/markers disappear)
-
+**Floor plane Notes**
+- Need to add how to confirm wand is level/confirm level floor if not using marker floor plane detection (part of alternative guide and just focus on the easiest path?)
+- Don't put marker clusters too far apart or the reflections from each can cause ghost markers
+- No disadvantage I can see to 'select all markers'
+- During floor plane calculation ensure that there's the number of markers you expect in each cluster
+- Ensure all cameras are casting rays - if not it may be a calibration issue (check world & image error)
 Made a little cross in middle-ish of floor to make volume capturing consistent, but may wish to experiment with different (*sigh*, **TODO**) l-frame positions in future
+
+**Camera Calibration Notes** 
+**NOTE**: 
+
+**Wand Waving/Camera Calibration Notes**
+- User needs to switch to 3d perspective after calibration feedback data processes (**note**: slow in 2.18) to confirm that it works
+- **[WAND DOCS](https://help.vicon.com/download/attachments/339347714/Active%20Wand%202.0%20User%20Guide%20Jun%202024.pdf)** - ***need to watch a wand video to confirm technique***
+	- **Wand has a bubble level** to confirm the floor is flat
+	- **Wand level screws** can be adjusted to assist with uneven floors
+	- **Continuous mode** assists with high light pollution, large volumes or video cameras
+	- **You can sync wand to cameras by turning on strobe** - should be 120fps (appears continuous)
+- Make sure to get wide and small, move back and forwards, and look at the camera with the wand strobe lights
+- Cameras blink faster when they're closer to finished
+- They turn green when completed
+- Are they blinking blue or purple when capturing?
+Cameras **definitely** blink faster the closer they are to being calibrated
 
 Interface - to view calibration feedback you may need to collapse previous sections
 
-Cameras **definitely** blink faster the closer they are to being calibrated
+**Calibration start-up (inc. masking & aiming) notes**
+- Make sure masking is held for a bit (runs for a bit - until the blinking/markers disappear)
+- By adjusting centroid fitting you can remove many marks from accidental reflections, but not all. Identifying certain reflections is difficult given the wide space and potential candidates, especially without any kind of video feed to overlay.
+- You can set a threshold in world/image error for warnings but doesn't appear to update real-time. It does apply on next calibration so you have to set it beforehand.
+- To paint camera masks you need to go into camera view without any settings, per camera
 
-**Notes** - by adjusting centroid fitting you can remove many marks from accidental reflections, but not all. Identifying certain reflections is difficult given the wide space and potential candidates, especially without any kind of video feed to overlay.
+**Future Concern Notes**
+- **Creating custom calibration tools (and their profiles) is possible, but outside guide scope**
+	  *This does allow for calibration with markers embedded in the volume however...*
+- **NOTE**: There are currently 22 markers in my working box - with possibly another 20 in other, the sample data uses 40 for a full body motion track so pushing up against limits of our materials
 
-To paint camera masks you need to go into camera view without any settings, per camera
+**Camera and Environment Notes**
+**Temperature changes ([in wand docs](https://help.vicon.com/download/attachments/339347714/Active%20Wand%202.0%20User%20Guide%20Jun%202024.pdf)) impact camera calibration - confirmed!**
 
-You can set a threshold in world/image error for warnings but doesn't appear to update real-time. It does apply on next calibration so you have to set it beforehand.
+**Doc Writing Notes**
+Should calibration process doc should cover the basics & leave specialist topics (like removing reflections) to the companion, or include as side topics? What's the structure, wiki? Will this be written on Obsidian and exported?
 
 ---
 # Reference Links
