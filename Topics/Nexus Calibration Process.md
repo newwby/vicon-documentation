@@ -45,6 +45,16 @@ parent:
 
 Need to add how to confirm wand is level/confirm level floor if not using marker floor plane detection (part of alternative guide and just focus on the easiest path?)
 
+**NOTE**: user needs to switch to 3d perspective after calibration feedback data processes (**note**: slow in 2.18)
+
+Don't put marker clusters too far apart or the reflections from each can cause ghost markers
+
+No disadvantage I can see to 'select all markers'
+
+During floor plane calculation ensure that there's the number of markers you expect in each cluster
+Ensure all cameras are casting rays - if not it may be a calibration issue (check world & image error)
+
+***need to watch a wand video to confirm technique***
 **[WAND DOCS](https://help.vicon.com/download/attachments/339347714/Active%20Wand%202.0%20User%20Guide%20Jun%202024.pdf)**
 - **Wand has a bubble level** to confirm the floor is flat
 - **Wand level screws** can be adjusted to assist with uneven floors

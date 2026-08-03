@@ -25,11 +25,26 @@ parent:
 - **Image Error** represents difference between the camera's 2D image of markers and 3D reconstructions of markers projected back to the camera sensor. Measured in ***RMS distance***.
 - **World Error** is a distance-based mm measurement of image error per camera.
 - **RMS distance** (measured in pixels) is the Root Mean Square error, a precision measure. This is the average geometric distance between where a marker actually registered on the camera sensor and where the software expects it to be based on the 3D model.
+
+---
+
+# Unsorted Notes
+
+You can click markers in the live view to see the camera rays
+F7 options
+
+---
 # User Navigation
 ### HOTKEYS
 ***NOTE:*** *There's a hotkeys list under help tab and [online](https://help.vicon.com/space/Nexus218/406487743/Hot+keys+and+shortcuts)*
 
 **SIMPLE CAPTURE MODE** - press Ctrl+H to access
+Ctrl+Enter to Start/Stop
+Ctrl+Tab to toggle live mode
+Space to pause
+
+Selection shortcuts for non-technical users?
+Like click vs ctrl+click vs shift click
 
 | Key     | Function                                                           |
 | ------- | ------------------------------------------------------------------ |

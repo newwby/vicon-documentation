@@ -28,12 +28,25 @@ Built a marker set on the spare driving glove in Vicon case
 Rolled micropore tape (cut in half lengthways for size) applied the markers to the glove, placing three per finger as per recommendations (although apparently some)
 As well as two on the wrist
 The thumb had a mesh covering which wasn't adhesive for micropore tape so ignored thumb for this testing
+Documented process & terminology notes
+**Forgot linking & then Nexus crashed/didn't save - lost the subject/labelling skeleton**, to repeat!
+### Experiment 3
+You can select markers to see camera rays at any time (updated [Vicon Nexus 2.18 User Interface](Vicon%20Nexus%202.18%20User%20Interface.md))
+You must create a database in a directory - this likely caused the crash last time
+Created subject again - went through linking process & tried to export as VSK/VST but encountered bug with naming
+	**To add to [Known Bugs](../../Private%20Files/Vicon%20Bugs,%20Experiments%20&%20Questions.md#Known%20Bugs)!**
+	***MARKER NAMES MUST BE ALPHANUMERIC 30 CHARACTERS NO SPACES***
+	If you don't do this you have to unlink joints and relink because it saves the spaces in the joint definitions
+Managed to reconstruct & label a capture!
+
+---
+# WIP Docs Draft
 #### **Notes on Terminology**
 - **Subject**: node in subject resource tree, container for a capture instance (e.g. `GloveTest`)
 - **Labelling Skeleton**: marker/segment/joint definition
 - **VST**: generic template for a labelling skeleton, built during skeleton capture
 - **VSK**: subject calibrated labelling skeleton, a VST that has been calibrated to a specific subject
-### **Process**
+### **Process I took**
 1. Placed glove on chair, put in capture volume (placing outside is an annoyance)
 2. Captured a very brief (barely over 100 frames) static video to get 3d data
 3. Then had to run the reconstruct pipeline to make it visible in the playback view
@@ -41,11 +54,12 @@ The thumb had a mesh covering which wasn't adhesive for micropore tape so ignore
 	1. name & click create
 	2. select origin, primary, secondary markers
 	3. click create again when done
-5. Set marker colours and resize!
+5. For readability - set marker colours and resize!
 	   *(hold shift to select more than one and adjust properties all at once)*
-6. You then right click & save as labelling skeleton template to get the .vsk file
+6. Go through the linking process by clicking link, selecting parent/root and child segment, until linked all segments, then click link again to stop (can customise ball joint here if needed)
+7. You then right click & save as labelling skeleton template to get the .vsk file
 		*(or save & attach to use as subject calibrated .vsk right now!)*
-**Forgot linking & then Nexus crashed/didn't save - lost the subject/labelling skeleton**, to repeat!
+8. You can then capture a video of the subject & run reconstruct & label pipeline
 ### References
 https://help.vicon.com/download/attachments/406490967/Vicon%20Nexus%20User%20Guide.pdf
 	for Nexus workflow order
