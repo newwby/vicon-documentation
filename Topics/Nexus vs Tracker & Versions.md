@@ -10,7 +10,7 @@ parent:
 ---
 ---
 
-**TODO** - migrate this to [Nexus Interface](Nexus%20Interface.md) file (maybe rewrite file as just a software program file) & [Vicon Tracker Software](Vicon%20Tracker%20Software.md)
+**TODO** - migrate this to [Vicon Nexus 2.18 User Interface](Vicon%20Nexus%202.18%20User%20Interface.md) file (maybe rewrite file as just a software program file) & [Vicon Tracker Software](Vicon%20Tracker%20Software.md)
 
 ---
 # Notes
