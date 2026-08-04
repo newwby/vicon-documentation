@@ -1,0 +1,213 @@
+{
+  "main": {
+    "id": "b48a1141870bd426",
+    "type": "split",
+    "children": [
+      {
+        "id": "07304308d05afa67",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "38c9dd9437df2e80",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "system_preparation/1_masking/1_1_masking.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1_1_masking"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "435d09585f293f58",
+    "type": "split",
+    "children": [
+      {
+        "id": "b74323dc65852e3b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "97f948fbeb2f3d4d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "5a8f498986fb3bb6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "a272fc13ab657c7a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "90077507dbbb51e3",
+    "type": "split",
+    "children": [
+      {
+        "id": "cf25f3701524c091",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6949db84ed33d1ef",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "system_preparation/4_volume/4_2_set_floor_plane.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "fb6b1cc134210cd5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "system_preparation/4_volume/4_2_set_floor_plane.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "6e8e158d29d25f48",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "6788ab288c7d7be2",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "b59ed5d2a3291261",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "system_preparation/4_volume/4_2_set_floor_plane.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "38c9dd9437df2e80",
+  "lastOpenFiles": [
+    "system_preparation/1_masking/1_2_reflections.md",
+    "system_preparation/3_calibrating/3_1_calibration_process.md",
+    "system_preparation/3_calibrating/3_2_wand_waving.md",
+    "system_preparation/3_calibrating/3_3_calibration_errors.md",
+    "system_preparation/3_calibrating/3_4_calibration_profiles.md",
+    "system_preparation/4_volume/4_1_set_volume_origin.md",
+    "system_preparation/4_volume/4_2_set_floor_plane.md",
+    "system_preparation/5_health/5_2_bumped_cameras.md",
+    "system_preparation/5_health/5_1_camera_error.md",
+    "system_preparation/3_calibrating/3_3_calibration_errors 1.md",
+    "system_preparation/1_masking/1_1_masking.md",
+    "system_preparation/3_calibrating/1_1_calibration.md",
+    "Welcome.md",
+    "system_preparation/5_health",
+    "system_preparation/4_volume",
+    "system_preparation/3_calibrating",
+    "system_preparation/2_aiming",
+    "system_preparation/1_masking",
+    "system_preparation"
+  ]
+}
