@@ -10,7 +10,8 @@ Chapter Number: "3"
 Page Title: Calibrating Cameras
 Page Number: "1"
 Page Status: Draft
-Version: "0.1"
+Software:
+  - Vicon Nexus 2.18
 ---
 ---
 ```table-of-contents

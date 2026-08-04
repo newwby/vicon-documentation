@@ -45,6 +45,7 @@ parent:
 ```
 System Preparation
 	Masking
+		Manual Masking
 		Removing Reflective Objects (Preview Mode)
 	Aiming (not relevant)
 	Calibrating Cameras
@@ -60,7 +61,8 @@ System Preparation
 		Bumped Cameras
 ```
 
-## Image Groups to Utilise
+## Existing Image Groups to Utilise
+04/08 - *Applies to images already saved on disk - **collecting more images since this was written***
 
 ```
 System Preparation
@@ -128,6 +130,11 @@ Software - Nexus 2.18 User Interface
 ---
 # Notes by Doc Wiki Structure
 
+## Doc Wiki Structure Goals
+Click through should be to next headers not subpages?
+Need a click through tool at top of page for easy nav, as well as navigation tree on left
+How to handle information display if pure .md? Write div tags into the docs to parse by the host?
+
 ---
 ## System Preparation
 Guide should identify the default steps and the advanced steps - guide the user through the basics first then ask them to re-read
@@ -136,6 +143,9 @@ Guide should identify the default steps and the advanced steps - guide the user 
 ### 1. Masking
 notes dumped to [1_1_masking](../Documentation%20(LCAS%20Vicon)/system_preparation/1_masking/1_1_masking.md)
 
+*need images for masking process*
+#### Manual Masking
+-
 #### Removing Reflective Objects (Preview Mode)
 ****TODO** - document this process
 images in vault - see [[#Identifying Reflective Objects Images (TODO)]]**

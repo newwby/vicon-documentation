@@ -10,7 +10,8 @@ Chapter Number: "3"
 Page Title: Wand Waving
 Page Number: "2"
 Page Status: Draft
-Version: "0.1"
+Software:
+  - Vicon Nexus 2.18
 ---
 ---
 ```table-of-contents

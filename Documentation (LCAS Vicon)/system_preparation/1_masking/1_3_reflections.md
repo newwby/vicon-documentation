@@ -8,9 +8,10 @@ Section: System Preparation
 Chapter: Masking
 Chapter Number: "1"
 Page Title: Removing Reflective Objects
-Page Number: "2"
+Page Number: "3"
 Page Status: Draft
-Version: "0.1"
+Software:
+  - Vicon Nexus 2.18
 ---
 ---
 ```table-of-contents

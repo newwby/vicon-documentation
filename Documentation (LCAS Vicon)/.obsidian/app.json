@@ -2,5 +2,11 @@
   "useMarkdownLinks": true,
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
-  "newLinkFormat": "absolute"
+  "newLinkFormat": "absolute",
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }

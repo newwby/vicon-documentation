@@ -1,0 +1,39 @@
+/* ==========================================
+   1. LIGHT THEME CONFIGURATION
+   ========================================== */
+.theme-light {
+  --nav-header: #0b1d3a;       /* Deep navy blue (High contrast on white) */
+  --text-more-info: #B85C00;   /* Deep Gold/Amber (Very visible, distinct from blue) */
+  --text-warning: #D55E00;     /* Rich Vermillion Orange (Accessible warning color) */
+}
+
+/* ==========================================
+   2. DARK THEME CONFIGURATION
+   ========================================== */
+.theme-dark {
+  --nav-header: #89B4FA;       /* Soft Light Blue (Stands out crisp on dark background) */
+  --text-more-info: #F9E2AF;   /* Light Warm Gold (High contrast, won't look white) */
+  --text-warning: #FF6F00;     /* Soft Pastel Tangerine (Readable, zero eye-strain glare) */
+}
+
+/* ==========================================
+   3. GLOBAL CLASS UTILITIES FOR YOUR MARKDOWN
+   ========================================== */
+
+/* Table of Contents headers */
+.toc-header {
+  color: var(--nav-header) !important;
+  font-weight: 700;
+}
+
+/* "For more information" spans */
+.info-text {
+  color: var(--text-more-info);
+  font-weight: 600; /* Slightly bolder to assist colorblind visibility */
+}
+
+/* Warning text segments */
+.warning-text {
+  color: var(--text-warning);
+  font-weight: 700;
+}
