@@ -10,6 +10,7 @@ TODO
 - modify CSV values to be copyable to spreadsheet simply (or create Claude skill to parse)
 - update readme
 - add script to autorun on desktop isntead?
+- make camera temp csvs output to a yearly/monthly directory instead, else it'll get messy in the folder (and put dtstamp first in filenames!)
 """
 
 """
@@ -61,6 +62,13 @@ from datetime import datetime, timedelta
 from pywinauto import Desktop
 
 NEXUS_CLASS_NAME = "VTrinityMainWindow"
+
+# defines the internal sensor temperature (°C) at which the camera is deemed 'ready to use'
+# all read cameras must reach this temperature in order for the setup to be deemed 'ready to use'
+CAMERA_READY_TEMPERATURE = 50
+
+# enable this for noisy debug printing
+DEBUG_LOGGING = False
 
 WELCOME_MESSAGE = f"""\n
 {"=" * 70}
@@ -134,40 +142,19 @@ def _get_window():
     return win
 
 
-def _read_all_camera_temperatures_debug(win):
-    table = win.child_window(auto_id="DataBrowser", control_type="Table").wrapper_object()
-    items = table.descendants(control_type="DataItem")
-
-    print(f"DEBUG: Found {len(items)} total DataItems")  # <-- ADD THIS
-
-    readings = {}
-    i = 0
-    while i < len(items) - 1:
-        label = items[i].window_text().strip()
-        print(f"DEBUG: Item {i}: '{label}'")  # <-- ADD THIS
-        if LABEL_PATTERN.match(label):
-            value = items[i + 1].window_text().strip()
-            readings[label.rstrip(":").strip()] = value
-            i += 2
-        else:
-            i += 1
-    return readings
-
-
-"""
-Returns a dict of {camera_label: temperature_string}.
-"""
 def _read_all_camera_temperatures(win):
-    # child_window() (only available on WindowSpecification, not on an already-resolved wrapper) is what supports matching by auto_id.
     table = win.child_window(auto_id="DataBrowser", control_type="Table").wrapper_object()
-
-    # .descendants() works directly and supports filtering by control_type
     items = table.descendants(control_type="DataItem")
+
+    if DEBUG_LOGGING:
+        print(f"DEBUG: Found {len(items)} total DataItems")
 
     readings = {}
     i = 0
     while i < len(items) - 1:
         label = items[i].window_text().strip()
+        if DEBUG_LOGGING:
+            print(f"DEBUG: Item {i}: '{label}'")  # <-- ADD THIS
         if LABEL_PATTERN.match(label):
             value = items[i + 1].window_text().strip()
             readings[label.rstrip(":").strip()] = value
@@ -175,6 +162,7 @@ def _read_all_camera_temperatures(win):
         else:
             i += 1
     return readings
+
 
 
 def _write_temperatures(new_csv_file_path, win):
@@ -189,8 +177,10 @@ def _write_temperatures(new_csv_file_path, win):
 
         start_time = datetime.now()
         end_time = start_time + timedelta(minutes=SCRIPT_MAX_DURATION)
+        time_to_ready = None
         next_read = start_time
         highest_recorded_temperature = 0
+        CAMERA_READY_TEMPERATURE = 50
 
         try:
             while datetime.now() < end_time:
@@ -200,14 +190,21 @@ def _write_temperatures(new_csv_file_path, win):
                     try:
                         readings = _read_all_camera_temperatures_debug(win)
                         for camera, temp in readings.items():
-                            writer.writerow([now.isoformat(timespec="seconds"), camera, temp])
-                            if temp > highest_recorded_temperature:
-                                highest_recorded_temperature = temp
-                            if temp < current_lowest_temperature:
-                                current_lowest_temperature = temp
+
+                            # need to convert from str property read
+                            try:
+                                temp_float = float(temp)
+                                writer.writerow([now.isoformat(timespec="seconds"), camera, temp])
+                                if temp_float > highest_recorded_temperature:
+                                    highest_recorded_temperature = temp_float
+                                if temp_float < current_lowest_temperature:
+                                    current_lowest_temperature = temp_float
+                            # If non-numeric value (shouldn't be unless wrong property grabbed), silent skip
+                            except ValueError:
+                                pass
+                        
                         f.flush()
                         print(f"[{now.strftime('%H:%M:%S')}] Read {len(readings)} cameras; data written to '{new_csv_file_path}'.")
-
                     except Exception as e:
                         writer.writerow([now.isoformat(timespec="seconds"), "ERROR", str(e)])
                         f.flush()
