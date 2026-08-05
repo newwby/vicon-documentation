@@ -45,10 +45,12 @@ parent:
 ```
 System Preparation
 	Masking
+		Masking Process
 		Manual Masking
 		Removing Reflective Objects (Preview Mode)
 	Aiming (not relevant)
 	Calibrating Cameras
+		Calibration Process
 		Wand Wave Technique
 		Bumped Cameras
 		Calibration Errors (Camera ID, Relative Positions)
@@ -160,6 +162,8 @@ images in vault - see [[#Identifying Reflective Objects Images (TODO)]]**
 Include *Calibration Baselines from "LCAS Vicon Calibration Tracker.xlsx"*
  check all cameras with 3d overlay view
 
+**At least 3 cameras need to see a marker - does this have an impact on camera health based on wand wave position?**
+
 **Daily Recalibration**
 Tracker (as of 4.4) no longer advises daily recalibration in stable environments but Nexus still does recommend daily recalibration (due to physiology tracking sensitivity). Tracker has tools to support avoiding daily recalibration such as automatic healing tools - see https://help.vicon.com/space/Tracker44/376308776/Maintaining+system+health
 Vicon Nexus does not have automatic healing tools it relies on recalibration
@@ -237,6 +241,13 @@ Resetting calibration will remove their understanding of the volume but you can 
 Remember to check level and flat floor!
 Can mention custom calibration tools here
 
+**Volume origin determines the axis of the volume!** - *test and document this!*
+Worthwhile establishing a baseline & noting the mark on floor - especially if volume orientation is important to the user
+Markers on the wand are actually spaced to indicate this
+```
+Global coordinate system facing direction (where the subject faces or moves) is determined by setting the **Volume Origin** and the **L-Frame / Calibration Wand** orientation. The positive Y-axis points down the handle from the middle marker, and the positive X-axis points toward the Vicon logo
+```
+
 don't use auto scale with the active wand v2 l-frame
 after clicking start for set volume origin go through (select multiple?) camera views and confirm most can see it - especially if having trouble getting cameras relative to the volume plane
 
@@ -257,6 +268,8 @@ after clicking start for set volume origin go through (select multiple?) camera 
 		   If the sphere was 9mm with a base of 2mm the z-measurement should be -6.50mm*
 	   After setting this up - press auto detect then start & set (*start* button will become *set*)
 	   You can confirm this is correct by choosing '3d orthogonal' and going to -X to view
+
+**Note** - you can select markers in one view (orthogonal) then change view (perspective) to figure out who problem markers are/where they are
 
 You do not have to create a box for the area (**TODO run experiments on this have reverted back to making box**)
 The dropdown at auto detect has a tolerance level, this should be 2mm (see Vicon docs) as 9mm can introduce errors - do not confuse this with the offset which should be z -9mm for 14.0mm marker sphere
