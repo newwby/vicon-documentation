@@ -53,7 +53,7 @@ from pywinauto import Desktop
 
 NEXUS_CLASS_NAME = "VTrinityMainWindow"
 
-K1_DELAY_SECONDS = 3        # Delay before the first read
+K1_DELAY_SECONDS = 10        # Delay before the first read
 K2_INTERVAL_MINUTES = 2      # Time between reads
 K3_DURATION_MINUTES = 30     # Total time the script runs for
 
