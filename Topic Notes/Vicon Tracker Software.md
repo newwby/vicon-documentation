@@ -13,7 +13,18 @@ parent:
 **Tracker can minimise jitter from vibrations**
 https://help.vicon.com/space/Tracker39/14057739/Tracker+3.0+new+features+and+functions
 
+### Software Versions
+***Versions Installed*** - **Vicon Tracker 4.4** & **Tracker 3.10**
+*Existing license issues*
 
+*Current Release Versions*
+**Tracker 4.4 is 09/2025** and is current/up to date
+#### Tracker
+Deals with rigid bodies where the relative marker positions can be predicted because they are static relative to each other.
+
+Applications of Vicon Tracker include robotics and drones.
+
+---
 # Tracker 3 & 4 Version Differences
 **also see:
 - [Tracker 3.10 & 4.0 Differences (Migration Guide)](https://help.vicon.com/space/Tracker40/14193120/Vicon+Tracker+4+Migration+Guide)

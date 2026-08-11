@@ -1,0 +1,144 @@
+/* ==========================================================
+   Notion Colour Mimicry
+   Recreates Notion's text-colour and background-highlight
+   palette as light/dark-aware Obsidian classes.
+
+   Usage in notes:
+     <span class="notion-yellow">coloured text</span>
+     <span class="notion-bg-yellow">highlighted text</span>
+     <div class="notion-callout notion-bg-blue">block content</div>
+   ========================================================== */
+
+/* ----------------------------------------------------------
+   1. COLOUR VARIABLES
+   ---------------------------------------------------------- */
+.theme-light {
+  --notion-gray-text: #9B9A97;
+  --notion-brown-text: #64473A;
+  --notion-orange-text: #D9730D;
+  --notion-yellow-text: #DFAB01;
+  --notion-green-text: #0F7B6C;
+  --notion-blue-text: #0B6E99;
+  --notion-purple-text: #6940A5;
+  --notion-pink-text: #AD1A72;
+  --notion-red-text: #E03E3E;
+
+  --notion-gray-bg: #EBECED;
+  --notion-brown-bg: #E9E5E3;
+  --notion-orange-bg: #FAEBDD;
+  --notion-yellow-bg: #FBF3DB;
+  --notion-green-bg: #DDEDEA;
+  --notion-blue-bg: #DDEBF1;
+  --notion-purple-bg: #EAE4F2;
+  --notion-pink-bg: #F4DFEB;
+  --notion-red-bg: #FBE4E4;
+
+  --notion-callout-border-opacity: 0.35;
+}
+
+.theme-dark {
+  --notion-gray-text: #9B9A97;
+  --notion-brown-text: #937264;
+  --notion-orange-text: #FFA344;
+  --notion-yellow-text: #FFDC49;
+  --notion-green-text: #4DAB9A;
+  --notion-blue-text: #529CCA;
+  --notion-purple-text: #9A6DD7;
+  --notion-pink-text: #E255A1;
+  --notion-red-text: #FF7369;
+
+  --notion-gray-bg: #454B4E;
+  --notion-brown-bg: #4A3728;
+  --notion-orange-bg: #5C3B23;
+  --notion-yellow-bg: #564A23;
+  --notion-green-bg: #243D34;
+  --notion-blue-bg: #143A4E;
+  --notion-purple-bg: #3C2D49;
+  --notion-pink-bg: #4E2C3C;
+  --notion-red-bg: #522E2A;
+
+  --notion-callout-border-opacity: 0.55;
+}
+
+/* ----------------------------------------------------------
+   2. INLINE TEXT COLOUR CLASSES
+   ---------------------------------------------------------- */
+.notion-gray   { color: var(--notion-gray-text); }
+.notion-brown  { color: var(--notion-brown-text); }
+.notion-orange { color: var(--notion-orange-text); }
+.notion-yellow { color: var(--notion-yellow-text); }
+.notion-green  { color: var(--notion-green-text); }
+.notion-blue   { color: var(--notion-blue-text); }
+.notion-purple { color: var(--notion-purple-text); }
+.notion-pink   { color: var(--notion-pink-text); }
+.notion-red    { color: var(--notion-red-text); }
+
+/* ----------------------------------------------------------
+   3. INLINE HIGHLIGHT (BACKGROUND) CLASSES
+   Small padding + radius so they read as pills, like Notion's
+   inline background-colour text.
+   ---------------------------------------------------------- */
+.notion-bg-gray,
+.notion-bg-brown,
+.notion-bg-orange,
+.notion-bg-yellow,
+.notion-bg-green,
+.notion-bg-blue,
+.notion-bg-purple,
+.notion-bg-pink,
+.notion-bg-red {
+  padding: 0.05em 0.4em;
+  border-radius: 4px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.notion-bg-gray   { background-color: var(--notion-gray-bg); }
+.notion-bg-brown  { background-color: var(--notion-brown-bg); }
+.notion-bg-orange { background-color: var(--notion-orange-bg); }
+.notion-bg-yellow { background-color: var(--notion-yellow-bg); }
+.notion-bg-green  { background-color: var(--notion-green-bg); }
+.notion-bg-blue   { background-color: var(--notion-blue-bg); }
+.notion-bg-purple { background-color: var(--notion-purple-bg); }
+.notion-bg-pink   { background-color: var(--notion-pink-bg); }
+.notion-bg-red    { background-color: var(--notion-red-bg); }
+
+/* Headings carrying a background class shouldn't inherit the
+   pill padding awkwardly at block level - keep it inline-block */
+h1 .notion-bg-gray, h2 .notion-bg-gray, h3 .notion-bg-gray,
+h1 .notion-bg-brown, h2 .notion-bg-brown, h3 .notion-bg-brown,
+h1 .notion-bg-orange, h2 .notion-bg-orange, h3 .notion-bg-orange,
+h1 .notion-bg-yellow, h2 .notion-bg-yellow, h3 .notion-bg-yellow,
+h1 .notion-bg-green, h2 .notion-bg-green, h3 .notion-bg-green,
+h1 .notion-bg-blue, h2 .notion-bg-blue, h3 .notion-bg-blue,
+h1 .notion-bg-purple, h2 .notion-bg-purple, h3 .notion-bg-purple,
+h1 .notion-bg-pink, h2 .notion-bg-pink, h3 .notion-bg-pink,
+h1 .notion-bg-red, h2 .notion-bg-red, h3 .notion-bg-red {
+  display: inline-block;
+}
+
+/* ----------------------------------------------------------
+   4. BLOCK-LEVEL CALLOUTS
+   For recreating Notion's coloured callout/toggle blocks.
+   Pair with a colour class, e.g.
+     <div class="notion-callout notion-callout-yellow">...</div>
+   ---------------------------------------------------------- */
+.notion-callout {
+  padding: 0.75em 1em;
+  border-radius: 6px;
+  border-left: 3px solid transparent;
+  margin: 0.75em 0;
+}
+
+.notion-callout-gray   { background-color: var(--notion-gray-bg);   border-left-color: color-mix(in srgb, var(--notion-gray-text) var(--notion-callout-border-opacity), transparent); }
+.notion-callout-brown  { background-color: var(--notion-brown-bg);  border-left-color: color-mix(in srgb, var(--notion-brown-text) var(--notion-callout-border-opacity), transparent); }
+.notion-callout-orange { background-color: var(--notion-orange-bg); border-left-color: color-mix(in srgb, var(--notion-orange-text) var(--notion-callout-border-opacity), transparent); }
+.notion-callout-yellow { background-color: var(--notion-yellow-bg); border-left-color: color-mix(in srgb, var(--notion-yellow-text) var(--notion-callout-border-opacity), transparent); }
+.notion-callout-green  { background-color: var(--notion-green-bg);  border-left-color: color-mix(in srgb, var(--notion-green-text) var(--notion-callout-border-opacity), transparent); }
+.notion-callout-blue   { background-color: var(--notion-blue-bg);   border-left-color: color-mix(in srgb, var(--notion-blue-text) var(--notion-callout-border-opacity), transparent); }
+.notion-callout-purple { background-color: var(--notion-purple-bg); border-left-color: color-mix(in srgb, var(--notion-purple-text) var(--notion-callout-border-opacity), transparent); }
+.notion-callout-pink   { background-color: var(--notion-pink-bg);   border-left-color: color-mix(in srgb, var(--notion-pink-text) var(--notion-callout-border-opacity), transparent); }
+.notion-callout-red    { background-color: var(--notion-red-bg);    border-left-color: color-mix(in srgb, var(--notion-red-text) var(--notion-callout-border-opacity), transparent); }
+
+.notion-callout > *:first-child { margin-top: 0; }
+.notion-callout > *:last-child  { margin-bottom: 0; }

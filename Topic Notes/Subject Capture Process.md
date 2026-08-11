@@ -14,7 +14,6 @@ parent:
 ---
 # **Notes**
 In order to develop a subject need define markers, and then segments out of those markers. Segments can be grouped together in a subject but must be defined first
-TODO - need to build a subject (a glove?) then capture to get the .VSK before determining segments
 
 *Need to bring gloves or utilise the test subject driving gloves*
 

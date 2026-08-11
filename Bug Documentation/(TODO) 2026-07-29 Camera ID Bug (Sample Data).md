@@ -11,7 +11,7 @@ parent:
 ---
 ---
 
-**TODO** - document this in writing
+**wip** - document this in writing
 	*see notes on [[Work Record (LCAS Vicon)#WEDNESDAY 29/07/2026]]*
 
 ---

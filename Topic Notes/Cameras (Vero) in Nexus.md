@@ -10,7 +10,7 @@ related files:
   - "[[26-07-24 Camera Start-Up Experiment]]"
 ---
 ---
-# **TODO FOR THESE DOCS**
+# **Doc Topics**
 
 1. Screenshots of different features
 2. Short videos demonstrating errors and camera properties

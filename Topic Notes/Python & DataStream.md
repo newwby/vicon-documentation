@@ -28,4 +28,3 @@ parent:
 
 - Difficult to reach camera properties, even with PyWinAuto
 - Alternative to hardware property recording - isolated recording with screencapture & OCR
-- **TODO** - reattempt pywinauto by hand as v2 or v3 of the script was listing camera properties

@@ -10,11 +10,24 @@ parent:
 ---
 ---
 
-# **TODO FOR THESE DOCS**
+# **WIP FOR THESE DOCS**
 
 1. Screenshots of different features
 2. Walkthrough video of different workflows
 3. Technical doc writeup
+
+---
+### Software Versions
+***Versions Installed*** - **Vicon Nexus** *multiple versions* **(2.16, 2.18, 2.19)**
+*Current Release Versions*
+**Nexus 2.20 is 05/2026** and is most recent
+##### Nexus
+Human bodies move, skin stretches, the relative covariance (measure of how two variables change together) changes and relative marker positions cannot be predicted where markers move out of camera sensor view.
+
+**E.g.** the covariance of markers between shoulder/back would be low, and between shoulder/elbow would be high.
+Range of motion pre-processing can help understand this motion with humans, however, the researcher defines how missing markers should be treated.
+
+Applications of Vicon Nexus include life science and gait tracking.
 
 ---
 # **Known Terms and Glossary**
