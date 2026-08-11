@@ -5,6 +5,10 @@ import time
 from pywinauto import Desktop
 from dataclasses import dataclass
 
+"""
+IMPORTANT - UI Automation only exposes rows that are actually rendered on screen!
+"""
+
 # Organising struct for property output.
 @dataclass
 class PropertyReading:
@@ -29,12 +33,10 @@ class PatternBuilder:
     # Camera hardware suffix as it appears in the label, e.g. '#3 N Wall C3 (Vero v2.2)', for regex - not expecting this to change any time soon.
     DEFAULT_CAMERA_MODEL = "Vero v2.2"
 
-    """
-    text
-    """
+
     @staticmethod
     def build_camera_row_pattern(camera_model: str = DEFAULT_CAMERA_MODEL) -> re.Pattern:
-        """
+        r"""
         Builds a Regex pattern for camera property lookup.
         DataItem tree entry format is always '#{id} {name} {camera} {property}',
             where {id} is the camera ID number,
@@ -52,24 +54,21 @@ class PatternBuilder:
         """
         model = re.escape(camera_model)
         # regex terms separated by fstring args for readability & in-line comments to explain
-        anchor_start = "^" # regex label start
-        anchor_end = "$" # regex label end
-        digit_match = "(?P<id>\d+)" # matches one-or-more digits after the preceding '#' character.
-        whitespace_1 = "\s+" # one-or-more whitespace characters, separating ID from camera name
-        whitespace_0 = "\s*" # zero-or-more whitespace characters, trails afterwards on rows
-        camera_name = "(?:(?P<re_name>.+?)\s+)?" # optional group with user camera name '<name>' of no fixed pattern
-        re_model = f"(?P<re_model>{model})" # named pattern group matching Regex resolution of camera_model
-        end_colon = ":?" # trailing colon - optional as some rows render with this
+        anchor_start = r"^" # regex label start
+        anchor_end = r"$" # regex label end
+        digit_match = r"(?P<id>\d+)" # matches one-or-more digits after the preceding '#' character.
+        whitespace_1 = r"\s+" # one-or-more whitespace characters, separating ID from camera name
+        whitespace_0 = r"\s*" # zero-or-more whitespace characters, trails afterwards on rows
+        camera_name = r"(?:(?P<re_name>.+?)\s+)?" # optional group with user camera name '<name>' of no fixed pattern
+        re_model = rf"(?P<re_model>{model})" # named pattern group matching Regex resolution of camera_model
+        end_colon = r":?" # trailing colon - optional as some rows render with this
         
         # anything not specified by fstring arg is a literal character or escaping a character, e.g '\('
         # full pattern = rf"^#(?P<id>\d+)\s+(?:(?P<re_name>.+?)\s+)?\((?P<re_model>{model})\):?\s*$"
         return re.compile(
-            rf"""
-            {anchor_start}
-            #{digit_match}{whitespace_1}{camera_name}\({re_model}\)
-            {end_colon}{whitespace_0}{anchor_end}
-            """
+            rf"{anchor_start}#{digit_match}{whitespace_1}{camera_name}\({re_model}\){end_colon}{whitespace_0}{anchor_end}"
         )
+
 
 """
 Contains methods that handle fetching Nexus 2.18 window, reading properties, and flushing current buffer to disk.
@@ -96,9 +95,7 @@ class NexusWrapper:
     # reference to the Vicon Nexus 2.18 window, for property reading
     nexus_window = None
 
-    """
-    Regex pattern is required to identify the 
-    """
+
     def __init__(
             self,
             debug_mode = False,
@@ -110,117 +107,35 @@ class NexusWrapper:
         self.startup_delay = startup_delay
 
 
-    """
-    Reads the properties of the Vicon Nexus 2.18 window, grbabing the DataItem tree through pywinauto.
-    IMPORTANT: only property groups currently expanded in the Nexus properties panel exist in the DataItem tree at all.
-    This script can't discover collapsed groups.
-    """
-    def __init__(self, camera_row_pattern: re.Pattern = PATTERN_CAMERA_ROW, debug_mode: bool = False):
-        self.camera_row_pattern = camera_row_pattern
-        self.debug_mode = debug_mode
-
-    """
-    Class operation relies on the Nexus Window being found - all methods validate it is located first of all.
-    """
-    def _validate_window():
-        # attempt to establish
+    def _validate_window(self):
+        """
+        Class operation relies on the Nexus Window being found - all methods validate it is located first of all.
+        """
         if self.nexus_window is None:
-            self.nexus_window = NexusWrapper.get_window()
+            self.nexus_window = NexusWrapper.get_window(self)
         # recheck
         if self.nexus_window is None:
             return False
         else:
             return True
 
+
     """
-    Method returns a list of properties from cameras in the Vicon Nexus 2.18 'Resources' panel
-    (as long as 'Vicon Cameras' is selected and the properties are expanded/visible)
-
-    arg desired_properties:
-        Specifies property to return from lookup - an exact-match filter against text, e.g. ['Camera Body Temp.']
-        If unspecified (leave as 'None'/do not pass argument) ALL properties will be retrieved.
-        Note: list[str] requires Python 3.10
+    Writes the full control identifier tree for the Nexus window to file_path - for debugging or pattern matching.
+        arg file_path - destination file path; overwritten if it already exists
+        arg depth - how many levels of descendants to include (None = full tree)
     """
-    def read(self, desired_properties: list[str] | None = None) -> list[PropertyReading]:
-        # guard
-        if self._validate_window == False:
+    def dump_control_tree(self, file_path: str, depth: int | None = None, get_full_control_tree: bool = False) -> None:
+        if self._validate_window() == False:
             return
-        # compiler guard (TODO this is unecessary)
-        if self.nexus_window is None:
-            return
-        
-        table = self.nexus_window.child_window(auto_id="DataBrowser", control_type="Table").wrapper_object()
-        items = table.descendants(control_type="DataItem")
 
-        readings: list[PropertyReading] = []
-        current_property = None
-        i = 0
-        while i < len(items) - 1:
-            label = items[i].window_text().strip()
-            match = self.camera_row_pattern.match(label)
-
-            if match:
-                value = items[i + 1].window_text().strip()
-                if desired_properties is None or current_property in desired_properties:
-                    readings.append(PropertyReading(
-                        property=current_property,
-                        camera_id=match["id"],
-                        camera_name=(match["re_name"] or "").strip(),
-                        camera_model=match["re_model"],
-                        value=value,
-                    ))
-                if self.debug_mode:
-                    print(f"DEBUG [{current_property}] #{match['id']} {match['name']} = {value}")
-                i += 2
-            else:
-                if label:
-                    current_property = label.rstrip(":").strip()
-                i += 1
-
-        return readings
-
-    @staticmethod
-    def get_window():
-        """
-        Start-up script to grab window & check if script can run - only fetches window, use startup() for console logging. 
-        Can be used to fetch window for custom behvaiour if desired.
-        """
-
-        # default behaviour print, always shown for user feedback
-        print("Looking for the Nexus window...", end="\r")
-        self.nexus_window = Desktop(backend="uia").window(class_name=NEXUS_CLASS_NAME)
-        if not self.nexus_window.exists():
-            raise RuntimeError(f"No window found with class_name='{NEXUS_CLASS_NAME}'. Is Nexus running?")
-        
-        if self.nexus_window == None:
-            print("Script error. Exit code 1 - null window.")
-            return None
-        
-        win_name = self.nexus_window.wrapper_object().window_text()
-        print(f"Found: '{win_name}'")
-        if not "nexus" in str(win_name).lower():
-            print("Script error. Exit code 2 - invalid window.")
-            return None
-        # else
-        return self.nexus_window
-
-    # assumes nexus_window is set via get_window()    
-    def startup_sequence():
-        print(WELCOME_MESSAGE)
-
-        for remaining in range(WELCOME_DELAY, 0, -1):
-            print(f"  Starting in {remaining}s (press ENTER to skip!)...", end="\r")
-
-            # Allow user to break out of this start-up; check if a key was pressed in the last second
-            if msvcrt.kbhit():
-                if msvcrt.getch() == b'\r':  # Enter key
-                    print(" " * 60, end="\r")
-                    print("Skipped countdown.\n")
-                    break
-            time.sleep(1)
-        else:
-            print(" " * 30, end="\r")
-            print("Started.\n")
+        # logging the whole control tree is slower
+        target = self.nexus_window if get_full_control_tree else self.nexus_window.child_window(auto_id="DataBrowser", control_type="Table")
+        status = f"Writing {"full " if get_full_control_tree else ""}control tree to '{file_path}'..."
+        print(status, end="\r")
+        target.print_control_identifiers(depth=depth, filename=file_path)
+        print(" " * len(status), end="\r")
+        print(f"Wrote control tree to '{file_path}'.")
 
 
     """
@@ -251,6 +166,101 @@ class NexusWrapper:
                 i += 1
         return readings
 
+
+    def get_window(self):
+        """
+        Start-up script to grab window & check if script can run - only fetches window, use startup() for console logging. 
+        Can be used to fetch window for custom behvaiour if desired.
+        """
+
+        # default behaviour print, always shown for user feedback
+        print("Looking for the Nexus window...", end="\r")
+        self.nexus_window = Desktop(backend="uia").window(class_name=self.NEXUS_CLASS_NAME)
+        if not self.nexus_window.exists():
+            raise RuntimeError(f"No window found with class_name='{selfNEXUS_CLASS_NAME}'. Is Nexus running?")
+        
+        if self.nexus_window == None:
+            print("Script error. Exit code 1 - null window.")
+            return None
+        
+        win_name = self.nexus_window.wrapper_object().window_text()
+
+        # console clear
+        print(" " * len("Looking for the Nexus window..."), end="\r")        
+        print(f"Found: '{win_name}'")
+        
+        if not "nexus" in str(win_name).lower():
+            print("Script error. Exit code 2 - invalid window.")
+            return None
+        # else
+        return self.nexus_window
+
+
+    """
+    Method returns a list of properties from cameras in the Vicon Nexus 2.18 'Resources' panel
+    (as long as 'Vicon Cameras' is selected and the properties are expanded/visible)
+
+    arg desired_properties:
+        Specifies property to return from lookup - an exact-match filter against text, e.g. ['Camera Body Temp.']
+        If unspecified (leave as 'None'/do not pass argument) ALL properties will be retrieved.
+        Note: list[str] requires Python 3.10
+    """
+    def read(self, desired_properties: list[str] | None = None) -> list[PropertyReading]:
+        # guard
+        if self._validate_window() == False:
+            return
+        # compiler guard (TODO this is unecessary)
+        if self.nexus_window is None:
+            return
+        
+        table = self.nexus_window.child_window(auto_id="DataBrowser", control_type="Table").wrapper_object()
+        items = table.descendants(control_type="DataItem")
+
+        readings: list[PropertyReading] = []
+        current_property = None
+        i = 0
+        while i < len(items) - 1:
+            label = items[i].window_text().strip()
+            match = self.PATTERN_CAMERA_ROW.match(label)
+
+            if match:
+                value = items[i + 1].window_text().strip()
+                if desired_properties is None or current_property in desired_properties:
+                    readings.append(PropertyReading(
+                        property=current_property,
+                        camera_id=match["id"],
+                        camera_name=(match["re_name"] or "").strip(),
+                        camera_model=match["re_model"],
+                        value=value,
+                    ))
+                if self.debug_mode:
+                    print(f"DEBUG [{current_property}] #{match['id']} {match['re_name']} = {value}")
+                i += 2
+            else:
+                if label:
+                    current_property = label.rstrip(":").strip()
+                i += 1
+
+        return readings
+
+
+    # assumes nexus_window is set via get_window()    
+    def startup_sequence():
+        print(WELCOME_MESSAGE)
+
+        for remaining in range(WELCOME_DELAY, 0, -1):
+            print(f"  Starting in {remaining}s (press ENTER to skip!)...", end="\r")
+
+            # Allow user to break out of this start-up; check if a key was pressed in the last second
+            if msvcrt.kbhit():
+                if msvcrt.getch() == b'\r':  # Enter key
+                    print(" " * 60, end="\r")
+                    print("Skipped countdown.\n")
+                    break
+            time.sleep(1)
+        else:
+            print(" " * 30, end="\r")
+            print("Started.\n")
 
 
     """
@@ -318,5 +328,9 @@ class NexusWrapper:
 if __name__ == "__main__":
     # NexusWrapper.startup_sequence()
     # print(get_camera_property(get_window()))
-    print(NexusWrapper().read())
+    nw = NexusWrapper()
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    tree_path = os.path.join(script_dir, "control_tree.txt")
+    nw.dump_control_tree(tree_path)
+    print(nw.read())
 
