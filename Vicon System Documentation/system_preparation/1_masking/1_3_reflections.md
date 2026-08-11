@@ -26,3 +26,7 @@ Lorem Ipsum
 *Do not push to live!*
 
 - **TODO**: Remove this header
+
+#### Removing Reflective Objects (Preview Mode)
+****TODO** - document this process
+images in vault - see [[#Identifying Reflective Objects Images (TODO)]]**

@@ -61,9 +61,6 @@ notes dumped to [1_1_masking](../Documentation%20(LCAS%20Vicon)/system_preparati
 *need images for masking process*
 #### Manual Masking
 -
-#### Removing Reflective Objects (Preview Mode)
-****TODO** - document this process
-images in vault - see [[#Identifying Reflective Objects Images (TODO)]]**
 
 ---
 ### 2. Aiming (not relevant)

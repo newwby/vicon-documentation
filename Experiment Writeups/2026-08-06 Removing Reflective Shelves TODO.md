@@ -21,7 +21,9 @@ Determine the calibration impact of the reflective metal shelving at the edge of
 ---
 # Outcome
 
-
+Shelving possibly trapped in sight of a camera
+Possibly additional floor reflection was an issue
+Worth re-doing
 ## Conclusion
 
 
