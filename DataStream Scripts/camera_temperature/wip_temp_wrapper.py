@@ -11,6 +11,13 @@ TODO
 - update readme
 - add script to autorun on desktop isntead?
 - make camera temp csvs output to a yearly/monthly directory instead, else it'll get messy in the folder (and put dtstamp first in filenames!)
+
+NOTES FOR CAMERA SCRIPT --
+Log outputs should happen every read & the final write only at end of script
+Log outputs should be keyed so you could manually rebuild the final output if you wanted
+Window does not need to be focused only the values you want need to be visible 
+#(could make small part of the screen just don't cover them - still worth adj. script to grab window for a split seconds)
+
 """
 
 """
