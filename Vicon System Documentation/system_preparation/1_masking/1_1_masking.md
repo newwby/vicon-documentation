@@ -13,13 +13,17 @@ Page Status: Draft
 Software:
   - Vicon Nexus 2.18
 cssclasses:
+Next Page:
+  - "[[Public Files/Vicon System Documentation/system_preparation/1_masking/1_2_manual_masking|1_2_manual_masking]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/3_calibrating/3_1_calibration_process|3_1_calibration_process]]"
+Last Page: "[[Public Files/Vicon System Documentation/system_preparation/index|index]]"
 ---
 ---
 ```table-of-contents
 ```
 ---
 ---
-# Documentation Topics
+# Introduction
 
 *This guide covers how to mask cameras, why you should mask cameras, how to navigate camera views, and touches on how cameras identify subjects.*
 

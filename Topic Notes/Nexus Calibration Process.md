@@ -58,10 +58,6 @@ Guide should identify the default steps and the advanced steps - guide the user 
 ### 1. Masking
 notes dumped to [1_1_masking](../Documentation%20(LCAS%20Vicon)/system_preparation/1_masking/1_1_masking.md)
 
-*need images for masking process*
-#### Manual Masking
--
-
 ---
 ### 2. Aiming (not relevant)
 2. **Aim Cameras**
@@ -75,48 +71,12 @@ notes dumped to [1_1_masking](../Documentation%20(LCAS%20Vicon)/system_preparati
 ---
 ### 4. Configuring Volume
 #### Set Volume Origin (Level)
-Remember to check level and flat floor!
-Can mention custom calibration tools here
 
-**Volume origin determines the axis of the volume!** - *test and document this!*
-Worthwhile establishing a baseline & noting the mark on floor - especially if volume orientation is important to the user
-Markers on the wand are actually spaced to indicate this
-```
-Global coordinate system facing direction (where the subject faces or moves) is determined by setting the **Volume Origin** and the **L-Frame / Calibration Wand** orientation. The positive Y-axis points down the handle from the middle marker, and the positive X-axis points toward the Vicon logo
-```
+migrated to [4_1_set_volume_origin](Public%20Files/Vicon%20System%20Documentation/system_preparation/4_volume/4_1_set_volume_origin.md)
 
-don't use auto scale with the active wand v2 l-frame
-after clicking start for set volume origin go through (select multiple?) camera views and confirm most can see it - especially if having trouble getting cameras relative to the volume plane
-
-**Note** - you can also set the floor plane by markers! **test effect of this add to experiments**
-
-4. **Set Volume Origin (Part 1)**
-	   Place the L-Frame ('**Active Wand v2**') in the centre of your working space
-	   Make sure no markers are in the detected camera range
-		   **question -** *Should auto-scale be set?*
 #### Set Floor Plane
-5. **Set Volume Origin (Part 2)**
-	   *You must set the floor position, and align it horizontal to the cameras*
-	   Create a 'box' around the intended working space, by outlining it with markers
-	   Place clusters of markers within the box
-	   The offset z axis must be set to determine the floor position, depending on markers used.
-	   **This must be equal to the negative value of half the sphere radius plus the height of the base, e.g.**
-		   *if the sphere is 14mm with a base of 2mm the z-measurement should be -9.00mm.
-		   If the sphere was 9mm with a base of 2mm the z-measurement should be -6.50mm*
-	   After setting this up - press auto detect then start & set (*start* button will become *set*)
-	   You can confirm this is correct by choosing '3d orthogonal' and going to -X to view
 
-**Note** - you can select markers in one view (orthogonal) then change view (perspective) to figure out who problem markers are/where they are
-
-You do not have to create a box for the area (**TODO run experiments on this have reverted back to making box**)
-The dropdown at auto detect has a tolerance level, this should be 2mm (see Vicon docs) as 9mm can introduce errors - do not confuse this with the offset which should be z -9mm for 14.0mm marker sphere
-
-- Need to add how to confirm wand is level/confirm level floor if not using marker floor plane detection (part of alternative guide and just focus on the easiest path?)
-- Don't put marker clusters too far apart or the reflections from each can cause ghost markers
-- No disadvantage I can see to 'select all markers'
-- During floor plane calculation ensure that there's the number of markers you expect in each cluster
-- Ensure all cameras are casting rays - if not it may be a calibration issue (check world & image error)
-Made a little cross in middle-ish of floor to make volume capturing consistent, but may wish to experiment with different (*sigh*, **TODO**) l-frame positions in future
+migrated to [4_2_set_floor_plane](Public%20Files/Vicon%20System%20Documentation/system_preparation/4_volume/4_2_set_floor_plane.md)
 
 ---
 ### 5. Camera Health Check

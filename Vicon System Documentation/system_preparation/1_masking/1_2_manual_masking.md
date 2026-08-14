@@ -12,13 +12,22 @@ Page Number: "2"
 Page Status: Draft
 Software:
   - Vicon Nexus 2.18
+Next Page: "[[Public Files/Vicon System Documentation/system_preparation/1_masking/1_3_reflections|1_3_reflections]]"
+Last Page:
+  - "[[Public Files/Vicon System Documentation/system_preparation/1_masking/1_1_masking|1_1_masking]]"
 ---
 ---
 ```table-of-contents
 ```
 ---
-# Title
-Lorem Ipsum
+# Introduction
+
+**This guide covers:**
+- How to use preview mode to identify reflections
+- How to manually mask the camera sensor view
+- The function of each grayscale mode
+
+Note - duplicate with reflections?
 
 ---
 # Note Dump

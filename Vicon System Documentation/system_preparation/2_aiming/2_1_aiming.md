@@ -12,6 +12,8 @@ Page Number: "1"
 Page Status: Draft
 Software:
   - Vicon Nexus 2.18
+Next Page:
+Last Page:
 ---
 ---
 ```table-of-contents

@@ -12,6 +12,8 @@ Page Number: "3"
 Page Status: Draft
 Software:
   - Vicon Nexus 2.18
+Next Page: "[[Public Files/Vicon System Documentation/system_preparation/3_calibrating/3_1_calibration_process|3_1_calibration_process]]"
+Last Page: "[[Public Files/Vicon System Documentation/system_preparation/1_masking/1_2_manual_masking|1_2_manual_masking]]"
 ---
 ---
 ```table-of-contents

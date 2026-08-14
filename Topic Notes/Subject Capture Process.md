@@ -83,3 +83,8 @@ You then must create a segment to know how the markers move relative to each oth
 After capture you have to reconstruct the trial (via reconstruct pipeline) in order to be able to display.
 ## Questions
 Why free joints when setting up subjects/segments?
+
+# Note Dump
+
+Generally if same subject and labelling skeleton still fits - don't recalibrate your skeleton/subject
+If your physical marker placement has drifted (markers re-glued, repositioned, etc.) even slightly, that counts as "markers moved" and does warrant a fresh calibration.

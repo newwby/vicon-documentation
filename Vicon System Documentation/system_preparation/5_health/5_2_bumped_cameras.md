@@ -12,6 +12,9 @@ Page Number: "2"
 Page Status: Draft
 Software:
   - Vicon Nexus 2.18
+Next Page:
+Last Page:
+  - "[[Public Files/Vicon System Documentation/system_preparation/5_health/5_1_camera_error|5_1_camera_error]]"
 ---
 ---
 ```table-of-contents
