@@ -4,7 +4,7 @@ tags:
   - Documentation
   - Live
   - Calibration
-Section: System Preparation
+Section: "[[Public Files/Vicon System Documentation/system_preparation/index (system_preparation)|System Preparation]]"
 Chapter: Masking
 Chapter Number: "1"
 Page Title: Masking Cameras
@@ -14,9 +14,9 @@ Software:
   - Vicon Nexus 2.18
 cssclasses:
 Next Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/1_masking/1_2_manual_masking|1_2_manual_masking]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/1_masking/1_2_reflections_and_manual_masking|1_2_reflections_and_manual_masking]]"
   - "[[Public Files/Vicon System Documentation/system_preparation/3_calibrating/3_1_calibration_process|3_1_calibration_process]]"
-Last Page: "[[Public Files/Vicon System Documentation/system_preparation/index|index]]"
+Last Page: "[[Public Files/Vicon System Documentation/system_preparation/index (system_preparation)|index (system_preparation)]]"
 ---
 ---
 ```table-of-contents
@@ -52,7 +52,7 @@ Markers are highly reflective - the ones pictured are attached to a base, but th
 
 **If markers are present in the environment when you start masking the system will treat this as an area to be ignored. They are designed to be noticed by the cameras.**
 
-<span class="info-text"><b>For more Information</b></span> see the [Removing Reflections Guide](system_preparation/1_masking/1_3_reflections.md). This covers how to identify reflective objects and prepare your environment before calibration.
+<span class="info-text"><b>For more Information</b></span> see the [removing reflections guide](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/1_2_reflections_and_manual_masking.md). This covers how to identify reflective objects and prepare your environment before calibration.
 
 <span class="warning-text"><b>Important:</b></span> The recommended practice is perform a calibration at the start of each day, or when beginning a capture session if the environment has changed. 
 
@@ -86,7 +86,7 @@ The marks displayed in the camera view are the motion tracking cameras attemptin
 
 Where the *grayscale blobs* reflect enough light, it is marked as a candidate point for a marker. If the candidate point resembles a sphere, the camera will identify it as a marker and attempt to fit a centroid; **this is false positive identification and will impair tracking.**
 
-If the object or reflection cannot be removed from the environment (see the [Removing Reflections Guide](system_preparation/1_masking/1_3_reflections.md)) then a mask is necessary to prevent it interacting with the camera.
+If the object or reflection cannot be removed from the environment (see the [removing reflections guide](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/1_2_reflections_and_manual_masking.md)) then a mask is necessary to prevent it interacting with the camera.
 
 **You may see the following icons on the camera display**:
 
@@ -136,7 +136,7 @@ You can select an individual camera, as before, to view the new masks in place o
 <small><i>Single camera masks</i></small>
 
 If there are any reflections that have not been captured by the masking process, or a new reflection is introduced, you can also manually add masks.
-<span class="info-text"><b>For more Information</b></span> on this see the [Manual Masking Guide](system_preparation/1_masking/1_2_manual_masking.md).
+<span class="info-text"><b>For more Information</b></span> on this see the [Manual Masking Guide](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/1_2_reflections_and_manual_masking.md).
 
 ---
 ---

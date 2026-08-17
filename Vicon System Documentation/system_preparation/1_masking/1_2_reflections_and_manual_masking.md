@@ -4,15 +4,16 @@ tags:
   - Documentation
   - Live
   - Calibration
-Section: System Preparation
+Section: "[[Public Files/Vicon System Documentation/system_preparation/index (system_preparation)|System Preparation]]"
 Chapter: Masking
 Chapter Number: "1"
-Page Title: Manual Masking
+Page Title: Reflections and Manual Masking
 Page Number: "2"
 Page Status: Draft
 Software:
   - Vicon Nexus 2.18
-Next Page: "[[Public Files/Vicon System Documentation/system_preparation/1_masking/1_3_reflections|1_3_reflections]]"
+Next Page:
+  - "[[Public Files/Vicon System Documentation/system_preparation/3_calibrating/3_1_calibration_process|3_1_calibration_process]]"
 Last Page:
   - "[[Public Files/Vicon System Documentation/system_preparation/1_masking/1_1_masking|1_1_masking]]"
 ---
@@ -30,10 +31,19 @@ Last Page:
 Note - duplicate with reflections?
 
 ---
+# TODO
+
+- [ ] Complete doc notes for [Identifying Reflective Objects with Preview Mode(TODO)](../Public%20Files/Topic%20Notes/Nexus%20Calibration%20Process.md#Identifying%20Reflective%20Objects%20with%20Preview%20Mode(TODO))
+- [ ] Identify & document reflective objects in each camera's preview
+- [ ] [2026-08-06 Removing Reflective Shelves TODO]
+
 # Note Dump
+### **TO REVIEW**
 ###### (Until Removed This Is A Draft Note Do Not Push To live)
 *Do not push to live!*
 
+**  
+TODO - document this process images in vault - see 
 - **TODO**: Remove this header
 
 	   *How to manually mask reflections*

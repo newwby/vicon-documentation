@@ -4,7 +4,7 @@ tags:
   - Documentation
   - Live
   - Calibration
-Section: System Preparation
+Section: "[[Public Files/Vicon System Documentation/system_preparation/index (system_preparation)|System Preparation]]"
 Chapter: Configuring Volume
 Chapter Number: "4"
 Page Title: Setting Floor Plane
@@ -24,8 +24,13 @@ Last Page:
 # Title
 Lorem Ipsum
 
+**note experiments on [2026-08-05 Marker Cluster Layout (v1) TODO](../Public%20Files/Experiment%20Writeups/2026-08-05%20Marker%20Cluster%20Layout%20(v1)%20TODO.md)**
+
 ---
 # Note Dump
+# TODO
+ **Effect of more markers on setting floor plane** - need to select more to cover wider areas, if floor is level it is fine to use fewer but any changes in plane will compound
+### **TO REVIEW**
 ###### (Until Removed This Is A Draft Note Do Not Push To live)
 *Do not push to live!*
 

@@ -4,7 +4,7 @@ tags:
   - Documentation
   - Live
   - Calibration
-Section: System Preparation
+Section: "[[Public Files/Vicon System Documentation/system_preparation/index (system_preparation)|System Preparation]]"
 Chapter: Calibrating Cameras
 Chapter Number: "3"
 Page Title: Calibration Errors
@@ -26,6 +26,8 @@ Lorem Ipsum
 
 ---
 # Note Dump
+### **TO REVIEW**
+all notes currently in [3_1_calibration_process](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/3_1_calibration_process.md) at moment
 ###### (Until Removed This Is A Draft Note Do Not Push To live)
 *Do not push to live!*
 

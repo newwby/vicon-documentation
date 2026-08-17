@@ -38,8 +38,7 @@ Once you feel comfortable, or when you need to troubleshoot any calibration issu
 
 ### Camera Masking
 1. [1_1_masking](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/1_1_masking.md)
-2. [1_2_manual_masking](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/1_2_manual_masking.md)
-3. [1_3_reflections](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/1_3_reflections.md)
+2. [1_2_reflections_and_manual_masking](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/1_2_reflections_and_manual_masking.md)
 ### Aiming Cameras
 *This section is a placeholder as the INB0104 fixed camera-setup does not require aiming.*
 	1. ~~[2_1_aiming](Public%20Files/Vicon%20System%20Documentation/system_preparation/2_aiming/2_1_aiming.md)~~

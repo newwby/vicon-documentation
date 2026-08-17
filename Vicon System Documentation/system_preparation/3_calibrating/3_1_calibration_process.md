@@ -4,7 +4,7 @@ tags:
   - Documentation
   - Live
   - Calibration
-Section: System Preparation
+Section: "[[Public Files/Vicon System Documentation/system_preparation/index (system_preparation)|System Preparation]]"
 Chapter: Calibrating Cameras
 Chapter Number: "3"
 Page Title: Calibrating Cameras
@@ -16,7 +16,7 @@ Next Page:
   - "[[Public Files/Vicon System Documentation/system_preparation/3_calibrating/3_2_wand_waving|3_2_wand_waving]]"
   - "[[Public Files/Vicon System Documentation/system_preparation/4_volume/4_1_set_volume_origin|4_1_set_volume_origin]]"
 Last Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/1_masking/1_3_reflections|1_3_reflections]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/1_masking/1_2_reflections_and_manual_masking|1_2_reflections_and_manual_masking]]"
   - "[[Public Files/Vicon System Documentation/system_preparation/1_masking/1_1_masking|1_1_masking]]"
 ---
 ---
@@ -25,6 +25,8 @@ Last Page:
 ---
 # Title
 Lorem Ipsum
+
+**TODO - *Determine default suggestions for this process, give default notes***
 
 *Daily calibration is recommended, any time you plan to start a new capture session if the environment has changed or been disturbed* - r**eview note what disturbs this**
 
@@ -64,7 +66,7 @@ text
 ## Wand Waving
 
 link to wand wave doc, covered in more detail
-**image of the active wand IR2**
+**add image of the active wand IR2**
 
    requires physical wand ('**Active Wand v2**') - it auto sets LED strobe freq. to FPS in LVS *(see https://help.vicon.com/download/attachments/339347714/Active%20Wand%20(Dual-Sided)%20User%20Guide%20-%20Dec%202025.pdf)*
 
@@ -110,6 +112,7 @@ what's happening during (what are they doing)
 	   cameras flash faster when they're closer to hitting minimum auto-stop frames
 	   
 once you've done calibrating you'll see success
+*images are collected for this already*
 **they all turn blue, re-use this image from above**
 **image of wand wave post-data** - note shown on Nexus
 
@@ -120,49 +123,18 @@ once you've done calibrating you'll see success
 - User needs to switch to 3d perspective after calibration feedback data processes (**note**: slow in 2.18) to confirm that it works
 
 ---
-
-## Other topics/potential advanced topics
-### Advanced Wand Waving
-**Review https://help.vicon.com/space/ActiveWandDoc/**
-**Wand Waving/Camera Calibration Notes**
-
-- **[WAND DOCS](https://help.vicon.com/download/attachments/339347714/Active%20Wand%202.0%20User%20Guide%20Jun%202024.pdf)** - ***need to watch a wand video to confirm technique***
-	- **Wand has a bubble level** to confirm the floor is flat
-	- **Wand level screws** can be adjusted to assist with uneven floors
-	- **Continuous mode** assists with high light pollution, large volumes or video cameras
-	- **You can sync wand to cameras by turning on strobe** - should be 120fps (appears continuous)
-
-- *Hold the wand as far away from your body as possible, to reduce occlusion caused by your body blocking the cameras from the wand.
-- *For good coverage, wave the wand high and low within the volume.*
-- *You don't need to include any kind of twisting motion.*
-- *Make sure to get wide and small, move back and forwards, and look at the camera with the wand strobe lights*
-### Auto-Stop
-*Maybe move to advanced section?*
-Note about Frames
-* What is auto-stop impact on wand count? (*graph?*)
-### Resetting Calibration
-**The options menu has additional sections when you click properties**
-F7 - Camera Positions - Show Uncalibrated Cameras
-if you reset calibration this will remove the camera from the 3d perspective
-### Calibration Health
-Should calibration health be shown in this guide - how to check if cameras are healthy? or just confirming the relativeness?
-
-**Include baselines?**
-Include *Calibration Baselines from "LCAS Vicon Calibration Tracker.xlsx"*
-### Calibration Errors (Camera ID, Relative Positions)
-tbd
-### Calibration Profiles
-Right click 'reset calibration' removes this **so recalibration has to be redone**
-Specifically reset calibration removes the ID (zeroed out), keyframe orientation (quaternion values) and position (3d axis) -  also seems to go from float to double
-You can check the .xcp to verify this
-You can reload calibrations from previous days if you have the file
-https://help.vicon.com/space/Nexus218/406490496/System+Preparation+tools#Manage-Camera-Calibration-section
-Resetting calibration will remove their understanding of the volume but you can recalibrate a selected camera to return them to calibration
-
----
 ## Questions to Answer for docs revision
 
 **At least 3 cameras need to see a marker - does this have an impact on camera health based on wand wave position?**
 
 - **To confirm**
   *You will always achieve better results by showing the wand to both sides of the volume at the same time, rather than separately to one side then the other.*
+
+# More Note Dump
+# TODO
+Note you check 3d calibration after the feedback finishes not before, it doesn't update until then
+
+## Reference Links
+* **https://help.vicon.com/space/Nexus218/406488171/Calibrate+Vicon+cameras**
+	  not in [Vicon Resources & Links](Private%20Files/Vicon%20Resources%20&%20Links.md)
+

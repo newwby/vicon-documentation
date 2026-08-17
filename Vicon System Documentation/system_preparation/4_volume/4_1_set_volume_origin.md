@@ -4,7 +4,7 @@ tags:
   - Documentation
   - Live
   - Calibration
-Section: System Preparation
+Section: "[[Public Files/Vicon System Documentation/system_preparation/index (system_preparation)|System Preparation]]"
 Chapter: Configuring Volume
 Chapter Number: "4"
 Page Title: Setting Volume Origin
@@ -25,8 +25,21 @@ Last Page:
 # Title
 Lorem Ipsum
 
+  ***note on floor plane doc that the wand is now level and to check level***
+
 ---
+# TODO
+
+**BUG**
+**Wand volume origin setting error** *(solved by refresh or reload camera user configs)*
+
+Marker plane setup documentation
+
+- [ ] Get documentation images for [4_1_set_volume_origin](Public%20Files/Vicon%20System%20Documentation/system_preparation/4_volume/4_1_set_volume_origin.md)
+      *Some definitely exist but 3-marker setup is not documented with images*
+
 # Note Dump
+### **TO REVIEW**
 ###### (Until Removed This Is A Draft Note Do Not Push To live)
 *Do not push to live!*
 

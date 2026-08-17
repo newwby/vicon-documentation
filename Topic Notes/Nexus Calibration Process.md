@@ -14,30 +14,16 @@ parent:
 ---
 # DOC WIP NOTES
 ## WIP
-1. Screenshots of different features
-2. Walkthrough video of calibration workflow (needs script first)
-3. Technical doc writeup with links
-
-4. [X] ~~Update calibration process guide based on recent notes~~
-5. [X] ~~Document the calibration process with images~~
-	   *collected not included, review for structure*
-6. [X] Repeat marker layout photos
-	   *done*
-7. [ ] Get short video of wand waving (POV?)
-8. [ ] L-Frame annotation & explanation
+1. [ ] L-Frame annotation & explanation
 
 - Shifting reflections during tracking mimics markers and affects data. - **TODO investigate this!!**
-- **TODO** investigate auto stop effect on world/image error, see wand count impact (*data now?*)
-## Reference Links
-* **https://help.vicon.com/space/Nexus218/406488171/Calibrate+Vicon+cameras**
-	  *move to [[../../Private Files/Vicon Resources & Links]]?*
-- **Still need to review other docs to update own process notes**
+- **TODO** i
 ## Future Concerns
 
 - **Creating custom calibration tools (and their profiles) is possible, but outside guide scope**
 	  *This does allow for calibration with markers embedded in the volume however...*
 - **NOTE**: There are currently 22 markers in my working box - with possibly another 20 in other, the sample data uses 40 for a full body motion track so pushing up against limits of our materials
-
+**TODO** - need to trial third party markers
 
 ---
 
@@ -80,12 +66,7 @@ migrated to [4_2_set_floor_plane](Public%20Files/Vicon%20System%20Documentation/
 
 ---
 ### 5. Camera Health Check
-#### World Error & Image Error explanation
-**Image error** measures 2D pixel inaccuracy based on camera sensor, and **world error** translates this into real-world distance-based mm measurements. Good/bad values need to be determined by comparing current results against the established lab-specific baseline so recording these will be important.
-**World Error** is calculated per camera so cameras further away with the same image error have a larger world error
-**Image Error** represents difference between camera 2D image of markers and 3D reconstructions of those markers projected back to the camera sensor.
-*The size of the capture volume and camera lens type impact these values.*
-https://help.vicon.com/space/Nexus218/406490496/System+Preparation+tools
+
 
 #### Bumped Cameras
 see [2026-07-28 Bumping Experiment](../Experiment%20Writeups/2026-07-28%20Bumping%20Experiment.md)

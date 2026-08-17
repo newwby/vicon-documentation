@@ -88,3 +88,8 @@ Why free joints when setting up subjects/segments?
 
 Generally if same subject and labelling skeleton still fits - don't recalibrate your skeleton/subject
 If your physical marker placement has drifted (markers re-glued, repositioned, etc.) even slightly, that counts as "markers moved" and does warrant a fresh calibration.
+
+### Files
+- **.VST files** are templates
+- **.VSK files** are applications of a VST file to a specific person. You can create a .VSK file by performing a brief capture of a subject, and then you can view the covariance between markers in the on-disk file.
+  *.VSK files cannot be edited manually through Nexus but they are XML so 3rd party solution may be viable.*
