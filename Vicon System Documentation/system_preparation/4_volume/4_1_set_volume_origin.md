@@ -35,9 +35,10 @@ Lorem Ipsum
 
 Marker plane setup documentation
 
-- [ ] Get documentation images for [4_1_set_volume_origin](Public%20Files/Vicon%20System%20Documentation/system_preparation/4_volume/4_1_set_volume_origin.md)
+- [x] Get documentation images for [4_1_set_volume_origin](Public%20Files/Vicon%20System%20Documentation/system_preparation/4_volume/4_1_set_volume_origin.md)
       *Some definitely exist but 3-marker setup is not documented with images*
 
+When setting with 3 markers make sure to place the Y Axis (handle) aka primary marker a further distance away from the origin marker than the X axis (crossbeam) aka secondary marker is. This helps identify them in 3D space (one will be further away from the L-intersection). You can use the active wand lights to help identify where to place markers.
 # Note Dump
 ### **TO REVIEW**
 ###### (Until Removed This Is A Draft Note Do Not Push To live)

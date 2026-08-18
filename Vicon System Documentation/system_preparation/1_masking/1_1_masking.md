@@ -28,7 +28,7 @@ Last Page: "[[Public Files/Vicon System Documentation/system_preparation/index (
 *This guide covers how to mask cameras, why you should mask cameras, how to navigate camera views, and touches on how cameras identify subjects.*
 
 ---
-----
+---
 # Masking
 
 ![Camera Mask Display|548](_assets/system_preparation/1_1_masking/masking_ui_example_camera_view_cropped.png)

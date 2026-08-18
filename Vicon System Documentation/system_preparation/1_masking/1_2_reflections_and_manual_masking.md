@@ -38,6 +38,15 @@ Note - duplicate with reflections?
 - [ ] [2026-08-06 Removing Reflective Shelves TODO]
 
 # Note Dump
+
+| Setting                       | Documented guidance                                                                                                                                                                           |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Threshold**                 | "This setting differentiates between markers and ambient light." Recommended range 0.2–0.5.                                                                                                   |
+| **Gain**                      | "Only adjust this setting if the markers appear too faint or the cameras have trouble distinguishing them; otherwise, leave at its default setting (x1)." Vicon advises against exceeding x2. |
+| **Strobe Intensity**          | "In most cases, keep its default setting (1)."                                                                                                                                                |
+| **Grayscale Mode**            | Set to **Auto** for data capture — the camera sends centroid data for recognised circles, or full greyscale where it cannot distinguish blob shape, allowing Nexus to circle-fit.             |
+| **Minimum Circularity Ratio** | Default 0.5. Higher values are better suited to calibration; lower values to data capture.                                                                                                    |
+
 ### **TO REVIEW**
 ###### (Until Removed This Is A Draft Note Do Not Push To live)
 *Do not push to live!*

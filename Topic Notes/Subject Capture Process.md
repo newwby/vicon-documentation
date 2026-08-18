@@ -30,7 +30,7 @@ The thumb had a mesh covering which wasn't adhesive for micropore tape so ignore
 Documented process & terminology notes
 **Forgot linking & then Nexus crashed/didn't save - lost the subject/labelling skeleton**, to repeat!
 ### Experiment 3
-You can select markers to see camera rays at any time (updated [Vicon Nexus 2.18 User Interface](Vicon%20Nexus%202.18%20User%20Interface.md))
+You can select markers to see camera rays at any time (updated [Vicon Nexus 2.18 User Interface inc. Hotkeys](Public%20Files/Topic%20Notes/Vicon%20Nexus%202.18%20User%20Interface%20inc.%20Hotkeys.md))
 You must create a database in a directory - this likely caused the crash last time
 Created subject again - went through linking process & tried to export as VSK/VST but encountered bug with naming
 	**To add to [Known Bugs](../../Private%20Files/Vicon%20Bugs,%20Experiments%20&%20Questions.md#Known%20Bugs)!**

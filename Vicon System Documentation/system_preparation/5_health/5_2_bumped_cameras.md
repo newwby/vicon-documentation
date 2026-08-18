@@ -35,6 +35,8 @@ Lorem Ipsum
 
 - **TODO**: Remove this header
 
+**NEED TO DOCUMENT HOW TO CONFIRM THEY AREN'T ACTUALLY UNHEALTHY**
+**Note:** Cameras blink when they're unhealthy, unless they're selected then they go solid (blue?)
 
 ---
 

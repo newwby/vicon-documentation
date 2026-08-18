@@ -44,7 +44,9 @@ Applications of Vicon Nexus include life science and gait tracking.
 # Unsorted Notes
 
 You can click markers in the live view to see the camera rays
-F7 options
+
+When you lock computer sometimes the cameras can desynchronise, disconnect, or stop contributing data
+Restarting Nexus is the quickest way to fix this but don't hit retry or re-open it immediately, the process takes a while to close
 
 ---
 # User Navigation
@@ -56,8 +58,23 @@ Ctrl+Enter to Start/Stop
 Ctrl+Tab to toggle live mode
 Space to pause
 
-Selection shortcuts for non-technical users?
+Press F7 for options
+
+CTRL+Shift+B = reset bumped status
+
+**Resetting Calibration**
+**Whole-system**: System Preparation Tools → Manage Camera Calibration → Reset
+**Single camera**: right-click the camera node  (resource tree or 3d view) → Reset Calibration.
+
+**Resetting Mask**
+*this is covered in [1_1_masking](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/1_1_masking.md)*
+Clear the mask from the camera button in the Camera view toolbar, per selected camera(s).
+
+**Include selection shortcuts for non-technical users?**
+*This is covered in the Vicon official guide so is definitely worthwhile*
 Like click vs ctrl+click vs shift click
+
+**Include a hotkey & UI cheat sheet rather than a full guide?**
 
 | Key     | Function                                                           |
 | ------- | ------------------------------------------------------------------ |

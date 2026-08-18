@@ -23,10 +23,18 @@ Last Page:
 ```table-of-contents
 ```
 ---
-# Title
-Lorem Ipsum
+---
+# Introduction
 
-**TODO - *Determine default suggestions for this process, give default notes***
+*Placeholder - write what this guide covers, and why it is important*
+
+---
+---
+
+# Title
+*As doc name*
+
+This guide is intended for default calibration, not advanced, anything that can be done in further detail should be moved to a sub-guide where appropriate
 
 *Daily calibration is recommended, any time you plan to start a new capture session if the environment has changed or been disturbed* - r**eview note what disturbs this**
 
