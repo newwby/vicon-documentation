@@ -28,8 +28,6 @@ Last Page:
 - How to manually mask the camera sensor view
 - The function of each grayscale mode
 
-Note - duplicate with reflections?
-
 ---
 # TODO
 

@@ -12,11 +12,21 @@ parent:
 ```table-of-contents
 ```
 ---
+
+---
 # **Notes**
 In order to develop a subject need define markers, and then segments out of those markers. Segments can be grouped together in a subject but must be defined first
 
-*Need to bring gloves or utilise the test subject driving gloves*
+---
+# Full-Body Marker Set Placement
 
+
+  **Resources found:**
+	- https://has-motion.com/wiki/doku.php?id=visual3d:references
+	- https://www.thingiverse.com/thing:4898356#Post-Printing
+		  *placement locations!*
+
+---
 # Process Documentation
 ## Experiment 1
 Experimented with placing markers on my own fingerless gloves - markers will not screw through holes in fabric & the lack of fingers makes it difficult to get to the end, but loathe to damage any of the lab gear. There's also a distinct lack of markers for this.

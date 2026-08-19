@@ -22,6 +22,17 @@ Last Page:
 ```table-of-contents
 ```
 ---
+---
+# Introduction
+
+*Placeholder - write what this guide covers, and why it is important*
+
+**This guide covers:**
+- Topic
+- Topic
+
+---
+---
 # Title
 Lorem Ipsum
 
@@ -29,6 +40,8 @@ Lorem Ipsum
 
 ---
 # TODO
+
+doc/notes on setting the wand level bubble
 
 **BUG**
 **Wand volume origin setting error** *(solved by refresh or reload camera user configs)*

@@ -1,6 +1,8 @@
 filters:
   and:
     - file.hasTag("Documentation")
+    - file.hasTag("Live")
+    - file.hasTag("Vicon")
 views:
   - type: table
     name: Obsidian-only Page DB Display

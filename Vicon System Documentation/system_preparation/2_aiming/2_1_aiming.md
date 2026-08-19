@@ -19,9 +19,21 @@ Last Page:
 ```table-of-contents
 ```
 ---
+---
+# Introduction
+
+*Placeholder - write what this guide covers, and why it is important*
+
+**This guide covers:**
+- Topic
+- Topic
+
+---
+---
+
 # Title
 Lorem Ipsum
-# This Note Is Not Relevant For Static Cameras
+## This Note Is Not Really Relevant For Static Cameras
 # Draft Note
 
 ---

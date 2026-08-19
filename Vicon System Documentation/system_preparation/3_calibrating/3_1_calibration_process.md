@@ -28,6 +28,10 @@ Last Page:
 
 *Placeholder - write what this guide covers, and why it is important*
 
+**This guide covers:**
+- Topic
+- Topic
+
 ---
 ---
 
@@ -140,6 +144,8 @@ once you've done calibrating you'll see success
 
 # More Note Dump
 # TODO
+Ensure notes about resetting calibration in calibration docs
+
 Note you check 3d calibration after the feedback finishes not before, it doesn't update until then
 
 ## Reference Links

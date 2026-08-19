@@ -20,6 +20,17 @@ Last Page:
 ```table-of-contents
 ```
 ---
+---
+# Introduction
+
+*Placeholder - write what this guide covers, and why it is important*
+
+**This guide covers:**
+- Topic
+- Topic
+
+---
+---
 # Title
 Lorem Ipsum
 
