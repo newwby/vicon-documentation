@@ -40,6 +40,13 @@ Marker plane setup documentation
 
 When setting with 3 markers make sure to place the Y Axis (handle) aka primary marker a further distance away from the origin marker than the X axis (crossbeam) aka secondary marker is. This helps identify them in 3D space (one will be further away from the L-intersection). You can use the active wand lights to help identify where to place markers.
 # Note Dump
+
+
+**SETTING ORIGIN**
+All 5 markers should be visible to all cameras
+Wand should always be placed in same place to remain valid relative to Vicon's origin
+
+
 ### **TO REVIEW**
 ###### (Until Removed This Is A Draft Note Do Not Push To live)
 *Do not push to live!*

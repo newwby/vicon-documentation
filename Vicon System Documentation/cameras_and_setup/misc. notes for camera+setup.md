@@ -13,6 +13,11 @@ parent:
 Are cameras the more important part? Is setup even a thing the guide should cover? It's already setup
 Camera information could be included as part of system preparation or a more general advanced section?
 
+Need to inform how to start software, start switch, what to look for, and ensure the wait time is allowed to happen but also body temperatures are checked
+
+**SETUP BASICS**
+Confirm LVS \[120Hz] is set requested frame rate to the Hz and processing output to 'labels'
+
 ---
 
 # Camera Functionality
