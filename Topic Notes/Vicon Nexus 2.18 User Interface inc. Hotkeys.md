@@ -53,6 +53,8 @@ Restarting Nexus is the quickest way to fix this but don't hit retry or re-open 
 ### HOTKEYS
 ***NOTE:*** *There's a hotkeys list under help tab and [online](https://help.vicon.com/space/Nexus218/406487743/Hot+keys+and+shortcuts)*
 
+`[ & ] scroll cameras`
+
 **SIMPLE CAPTURE MODE** - press Ctrl+H to access
 Ctrl+Enter to Start/Stop
 Ctrl+Tab to toggle live mode
