@@ -12,6 +12,19 @@ TODO
 """
 
 """
+CONFIRMED SCRIPT BEHAVIOUR NOTES
+
+- Expand advanced properties & camera body temp. to see dropdown.
+- Properties must be in visual view on screen.
+    (Nexus window does not need to be focused)
+- All cameras must be enabled before you click Vicon Cameras.
+    (click on & off if this is the case/you can't see all values)
+- If done correctly you should see 'read 18 cameras' within 1m of startup
+    (if not, hit ctrl+c & restart the script to force a recheck)
+
+"""
+
+"""
 nexus_temp_reader.py
 
 Reads the "Camera Body Temperature" values directly from Vicon Nexus's
