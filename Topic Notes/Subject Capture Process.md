@@ -18,13 +18,39 @@ parent:
 In order to develop a subject need define markers, and then segments out of those markers. Segments can be grouped together in a subject but must be defined first
 
 ---
-# Full-Body Marker Set Placement
+# Full-Body Marker Set Design
 
+##### **Full-Body Scoped Marker Set Analysis**
 
-  **Resources found:**
-	- https://has-motion.com/wiki/doku.php?id=visual3d:references
-	- https://www.thingiverse.com/thing:4898356#Post-Printing
-		  *placement locations!*
+| Model                                                                            | Total Markers                                      | Notes & Links                                                                                                                                                                                                                                     |
+| -------------------------------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Vicon Plug-in Gait**                                                           | 39<br><small><i>(35 without head)</i></small>      | <small>No precise hand/foot tracking.<br>Vicon offers the '**Oxford Foot Model**' (*requestable through support*) for foot modelling.<br>Not a gold standard (see [Pycgm2 criticisms](https://pycgm2.netlify.app/background/weaknesses/))</small> |
+| **Full-body modified IOR/CAST set**<br><small>(6DoF rigid body clusters)</small> | 52                                                 | <small>[Paper](https://arxiv.org/pdf/2402.09479)</small>                                                                                                                                                                                          |
+| **CGM2**                                                                         | 27-35<br><small><i>(version dependent)</i></small> | <small>[Paper](https://www.sciencedirect.com/science/article/pii/S0966636219304333)<br>[Webpage](https://pycgm2.netlify.app/cgm/)<br><i>Lower marker counts are lower-body only.</i></small>                                                      |
+##### **Full Gait Marker Layout**
+
+| Group                | Count             | Marker IDs                               |
+| -------------------- | ----------------- | ---------------------------------------- |
+| Head                 | 4                 | LFHD, RFHD, LBHD, RBHD                   |
+| Torso                | 5                 | C7, T10, CLAV, STRN, RBAK                |
+| Left Arm             | 7                 | LSHO, LUPA, LELB, LFRM, LWRA, LWRB, LFIN |
+| Right Arm            | 7                 | RSHO, RUPA, RELB, RFRM, RWRA, RWRB, RFIN |
+| Pelvis               | 4                 | LASI, RASI, LPSI, RPSI                   |
+| Left Leg             | 6                 | LTHI, LKNE, LTIB, LANK, LHEE, LTOE       |
+| Right Leg            | 6                 | RTHI, RKNE, RTIB, RANK, RHEE, RTOE       |
+| <big>**Total**</big> | <big>**39**</big> |                                          |
+##### **Cluster Marker Building**
+Cappozzo, Cappello, Della Croce & Pensalfini (1997), _Surface-Marker Cluster Design Criteria for 3-D Bone Movement Reconstruction_, IEEE Trans. Biomed.
+- **4-marker cluster is the practical sweet spot**
+- Planar clusters are fine if the markers are in a quasi-isotropic (non-collinear, roughly evenly spread) layout.
+- RMS distance of markers from the cluster centroid should be more than 10× your marker-position measurement error.
+- Basis for every CAST-derived protocol (inc. CGM2.3's thigh/shank clusters)
+##### **Links**
+[Doku3DReferences](https://has-motion.com/wiki/doku.php?id=visual3d:references)
+[HAS-Motion, _Rizzoli/IOR foot marker sets documentation_](https://wiki.has-motion.com/doku.php?id=other:ior_gait:documentation:marker_sets)
+
+ https://www.thingiverse.com/thing:4898356#Post-Printing
+fabrication file; 3D-printable upper-body cluster mounts - shows placement locations *(2 shoulder, 2 upper arm, 4 elbow, 2 forearm, 2 hand)*
 
 ---
 # Process Documentation

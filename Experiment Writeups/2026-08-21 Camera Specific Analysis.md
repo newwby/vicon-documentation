@@ -14,6 +14,16 @@ parent:
 ---
 
 **WIP documentation/experimentation with specific camera reflections and obstructions**
+# TODO
+Overlay screenshots, update specific analysis
+
+---
+# Setup
+**All camera images documented in `Public%20Files/Experiment%20Images/2026-08-21%20Camera%20Specific%20Analysis`**
+
+**Started 18:50 on 21/08/26** 
+*Capture 1 in* Greyscale-Mode: **ALL**
+*Capture 2 in* Preview Mode
 
 ---
 # Camera Specific Analysis
