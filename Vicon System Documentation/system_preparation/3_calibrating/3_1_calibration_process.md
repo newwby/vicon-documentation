@@ -132,7 +132,10 @@ once you've done calibrating you'll see success
 **Interface** - to view calibration feedback you may need to collapse previous sections
 
 **image of success relative positions** - note to flip to 3d perspective
-- User needs to switch to 3d perspective after calibration feedback data processes (**note**: slow in 2.18) to confirm that it works
+- User needs to switch to 3d perspective after calibration feedback data processes (**note**: slow in 2.18) to confirm that it works (note that if you reset, as you should have, you'll see nothing until this feedback does complete)
+
+**Advanced doc/plane doc?**
+You can export feedback data here but you can't get full calibration or origin set data until after you set with wand (not with marker)
 
 ---
 ## Questions to Answer for docs revision

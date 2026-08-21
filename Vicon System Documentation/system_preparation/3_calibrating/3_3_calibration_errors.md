@@ -43,3 +43,7 @@ all notes currently in [3_1_calibration_process](Public%20Files/Vicon%20System%2
 *Do not push to live!*
 
 - **TODO**: Remove this header
+
+**see images in:**
+- [(TODO) 2026-07-29 Camera ID Bug (Sample Data)](Public%20Files/Bug%20Documentation/(TODO)%202026-07-29%20Camera%20ID%20Bug%20(Sample%20Data).md)
+

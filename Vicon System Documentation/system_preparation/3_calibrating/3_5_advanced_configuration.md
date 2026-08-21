@@ -79,6 +79,13 @@ https://help.vicon.com/space/Nexus218/406488171
   **calibration refinement passes**
   redundancy & geometry
 
+Existing notes do document shifting reflections during tracking to be responsible for marker mimicking?
+
+- **Creating custom calibration tools (and their profiles) is possible, but outside guide scope**
+	  *This does allow for calibration with markers embedded in the volume however...*
+
+Is it possible to create a custom floor plane calibration tool then? With 3rd party static markers (*even reflective dots?*) this should be possible???
+
 **Benefit of setting alternative configurations?**
 https://help.vicon.com/space/Nexus218/406487668/Manage+configurations+in+Vicon+Nexus
 
