@@ -143,6 +143,9 @@ If there are any reflections that have not been captured by the masking process,
 # Notes
 ### **TO REVIEW**
 
+3. How long does masking need to be done for? Does it get better if left for longer?
+	   *no.*
+
 Masking squares appear during camera setup due to reflections - markers should be removed
 When masking you can see the masks appear quickly over time.
 Select all cameras and 'clear mask' on the view window to remove all masking

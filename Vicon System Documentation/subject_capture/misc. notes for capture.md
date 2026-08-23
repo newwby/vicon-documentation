@@ -11,6 +11,11 @@ parent:
 # **see [Subject Capture Process](Public%20Files/Topic%20Notes/Subject%20Capture%20Process.md)**
 
 ---
+# WIP MISC NOTES FOR TRIALS
+
+*you can replay trials with specific camera views*
+
+---
 # WIP MISC NOTES FOR SUBJECT CAPTURE
 
 SubjectViewer view in Nexus is useful for labelling skeletons

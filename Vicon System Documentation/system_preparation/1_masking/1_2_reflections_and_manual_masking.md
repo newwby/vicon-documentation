@@ -36,6 +36,7 @@ Last Page:
 - [ ] [2026-08-06 Removing Reflective Shelves TODO]
 
 # Note Dump
+These properties are worth touching upon, though proper experimentation has still not happened yet (as of 22/08/26).
 
 | Setting                       | Documented guidance                                                                                                                                                                           |
 | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -63,3 +64,14 @@ TODO - document this process images in vault - see
 ![masking_process_views_without_masks](_assets/system_preparation/1_masking/masking_process_views_without_masks.png)
 
 ![masking_selected_cameras_only](_assets/system_preparation/1_masking/masking_selected_cameras_only.png)
+
+---
+# Embed experiment from [2026-08-06 Removing Reflective Shelves TODO](Public%20Files/Experiment%20Writeups/2026-08-06%20Removing%20Reflective%20Shelves%20TODO.md)
+
+![2026-08-06 Removing Reflective Shelves TODO](Public%20Files/Experiment%20Writeups/2026-08-06%20Removing%20Reflective%20Shelves%20TODO.md)
+
+---
+# Embed from [2026-08-21 Camera Specific Analysis](Public%20Files/Experiment%20Writeups/2026-08-21%20Camera%20Specific%20Analysis.md)
+
+![2026-08-21 Camera Specific Analysis](Public%20Files/Experiment%20Writeups/2026-08-21%20Camera%20Specific%20Analysis.md)
+

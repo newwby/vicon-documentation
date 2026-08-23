@@ -9,6 +9,13 @@ parent:
   - "[[_Vicon DB.base]]"
 ---
 ---
+
+***Experiment done twice***
+
+1. **Original on 2026-08-06**
+2. **Repeated on 2026-08-22**
+
+---
 # Setup/Method
 New calibrations, new volume setting
 ### 2026-08-06 Removing Reflective Shelves Experiment
@@ -52,3 +59,9 @@ Camera 16 is the one clear counterexample — wand count went up the most (+740)
 
 Camera 18 is your worst camera in both runs, and it got dramatically worse post-removal (WE 0.752 → 0.946, IE 0.151 → 0.198) — worth a look on its own.
 ```
+
+---
+
+# Notes
+
+Also see [2026-08-21 Camera Specific Analysis](Public%20Files/Experiment%20Writeups/2026-08-21%20Camera%20Specific%20Analysis.md) which covers reflection topics

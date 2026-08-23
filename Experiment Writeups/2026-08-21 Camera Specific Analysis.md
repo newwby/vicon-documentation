@@ -18,12 +18,87 @@ parent:
 Overlay screenshots, update specific analysis
 
 ---
-# Setup
+# Experiment
+## Setup
 **All camera images documented in `Public%20Files/Experiment%20Images/2026-08-21%20Camera%20Specific%20Analysis`**
 
 **Started 18:50 on 21/08/26** 
 *Capture 1 in* Greyscale-Mode: **ALL**
 *Capture 2 in* Preview Mode
+
+---
+## Methodology
+*Can this be automated? Developing an automation could be useful for others but will not save me personally time.*
+
+  **The actual experiment is very repeatable - documented below:**
+  *image stripping script requires pixel perfect panel sizes - if adjusted this will need updating, identifying the window some other way, e.g. through panel capture & Nexus property wrapper script*
+  
+  1. **Pre-preparation:** select all cameras and strip all camera masking.
+  2. **Greyscale mode**: select `'greyscale mode: all'` for all cameras.
+  3. Simple capture mode `Ctrl+H` could negate image stripping step 10 (**if hotkeys work with this**).
+  4. Select camera 1 to start.
+  5. Take screenshots for camera view `ALT+Win+PrtScrn` then move to next camera `]`.
+  6. **Take 1st batch of 18 screenshots (Greyscale mode) following steps above**.
+  7. Select Vicon Camera System & enable Preview Mode.
+  8. **Repeat step 4-5 (take 2nd batch of 18 screenshots)** to take Preview mode screenshots.
+  9. *(optional for human readability)* rename batches as `<id>_<greyscale_or_preview>`.
+  10. Run image stripping script in folder to remove irrelevant system panels.
+  11. Pass screenshots to LLM skill in order to overlay preview/greyscale, identify clusters & potential cameras for review *(either masking obstructions/reflections or adjusting centroid fitting)*.
+	  *Developing an LLM skill could assist with this.*
+
+---
+## Actions to Take Post-Camera Analysis
+
+- [ ] Point #4 in findings raises that corner cameras are reporting more issues, but need to confirm this is what the camera health and capture data reports.
+- [ ] Point #5 raises several cameras where centroid fitting property tweaking may assist with minor reflection capturing.
+- It is worth repeating this same experiment early in morning and at midday, versus evening.
+
+---
+# Specific Findings
+
+## 1 - Long Ceiling Object
+
+There's a thin bright linear feature runs across the upper part of the frame in cameras 1, 2, 4, 5, 6, 7, 9, 10, 12, 14 and 17.
+
+It presents at a different angle in each view (horizontal in C2 and C14, a shallow descending diagonal in C1, C4, C10, a pronounced curve in C5 and C7).
+
+Consistent with one long straight object in the ceiling plane seen from eleven different positions, rather than eleven separate objects. One of the ceiling rails/light fixtures/AC units?
+
+***As it is at the top of the volume, not within the volume, stationary and masked, I don't think this has impact on capture***
+
+## 2 - Bright cluster in SW corner
+
+Camera 9 (SW Corner) has the strongest raw returns of any camera. Peak 135, with a 137-pixel blob plus other detections clustered on the same object. There is a bright, hard-edged, box-like structure occupying the upper centre-right of the frame.
+
+C12 W Wall & C3 N Wall are also capturing edges of this object.
+
+## 3 - Three cameras report no issues
+
+C8 (E Wall), C11 (W Wall) and C13 (W Wall).
+
+The other two W Wall cameras (C1, C12) <u><b>do</b></u> report issues. This is likely because of their angle/adjustment.
+
+## 4 - Corner Cameras report more issues
+
+Expected, corner cameras look down the long diagonal of the room and see the full run of the overhead structure plus the far wall. Wall cameras sees a shorter span.
+
+The corner-mounted units (particularly **C17, C7, C6, C2**) are where masking effort should be focused.
+
+**TODO** - confirm this is what the camera health and capture data reports.
+
+## 5 - Multiple isolated reflections
+
+Several cameras report possible returns - these could be below greyscale display floor, but above camera centroid threshold. These cameras could be assisted with property tweaking.
+
+| Camera        | Detections         | Position in frame                |
+| ------------- | ------------------ | -------------------------------- |
+| C4 SE Corner  | 6, 7               | lower-left, floor level          |
+| C5 N Wall     | 10, 11, 12         | mid-left and lower-right         |
+| C6 NE Corner  | 7, 8, 9, 10, 11    | mid-left column and lower-centre |
+| C7 NE Corner  | 10, 12, 13, 14, 15 | mid-left cluster and lower-right |
+| C17 NW Corner | 17, 18             | mid-left and lower-centre        |
+| C18 SE Corner | 2, 3               | mid-right                        |
+| C16 S Wall    | 1                  | mid-right                        |
 
 ---
 # Camera Specific Analysis

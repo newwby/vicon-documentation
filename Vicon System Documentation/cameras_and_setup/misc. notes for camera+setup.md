@@ -8,7 +8,17 @@ parent:
   - "[[_Vicon (Contents & Glossary)]]"
   - "[[_Vicon DB.base]]"
 ---
+# TOPICS
+
+**System start-up**
+*including temperature effects in brief*
+[2026-07-24 Camera Start-Up Experiment](Public%20Files/Experiment%20Writeups/2026-07-24%20Camera%20Start-Up%20Experiment.md)
+
+---
 # WIP MISC NOTES FOR CAMERAS & SETUP
+
+  *document for start-up the change in camera switch sound when cameras are ready*
+  *note you cannot get focus/aperture/zoom values from software - mechanical only*
 
 Are cameras the more important part? Is setup even a thing the guide should cover? It's already setup
 Camera information could be included as part of system preparation or a more general advanced section?

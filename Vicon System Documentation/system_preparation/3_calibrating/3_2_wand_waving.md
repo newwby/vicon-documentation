@@ -46,6 +46,14 @@ Lorem Ipsum
 	  *what calibration triangles look like*
 
 # Note Dump
+
+## QUESTIONS
+**No-auto-stop does what?** Does auto-stop impact wand count/error negatively or improve calibration accuracy? Will cameras still turn green when hitting minimum frames?? Otherwise got to manually check the wand count
+
+**note sure if auto-stop belongs in this doc or wand-waving**
+*increasing auto-stop appeared to increase wand count and negatively impact, but this was tested with an alternate wand wave technique so bares repeating*
+**What happens to calibration process if you change the minimum frames**
+
 ### **TO REVIEW**
 all notes currently in [3_1_calibration_process](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/3_1_calibration_process.md) at moment
 (and [2026-08-11 Wand Wave Technique](Public%20Files/Experiment%20Writeups/2026-08-11%20Wand%20Wave%20Technique.md))
@@ -56,6 +64,10 @@ all notes currently in [3_1_calibration_process](Public%20Files/Vicon%20System%2
 
 **moved to wanddoc**
 	  **wand technique** - verticality, overlapping views, volume coverage/centring
+
+wand count has no (relation of wand count/avg as % to camera error?) that I can see and LM analysis suggests this as well
+[wand_wave_analysis](Private%20Files/LLM%20Summaries/wand_wave_analysis.md)
+**REVIEW [wand_wave_analysis](Private%20Files/LLM%20Summaries/wand_wave_analysis.md) based on LM wave screenshot analysis**
 
 **Advanced Wand Waving**
 **Review https://help.vicon.com/space/ActiveWandDoc/**
@@ -75,3 +87,8 @@ all notes currently in [3_1_calibration_process](Public%20Files/Vicon%20System%2
 *Maybe move to advanced section?*
 Note about Frames
 * What is auto-stop impact on wand count? (*graph?*)
+
+---
+# Embed from [2026-08-11 Wand Wave Technique](Public%20Files/Experiment%20Writeups/2026-08-11%20Wand%20Wave%20Technique.md)
+
+![2026-08-11 Wand Wave Technique](Public%20Files/Experiment%20Writeups/2026-08-11%20Wand%20Wave%20Technique.md)

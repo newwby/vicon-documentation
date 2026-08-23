@@ -47,6 +47,13 @@ Lorem Ipsum
 
 - **TODO**: Remove this header
 
+3. Does using more markers to outline the 'box' create a more or less accurate working space
+	1. Why use clusters of markets in the volume origin space/working area
+	2. What happens if you don't use clusters?
+	3. What happens if you use loads of clusters?
+4. How is the volume origin affected by one or three markers being set
+5. Is the best strategy for scattering markers to go wide over the area people will be walking/moving, avoid straight lines, use at least 4-12
+
 You can set floor plane with just 3 markers
 
 5. **Set Volume Origin (Part 2)**
@@ -70,4 +77,16 @@ The dropdown at auto detect has a tolerance level, this should be 2mm (see Vicon
 - No disadvantage I can see to 'select all markers'
 - During floor plane calculation ensure that there's the number of markers you expect in each cluster
 - Ensure all cameras are casting rays - if not it may be a calibration issue (check world & image error)
-Made a little cross in middle-ish of floor to make volume capturing consistent
+Made a little cross in middle of floor to make volume capturing consistent (*now superseded by wand marker tape)*)
+
+
+- [ ] Try calibrating floor plane with reflective dots?
+	      *feeling is this will work, but they'll also create masks if not covered or removed*
+
+---
+
+# Embed from [2026-08-05 Marker Cluster Layout (v1) TODO](Public%20Files/Experiment%20Writeups/2026-08-05%20Marker%20Cluster%20Layout%20(v1)%20TODO.md)
+
+This was since solved
+
+![2026-08-05 Marker Cluster Layout (v1) TODO](Public%20Files/Experiment%20Writeups/2026-08-05%20Marker%20Cluster%20Layout%20(v1)%20TODO.md)

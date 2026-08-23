@@ -66,3 +66,13 @@ parent:
 
 **Fabric Tape + Vicon Marker**
 	The tape is very hard to apply, incredibly adhesive, and does not stick over base to skin very well, but when wrapped around the base it becomes adhesive to anything it touches (including skin but watch out for any hair in the area). This marker was very trackable by every camera in the room, as expected.
+
+---
+## Proposed Marker Types
+
+- Vicon Markers
+- 3rd Party Markers (eBay)
+- Reflective tape & polystyrene homemade markers
+- Reflective paint & 3D printed homemade markers
+- *Plastic bearings with tape or paint?*
+- Reflective dots

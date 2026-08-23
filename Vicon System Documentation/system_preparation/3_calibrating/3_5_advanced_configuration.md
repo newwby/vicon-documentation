@@ -70,6 +70,12 @@ https://help.vicon.com/download/attachments/406490967/Vicon%20Nexus%20Reference%
 https://help.vicon.com/space/Nexus218/406488171
 
 ---
+## QUESTIONS
+**No-auto-stop does what?** Does auto-stop impact wand count/error negatively or improve calibration accuracy? Will cameras still turn green when hitting minimum frames?? Otherwise got to manually check the wand count
+
+**note sure if auto-stop belongs in this doc or wand-waving**
+*increasing auto-stop appeared to increase wand count and negatively impact, but this was tested with an alternate wand wave technique so bares repeating*
+**What happens to calibration process if you change the minimum frames**
 
 ## TODO
 - [ ] [2026-08-08 Auto-Stop TODO](../Public%20Files/Experiment%20Writeups/2026-08-08%20Auto-Stop%20TODO.md)
@@ -78,6 +84,8 @@ https://help.vicon.com/space/Nexus218/406488171
 **THINGS TO INVESTIGATE & INCLUDE FOR THIS DOC**
   **calibration refinement passes**
   redundancy & geometry
+
+4. How is focal length determined? Record before and after calibration - **reset first**
 
 Existing notes do document shifting reflections during tracking to be responsible for marker mimicking?
 
@@ -141,9 +149,17 @@ Include *Calibration Baselines from "LCAS Vicon Calibration Tracker.xlsx"*
 ### Calibration Errors (Camera ID, Relative Positions)
 tbd
 ### Calibration Profiles
+**This needs to be included in basics really, or touched upon**
+
 Right click 'reset calibration' removes this **so recalibration has to be redone**
 Specifically reset calibration removes the ID (zeroed out), keyframe orientation (quaternion values) and position (3d axis) -  also seems to go from float to double
 You can check the .xcp to verify this
 You can reload calibrations from previous days if you have the file
 https://help.vicon.com/space/Nexus218/406490496/System+Preparation+tools#Manage-Camera-Calibration-section
 Resetting calibration will remove their understanding of the volume but you can recalibrate a selected camera to return them to calibration
+
+---
+
+# Embed from [2026-08-08 Auto-Stop TODO](Public%20Files/Experiment%20Writeups/2026-08-08%20Auto-Stop%20TODO.md)
+
+![2026-08-08 Auto-Stop TODO](Public%20Files/Experiment%20Writeups/2026-08-08%20Auto-Stop%20TODO.md)
