@@ -4,7 +4,7 @@ _This directory is a subset of a larger Obsidian vault, but contains a .git repo
 **LAST UPDATE: 04/08/2026**
 Mirrored repo from internal notes, working on Vicon motion-capture. This repo is the future root of LCAS documentation (currently in experimentative and note-taking phase) and to be transferred to an appropriate owner at the end of the project.
 
-Currently this repo is owned by a dummy organisation & account for the INB0104 Vicon desktop.
+Currently this repo is owned by a dummy organisation & account for the Vicon desktop.
 - Planned technical documentation will be hosted through this repository.
 - As of last update this repository is a store for wip documentation & notes, experiment data/images, and scripts.
 
