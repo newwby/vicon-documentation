@@ -61,7 +61,9 @@ world error is for cross camera comparison & image error for per camera comparis
 
 - **TODO**: Remove this header
 
-	   *Diagnosing camera health through image/world error*
+**Note from speed trial:** *WE/IE ratio shows camera is stable throughout trials - this is a good finding; camera isn't in drift over time it is fixed. **Determining this per camera in the environment, over time, could be useful***
+
+*Diagnosing camera health through image/world error*
 #### World Error & Image Error explanation
 **Image error** measures 2D pixel inaccuracy based on camera sensor, and **world error** translates this into real-world distance-based mm measurements. Good/bad values need to be determined by comparing current results against the established lab-specific baseline so recording these will be important.
 **World Error** is calculated per camera so cameras further away with the same image error have a larger world error
