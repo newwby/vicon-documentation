@@ -61,6 +61,8 @@ world error is for cross camera comparison & image error for per camera comparis
 
 - **TODO**: Remove this header
 
+
+
 **Note from speed trial:** *WE/IE ratio shows camera is stable throughout trials - this is a good finding; camera isn't in drift over time it is fixed. **Determining this per camera in the environment, over time, could be useful***
 
 *Diagnosing camera health through image/world error*

@@ -26,11 +26,12 @@ Overlay screenshots, update specific analysis
 | ---------- | -------- | ---------- |
 | **1**      | 18:50    | 21/08/2026 |
 | **2**      | 12:45    | 24/08/2026 |
-| **3**      |          |            |
+| **3**      | 15:45    | 24/08/2026 |
 
 ---
 ## Methodology
 *Can this be automated? Developing an automation could be useful for others but will not save me personally time.*
+**Note:** *Ctrl+H capture mode would be useful for this if it creates an expected pixel position for auto-cut script, can use the Nexus wrapper script for UI grabbing/element controlling & probably output the whole thing in 2 minutes - with a local LLM hooked up it could analyse quite quickly if all the overlay steps were broken down - **value of developing this?***
 
   **The actual experiment is very repeatable - documented below:**
   *image stripping script requires pixel perfect panel sizes - if adjusted this will need updating, identifying the window some other way, e.g. through panel capture & Nexus property wrapper script*
