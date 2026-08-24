@@ -71,7 +71,7 @@ TODO - document this process images in vault - see
 ![2026-08-06 Removing Reflective Shelves TODO](Public%20Files/Experiment%20Writeups/2026-08-06%20Removing%20Reflective%20Shelves%20TODO.md)
 
 ---
-# Embed from [2026-08-21 Camera Specific Analysis](Public%20Files/Experiment%20Writeups/2026-08-21%20Camera%20Specific%20Analysis.md)
+# Embed from [2026-08-21 Reflection Analysis (Camera Specific)](Public%20Files/Experiment%20Writeups/2026-08-21%20Reflection%20Analysis%20(Camera%20Specific).md)
 
-![2026-08-21 Camera Specific Analysis](Public%20Files/Experiment%20Writeups/2026-08-21%20Camera%20Specific%20Analysis.md)
+![2026-08-21 Reflection Analysis (Camera Specific)](Public%20Files/Experiment%20Writeups/2026-08-21%20Reflection%20Analysis%20(Camera%20Specific).md)
 

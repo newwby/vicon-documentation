@@ -64,4 +64,4 @@ Camera 18 is your worst camera in both runs, and it got dramatically worse post-
 
 # Notes
 
-Also see [2026-08-21 Camera Specific Analysis](Public%20Files/Experiment%20Writeups/2026-08-21%20Camera%20Specific%20Analysis.md) which covers reflection topics
+Also see [2026-08-21 Reflection Analysis (Camera Specific)](Public%20Files/Experiment%20Writeups/2026-08-21%20Reflection%20Analysis%20(Camera%20Specific).md) which covers reflection topics

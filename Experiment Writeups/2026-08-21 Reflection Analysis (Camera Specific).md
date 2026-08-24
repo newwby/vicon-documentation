@@ -22,9 +22,11 @@ Overlay screenshots, update specific analysis
 ## Setup
 **All camera images documented in `Public%20Files/Experiment%20Images/2026-08-21%20Camera%20Specific%20Analysis`**
 
-**Started 18:50 on 21/08/26** 
-*Capture 1 in* Greyscale-Mode: **ALL**
-*Capture 2 in* Preview Mode
+| Experiment | Run Time | Date       |
+| ---------- | -------- | ---------- |
+| **1**      | 18:50    | 21/08/2026 |
+| **2**      | 12:45    | 24/08/2026 |
+| **3**      |          |            |
 
 ---
 ## Methodology
@@ -36,15 +38,18 @@ Overlay screenshots, update specific analysis
   1. **Pre-preparation:** select all cameras and strip all camera masking.
   2. **Greyscale mode**: select `'greyscale mode: all'` for all cameras.
   3. Simple capture mode `Ctrl+H` could negate image stripping step 10 (**if hotkeys work with this**).
+     *hotkeys do work but for consistency continued with method as before, better in future*
   4. Select camera 1 to start.
   5. Take screenshots for camera view `ALT+Win+PrtScrn` then move to next camera `]`.
   6. **Take 1st batch of 18 screenshots (Greyscale mode) following steps above**.
   7. Select Vicon Camera System & enable Preview Mode.
   8. **Repeat step 4-5 (take 2nd batch of 18 screenshots)** to take Preview mode screenshots.
   9. *(optional for human readability)* rename batches as `<id>_<greyscale_or_preview>`.
+     *Screenshots are located in: `C:\Users\%USERPROFILE%\Videos\Captures`*
   10. Run image stripping script in folder to remove irrelevant system panels.
   11. Pass screenshots to LLM skill in order to overlay preview/greyscale, identify clusters & potential cameras for review *(either masking obstructions/reflections or adjusting centroid fitting)*.
 	  *Developing an LLM skill could assist with this.*
+  12. **Reset greyscale mode**: select `'greyscale mode: auto'` for all cameras.
 
 ---
 ## Actions to Take Post-Camera Analysis
