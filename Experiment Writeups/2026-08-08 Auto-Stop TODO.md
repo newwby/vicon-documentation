@@ -20,7 +20,7 @@ Change auto-stop property, calibrate with AW2 IR, save calibration data & wand w
 | *Impact of System Property* |
 Determine the calibration impact of getting more frames during calibration.
 
-See notes [calibration notes](Public%20Files/Documentation%20Data/Calibration%20Set%20Backups%20(Trials)/2026-08-08%20-%20auto-stop/calibration%20notes.md)
+See notes [calibration notes](Public%20Files/Data/Calibration%20Set%20Backups%20(Trials)/2026-08-08%20-%20auto-stop/calibration%20notes.md)
 
 ---
 # Outcome

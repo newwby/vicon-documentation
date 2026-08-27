@@ -1,0 +1,67 @@
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
+
+TRACKER_PATH = Path(
+    r"C:\Users\newwb\Documents\brain\professional\university\LCAS"
+    r"\Vicon (EPSURIS) Main\Public Files\Documentation Data"
+    r"\LCAS Vicon Calibration Tracker.xlsx"
+)
+
+CACHE_PATH = ROOT / "calibration_data.csv"
+OUTPUT_DIR = ROOT / "output"
+CHART_MANIFEST_PATH = ROOT / "chart_manifest.json"
+
+LOG_SHEET = "Log"
+DAILY_META_SHEET = "Daily WE"
+ERROR_META_SHEET = "Errors"
+TRIAL_META_SHEET = "Trials"
+CAMERA_LIST_SHEET = "Data-Lists"
+
+LOG_HEADER_ROW = 2
+CAMERA_LIST_RANGE = ("A", 3, 20)
+
+CATEGORY_DAILY = "Daily"
+CATEGORY_ERROR = "Error"
+CATEGORY_TRIAL = "Trial"
+DAILY_KEY = "n/a"
+
+CAMERA_COUNT = 18
+DEFAULT_CAMERA = "#5 (Vero v2.2)"
+RANK_ERROR_TYPE = "World Error"
+IE_OUTLIER_SPREAD_MULTIPLIER = 2.5
+HIGH_ERROR_RATE_THRESHOLD = 0.70
+TRIAL_META_PREFIX = "Wand-Wave-"
+TRIAL_META_SUFFIX = " (Averages)"
+
+DATE_DIR_FORMAT = "%Y_%m_%d"
+TIME_PREFIX_FORMAT = "%H_%M"
+DATA_SUFFIX = "data"
+VISUAL_SUFFIX = "visualisation"
+CSV_DATE_FORMAT = "%d/%m/%Y"
+CSV_FLOAT_FORMAT = "%.6f"
+
+SCALE_GYR = ["#63BE7B", "#FFEB84", "#F8696B"]
+SCALE_RYG = ["#F8696B", "#FFEB84", "#63BE7B"]
+SCALE_CREAM_ORANGE = ["#FFEF9C", "#FF7128"]
+SCALE_ORANGE_CREAM = ["#FF7128", "#FFEF9C"]
+SCALE_DARKRED_CREAM = ["#C00000", "#E97132", "#FFEF9C"]
+
+HEADER_FILL = "#404040"
+HEADER_TEXT = "#FFFFFF"
+GRID_LINE = "#BFBFBF"
+BLANK_FILL = "#F2F2F2"
+TEXT_COLOUR = "#1A1A1A"
+OUTLIER_EDGE = "#7030A0"
+
+TABLE_CELL_WIDTH = 1.05
+TABLE_CELL_HEIGHT = 0.30
+TABLE_FONT_SIZE = 6.5
+TABLE_HEADER_FONT_SIZE = 6.5
+TABLE_MAX_TEXT_CHARS = 28
+TABLE_DPI = 200
+
+CHART_DPI = 200
+CHART_FIGSIZE = (12.0, 5.5)
+CHART_GRID_ALPHA = 0.25
+CHART_COLOURS = ["#2F6FB3", "#D1495B", "#3F8F5E", "#E0952A", "#7A4FA3", "#4C4C4C"]

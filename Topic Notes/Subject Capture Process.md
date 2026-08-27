@@ -28,7 +28,6 @@ In order to develop a subject need define markers, and then segments out of thos
 | **Full-body modified IOR/CAST set**<br><small>(6DoF rigid body clusters)</small> | 52                                                 | <small>[Paper](https://arxiv.org/pdf/2402.09479)</small>                                                                                                                                                                                          |
 | **CGM2**                                                                         | 27-35<br><small><i>(version dependent)</i></small> | <small>[Paper](https://www.sciencedirect.com/science/article/pii/S0966636219304333)<br>[Webpage](https://pycgm2.netlify.app/cgm/)<br><i>Lower marker counts are lower-body only.</i></small>                                                      |
 ##### **Full Gait Marker Layout**
-
 | Group                | Count             | Marker IDs                               |
 | -------------------- | ----------------- | ---------------------------------------- |
 | Head                 | 4                 | LFHD, RFHD, LBHD, RBHD                   |
@@ -38,7 +37,7 @@ In order to develop a subject need define markers, and then segments out of thos
 | Pelvis               | 4                 | LASI, RASI, LPSI, RPSI                   |
 | Left Leg             | 6                 | LTHI, LKNE, LTIB, LANK, LHEE, LTOE       |
 | Right Leg            | 6                 | RTHI, RKNE, RTIB, RANK, RHEE, RTOE       |
-| <big>**Total**</big> | <big>**39**</big> |                                          |
+| <big>**Total**</big> | <big>**39**</big> |                                          
 ##### **Cluster Marker Building**
 Cappozzo, Cappello, Della Croce & Pensalfini (1997), _Surface-Marker Cluster Design Criteria for 3-D Bone Movement Reconstruction_, IEEE Trans. Biomed.
 - **4-marker cluster is the practical sweet spot**

@@ -32,8 +32,19 @@
   font-weight: 600; /* Slightly bolder to assist colorblind visibility */
 }
 
+.info-header {
+  color: var(--text-more-info);
+  font-weight: 600; /* Slightly bolder to assist colorblind visibility */
+}
+
 /* Warning text segments */
 .warning-text {
   color: var(--text-warning);
   font-weight: 700;
+}
+
+.image-caption {
+    font-size: 0.8em;         /* Makes the text smaller relative to body text */
+    font-style: italic;       /* Italicises the text */
+    display: inline-block;    /* Ensures proper spacing if needed */
 }

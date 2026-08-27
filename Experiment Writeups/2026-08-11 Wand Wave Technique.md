@@ -102,7 +102,7 @@ This is potentially due to a high degree of body occlusion with these particular
 | **E**                     | 26                       | 77%                             | 23%                              |
 | **F**                     | 16                       | 69%                             | 31%                              |
 | **G**                     | 4                        | 74%                             | 26%                              |
-![technique_frame_quality](Public%20Files/Experiment%20Images/2026-08-11%20Wand%20Waving%20Technique/technique_frame_quality.png)
+![technique_frame_quality](Public%20Files/Experiment%20and%20Error%20Images/2026-08-11%20Wand%20Waving%20Technique/technique_frame_quality.png)
 
 In the below table I've added technique coverage and description
 
@@ -116,17 +116,17 @@ In the below table I've added technique coverage and description
 | **F**     | Low to High<br>Further from Self<br>Facing Towards<br>Body occlusion of markers                                 | **Wave wand up and down (chopping axe motion, AWIR2 docs)**<br>More active than most. Some of the problem cameras really like this better however on further exploration that's because it's very plane/axis fixed - the cameras facing get lots of frames and anyone behind gets zero. |
 | **G**     | Low and High only<br>Further from Self<br>Facing Towards<br>Less body occlusion, some wand occlusion of markers | **Circling the wand extended from body (hold forward & draw circle, rotating around center 360deg holding handle - full circle vs C semi-circle)**<br>More active than most.                                                                                                            |
 
-![2026_08_13_technique_vs_world_error](Public%20Files/Experiment%20Images/2026-08-11%20Wand%20Waving%20Technique/2026_08_13_technique_vs_world_error.png)
+![2026_08_13_technique_vs_world_error](Public%20Files/Experiment%20and%20Error%20Images/2026-08-11%20Wand%20Waving%20Technique/2026_08_13_technique_vs_world_error.png)
 
-![2026_08_13_technique_vs_image_error](Public%20Files/Experiment%20Images/2026-08-11%20Wand%20Waving%20Technique/2026_08_13_technique_vs_image_error.png)
+![2026_08_13_technique_vs_image_error](Public%20Files/Experiment%20and%20Error%20Images/2026-08-11%20Wand%20Waving%20Technique/2026_08_13_technique_vs_image_error.png)
 
 Charts show that techniques E & F are prone to high error.
 The differences between techniques A-D & G are minimal, with B showing a spike in range but otherwise being similar 
 
 
-![2026_08_17_technique_vs_world_error_normalised](Public%20Files/Experiment%20Images/2026-08-11%20Wand%20Waving%20Technique/2026_08_17_technique_vs_world_error_normalised.png)
+![2026_08_17_technique_vs_world_error_normalised](Public%20Files/Experiment%20and%20Error%20Images/2026-08-11%20Wand%20Waving%20Technique/2026_08_17_technique_vs_world_error_normalised.png)
 
-![2026_08_17_technique_vs_image_error_normalised](Public%20Files/Experiment%20Images/2026-08-11%20Wand%20Waving%20Technique/2026_08_17_technique_vs_image_error_normalised.png)
+![2026_08_17_technique_vs_image_error_normalised](Public%20Files/Experiment%20and%20Error%20Images/2026-08-11%20Wand%20Waving%20Technique/2026_08_17_technique_vs_image_error_normalised.png)
 
 Specific cameras preferred different techniques.
 
@@ -140,7 +140,7 @@ Specific cameras preferred different techniques.
 | D    | Minimal occlusion of markers by body and wand        |
 | G    | Less body occlusion, some wand occlusion of markers. |
 
-![camera only layout INB0104 robotics lab](Public%20Files/Experiment%20Images/2026-07-28%20Bumped%20Cameras/camera%20only%20layout%20INB0104%20robotics%20lab.png)*camera positioning guide for reference, with camera 1 being above the workstation where calibration begins and wand-waving calibration moving anti-clockwise from there.*
+![camera only layout INB0104 robotics lab](Public%20Files/Experiment%20and%20Error%20Images/2026-07-28%20Bumped%20Cameras/camera%20only%20layout%20INB0104%20robotics%20lab.png)*camera positioning guide for reference, with camera 1 being above the workstation where calibration begins and wand-waving calibration moving anti-clockwise from there.*
 
 A&B are similar techniques, the best error was gathered by the camera that needed the most additional focus - camera 13 - at the end of the calibration walkthrough. Camera 12 was peferred by G, in the same space - potentially due to additional attention gained during a 13 calibration effort.
 D was  preferred by 8, another problem camera with a floor-pointing frustrum. Technique C was preferred by 14, a camera next to 8 who possibly benefitted from additional attention provided to 8.
@@ -164,7 +164,7 @@ In all instances the majority of cameras were above the mean, suggesting low-per
 
 Additionally several techniques showed noticeable differences in time to gather frames, with D having the quickest coverage. From the data gathered fame count does not seem to be associated with calibration time in any strong fashion. It is possible that fewer frames result from quicker calibrations but this is difficult to say from the current data gathered. D&E collected very similar number of frames but E was noticeably slower to calibrate.
 
-![2026_08_13_technique_vs_time](Public%20Files/Experiment%20Images/2026-08-11%20Wand%20Waving%20Technique/2026_08_13_technique_vs_time.png)
+![2026_08_13_technique_vs_time](Public%20Files/Experiment%20and%20Error%20Images/2026-08-11%20Wand%20Waving%20Technique/2026_08_13_technique_vs_time.png)
 ## Thoughts
 No single technique is an outright guaranteed best technique, but some cameras do seem to prefer others.
 

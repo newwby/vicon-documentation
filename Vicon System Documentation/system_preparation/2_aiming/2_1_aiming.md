@@ -48,7 +48,7 @@ Lorem Ipsum
   reviewed and this was caused by reflections and a camera nearby unable to locate the capture wand in the middle of the volume thus breaking the calculation channel - unnecessary for fixed camera environment
   managed to set floor grid to the volume instead - increased from 5000x5000 to 6000x6000, matching volume x/y and increased display grid squares to compensate
 
-  ![2026-08-18 aiming_overlay_bug|365](Public%20Files/Bug%20Images/2026-08-18%20aiming_overlay_bug.png)
+  ![2026-08-18 aiming_overlay_bug|365](Public%20Files/Experiment%20and%20Error%20Images/2026-08-18%20aiming_overlay_bug.png)
 
 ---
 ## **Preview Mode**

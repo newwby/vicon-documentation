@@ -21,10 +21,59 @@ parent:
 # Experiment
 ## **Phase 1**
 
-- [ ] **Explore if any data on this exists already**
-- [ ] **precursor analysis**
+- [x] **Explore if any data on this exists already**
+- [x] **precursor analysis**
       *passed to Claude to confirm what can be determined from wand wave data*
+- [ ] Review precursor analysis
 - [ ] **Put together json manifest of files with datetimestamps and experiment data**
+      *WIP need to do version 2*
+
+**Manifest Prompt**
+```
+From the log sheet in this spreadsheet I need a JSON output
+each JSON entry key needs to be built from column A 'key ', column B 'key2' & column C 'date'.
+converting to snakecase, removing 'n/a' & replacing all slashes/dashes/spaces with underscores
+e.g. 1. say the row is:
+col A: Daily
+col B: n/a
+col C: 14/08/2026
+then the JSON entry key becomes 'daily_14_08_2026'
+e.g. 2. say the row is 
+col A: Trial
+col B: reflection-trial-2
+col C: 21/08/2026
+then the JSOn entry key becomes 'trial_reflection_trial_2_21_08_2026'
+
+inside each JSON entry key you then need to look at column D where the camera name is specified, and build a nested "cameras" dict based on this, with the camera name stripped down to ID (e.g. '#1 (Vero v2.2)' becomes '1', the ID always comes after the #) as key; e.g.
+daily_14_08_2026: {
+	"cameras": {
+		"1": {...
+		},
+		"2": {...
+		},
+		"3": {…
+		},
+		"4": {...
+		},
+		...etc
+	}
+}
+
+Inside each nested camera dict get the camera's wand frame count (column E), world error (column F) and camera's image error (column G) then add them as kv pairs inside
+E.g.
+daily_14_08_2026: {
+	"cameras": {
+		"1": {
+			"wand_frame_count": 1899,
+			"world_error": 0.431875,
+			"image_error": 0.121454,
+		},
+
+do this for each camera, within each set
+there should be 18 cameras (except in the earliest set where camera 8 is missing, record this camera but put None for values) per set
+There should be no duplicate cameras per set
+
+```
 
 ### Findings
 
@@ -34,10 +83,12 @@ parent:
 ---
 ## Phase 2
 
-- [ ] Write experimentative prompt or Claude skill
-      *to document input*
+- [x] Write experimentative prompt or Claude skill
+      ***to document input***
+      *WIP - mostly done*
 - [ ] Write structured output expected
-      *to document output*
+      ***to document output***
+      *must meet manifest structure/copy that*
 - [ ] **(repeat with different data sets)**
 	- [ ] perform with data from daily wand waves
 	- [ ] perform with data from [2026-08-11 Wand Wave Technique](Public%20Files/Experiment%20Writeups/2026-08-11%20Wand%20Wave%20Technique.md)
