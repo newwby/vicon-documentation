@@ -45,7 +45,39 @@ Lorem Ipsum
 	  *how to get popout window*
 	  *what calibration triangles look like*
 
+Mention technique guidance videos on disk
 # Note Dump
+link to wand wave doc, covered in more detail
+**add image of the active wand IR2**
+
+   requires physical wand ('**Active Wand v2**') - it auto sets LED strobe freq. to FPS in LVS *(see https://help.vicon.com/download/attachments/339347714/Active%20Wand%20(Dual-Sided)%20User%20Guide%20-%20Dec%202025.pdf)*
+
+**confirm**
+Nexus/Tracker shows per-camera feedback (colored wand-frame lines, a red→green progress triangle, and a Wand Count table)
+
+```
+- **Recommended for v2:**
+  wave the wand up and down (an "axe" motion) _or_ side to side (left-right/right-left),
+  **without twisting it**, moving around the volume to cover the space.[6](#user-content-fn-6)
+- Hold the wand **sideways** (faces pointing left-right, not up-down) rather than flat — increases visibility to cameras.[6](#user-content-fn-6)
+```
+
+```
+**"Painting the room"**:
+Treat the wand like a paintbrush, covering the capture volume's boundary from inside and outside (painting from outside blocks some camera views with your body; painting from inside avoids that)
+```
+
+```
+**Loose grip with slight rotation**: hold the wand loosely rather than rigidly, letting it rotate ~180–360° in your hand every couple of strokes as you move it up and down
+```
+
+```
+**Keep the wand visible to ≥3 cameras at once** while waving, and cover near-floor as well as high areas
+```
+
+what's happening during (what are they doing)
+**image for camera blinking blue (side-by-side blinked on/off)**
+**image for camera calibrating success (green)**
 
 ## QUESTIONS
 **No-auto-stop does what?** Does auto-stop impact wand count/error negatively or improve calibration accuracy? Will cameras still turn green when hitting minimum frames?? Otherwise got to manually check the wand count

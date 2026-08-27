@@ -13,7 +13,7 @@ Page Status: Draft
 Software:
   - Vicon Nexus 2.18
 Next Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/4_volume/4_1_set_volume_origin|4_1_set_volume_origin]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/4_volume/4_1_set_origin_and_plane|4_1_set_origin_and_plane]]"
 Last Page:
   - "[[Public Files/Vicon System Documentation/system_preparation/3_calibrating/3_4_calibration_profiles|3_4_calibration_profiles]]"
 ---
@@ -81,11 +81,17 @@ https://help.vicon.com/space/Nexus218/406488171
 - [ ] [2026-08-08 Auto-Stop TODO](../Public%20Files/Experiment%20Writeups/2026-08-08%20Auto-Stop%20TODO.md)
 *Add relevant data from experiments & spreadsheets*
 
+Confirm greyscale/centroid fitting settings can't capture the poor quality reflective marker balls (careful petal strip & overlaid strips)
+
+**Ensure you have about loading older calibrations in here** from tools/system-prep/manage-camera-calibration
+
 **THINGS TO INVESTIGATE & INCLUDE FOR THIS DOC**
   **calibration refinement passes**
   redundancy & geometry
 
 4. How is focal length determined? Record before and after calibration - **reset first**
+
+**Add extended frustum F7 properties view**
 
 Existing notes do document shifting reflections during tracking to be responsible for marker mimicking?
 

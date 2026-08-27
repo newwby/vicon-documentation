@@ -61,6 +61,7 @@ Ctrl+Tab to toggle live mode
 Space to pause
 
 Press F7 for options
+F2 hides the Communication panel - helpful because this thing is clunky and not useful until subject capturing
 
 CTRL+Shift+B = reset bumped status
 

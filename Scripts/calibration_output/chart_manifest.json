@@ -1,0 +1,108 @@
+{
+  "charts": [
+    {
+      "id": "world_error_over_time",
+      "title": "World Error Over Time - All Cameras (daily 'n/a' key only)",
+      "type": "line",
+      "source": "daily_sessions",
+      "x": "date",
+      "x_label": "Date",
+      "y_label": "Error",
+      "series": [
+        {"column": "mean_world_error", "label": "Mean World Error"},
+        {"column": "all_time_mean_world_error", "label": "All-Time Mean", "marker": "None", "linestyle": "--"}
+      ]
+    },
+    {
+      "id": "image_error_over_time",
+      "title": "Image Error Over Time - All Cameras (daily 'n/a' key only)",
+      "type": "line",
+      "source": "daily_sessions",
+      "x": "date",
+      "x_label": "Date",
+      "y_label": "Error",
+      "series": [
+        {"column": "mean_image_error", "label": "Mean Image Error"},
+        {"column": "all_time_mean_image_error", "label": "All-Time Mean", "marker": "None", "linestyle": "--"}
+      ]
+    },
+    {
+      "id": "technique_vs_world_error",
+      "title": "Wand technique vs world error",
+      "type": "line",
+      "source": "technique_means",
+      "x": "technique",
+      "x_label": "Wand Technique",
+      "y_label": "Error Value",
+      "series": [
+        {"column": "mean_world_error", "label": "Mean World Error"},
+        {"column": "lowest_world_error", "label": "Lowest World Error"},
+        {"column": "highest_world_error", "label": "Highest World Error"}
+      ]
+    },
+    {
+      "id": "technique_vs_image_error",
+      "title": "Wand technique vs IMAGE error",
+      "type": "line",
+      "source": "technique_means",
+      "x": "technique",
+      "x_label": "Wand Technique",
+      "y_label": "Error Value",
+      "series": [
+        {"column": "mean_image_error", "label": "Mean Image Error"},
+        {"column": "lowest_image_error", "label": "Lowest Image Error"},
+        {"column": "highest_image_error", "label": "Highest Image Error"}
+      ]
+    },
+    {
+      "id": "technique_vs_auto_stop_time",
+      "title": "Wand technique vs CAMERA AUTO-STOP TIME",
+      "type": "line",
+      "source": "technique_means",
+      "x": "technique",
+      "x_label": "Wand Technique",
+      "y_label": "Duration (minutes)",
+      "series": [
+        {"column": "wand_wave_minutes", "label": "Wand Wave Time"}
+      ]
+    },
+    {
+      "id": "camera_world_error_over_time",
+      "title": "World Error Over Time - Selected Camera",
+      "type": "line",
+      "source": "camera_trend",
+      "x": "Date",
+      "x_label": "Date",
+      "y_label": "Error",
+      "series": [
+        {"column": "Camera World Error", "label": "Camera World Error"},
+        {"column": "Daily All Camera Mean World Error", "label": "Daily All Camera Mean", "marker": "None", "linestyle": "--"}
+      ]
+    },
+    {
+      "id": "camera_image_error_over_time",
+      "title": "Image Error Over Time - Selected Camera",
+      "type": "line",
+      "source": "camera_trend",
+      "x": "Date",
+      "x_label": "Date",
+      "y_label": "Error",
+      "series": [
+        {"column": "Camera Image Error", "label": "Camera Image Error"},
+        {"column": "Daily All Camera Mean Image Error", "label": "Daily All Camera Mean", "marker": "None", "linestyle": "--"}
+      ]
+    },
+    {
+      "id": "camera_error_rate_ranking",
+      "title": "Camera error rate - share of days above the session mean",
+      "type": "bar",
+      "source": "camera_error_rate",
+      "x": "camera_id",
+      "x_label": "Camera",
+      "y_label": "Error Rate",
+      "series": [
+        {"column": "error_rate", "label": "Error Rate"}
+      ]
+    }
+  ]
+}

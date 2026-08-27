@@ -12,7 +12,7 @@ parent:
 # Post-Experiment Update
 
 *Camera temperature **does** seem to impact start-up temperatures.* 
-- Documenting in [LCAS Vicon Temperature Tracker](../Documentation%20Data/LCAS%20Vicon%20Temperature%20Tracker.xlsx)
+- Documenting in [LCAS Vicon Temperature Tracker](Public%20Files/Data/LCAS%20Vicon%20Temperature%20Tracker.xlsx)
 - 25° was faster to start up & notably so to hit '**ready**' temperatures
 - **Note:** the internal temperature for a room should be -5° to 35°! *[(Camera docs here)](https://hel*p.vicon.com/space/CamDocs/374374408/Vicon+cameras++-+operating+temperature+ranges)
 

@@ -15,7 +15,7 @@ Software:
 Next Page:
   - "[[Public Files/Vicon System Documentation/system_preparation/5_health/5_2_bumped_cameras|5_2_bumped_cameras]]"
 Last Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/4_volume/4_2_set_floor_plane|4_2_set_floor_plane]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/4_volume/4_3_volume_configuration|4_3_volume_configuration]]"
 ---
 ---
 ```table-of-contents
@@ -61,7 +61,7 @@ world error is for cross camera comparison & image error for per camera comparis
 
 - **TODO**: Remove this header
 
-
+**HEALTH IS RELATIVE** - it matters as great deal more for precision movements than it does for large movements
 
 **Note from speed trial:** *WE/IE ratio shows camera is stable throughout trials - this is a good finding; camera isn't in drift over time it is fixed. **Determining this per camera in the environment, over time, could be useful***
 
