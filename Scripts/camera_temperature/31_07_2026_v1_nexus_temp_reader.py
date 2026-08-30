@@ -73,7 +73,7 @@ K3_DURATION_MINUTES = 30     # Total time the script runs for
 OUTPUT_DIR = "nexus_temp_log"
 CSV_PATH = os.path.join(OUTPUT_DIR, "camera_temperatures.csv")
 # postproc paths are saved in OUTPUT_DIR/datetime-stamped subfolders, e.g. "nexus_temp_log/2026-07-31_15-30-00/camera_temperatures_postproc.csv"
-POSTPROC_FILENAME = "camera_temperatures_postproc.csv")
+POSTPROC_FILENAME = "camera_temperatures_postproc.csv"
 POSTPROC_DIR_FORMAT = "%Y-%m-%d_%H-%M-%S"
 
 # Matches label rows like "#1 W Wall C1 (Vero v2.2): "
@@ -170,6 +170,8 @@ def main():
 
     print(f"\nDone. Log: {CSV_PATH}")
 
+
+# forgot to call this
 def post_processing(new_sets):
     """
     Reads a new CSV set and outputs a dated postproc file with the expected log format
