@@ -72,6 +72,9 @@ K3_DURATION_MINUTES = 30     # Total time the script runs for
 
 OUTPUT_DIR = "nexus_temp_log"
 CSV_PATH = os.path.join(OUTPUT_DIR, "camera_temperatures.csv")
+# postproc paths are saved in OUTPUT_DIR/datetime-stamped subfolders, e.g. "nexus_temp_log/2026-07-31_15-30-00/camera_temperatures_postproc.csv"
+POSTPROC_FILENAME = "camera_temperatures_postproc.csv")
+POSTPROC_DIR_FORMAT = "%Y-%m-%d_%H-%M-%S"
 
 # Matches label rows like "#1 W Wall C1 (Vero v2.2): "
 LABEL_PATTERN = re.compile(r"^#\d+\s")
@@ -131,6 +134,9 @@ def main():
     print(" " * 30, end="\r")
     print("Started.\n")
 
+    # for post-processing we also need to store the new sets
+    new_sets = []  # list of (timestamp, camera, temperature) tuples
+
     with open(CSV_PATH, "a", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         if write_header:
@@ -147,6 +153,7 @@ def main():
                     try:
                         readings = read_camera_temperatures(win)
                         for camera, temp in readings.items():
+                            new_sets.append((now, camera, float(temp)))
                             writer.writerow([now.isoformat(timespec="seconds"), camera, temp])
                         f.flush()
                         print(f"[{now.strftime('%H:%M:%S')}] Read {len(readings)} cameras.")
@@ -162,6 +169,47 @@ def main():
             print("\nStopped early by user.")
 
     print(f"\nDone. Log: {CSV_PATH}")
+
+def post_processing(new_sets):
+    """
+    Reads a new CSV set and outputs a dated postproc file with the expected log format
+    Iterates over each camera set and finds the lowest and highest temperature for that set, then outputs a single line for that set.
+    Column 1 'Key' = Date
+    Column 2 'Timestamp' = the camera set reading timestamp
+    Column 3 'Lowest Temperature' = the lowest camera temp reading for that set
+    Column 4 'Highest Temperature' = the highest camera temp reading for that set
+    """
+    postproc_dir = os.path.join(OUTPUT_DIR, datetime.now().strftime(POSTPROC_DIR_FORMAT))
+    os.makedirs(postproc_dir, exist_ok=True)
+    postproc_path = os.path.join(postproc_dir, POSTPROC_FILENAME)
+
+    # TODO this is brittle as script needs to finish to call this & if the script is run in short breaks it won't capture earlier data
+    # NexusWrapper should take a date argument and save csv by date or process logs by date, output this by date
+    # does not actually open the CSV file as this may contain older values not from this iteration
+
+    # new_sets will contain (timestamp, camera, temp) per row
+    # rows for each camera are written as matching timestamps
+    # group the sets
+    sets = {}
+    for timestamp, camera, temperature in new_sets:
+        if timestamp not in sets:
+            sets[timestamp] = []
+        sets[timestamp].append({camera: temperature})
+
+    # get the lowest & highest values in each set
+    for timestamp, data in sets.items():
+        # data is a list of dicts, each dict is {camera: temperature}
+        # we want to find the lowest & highest temperature for that set
+        temps = [list(d.values())[0] for d in data]
+        lowest = min(temps)
+        highest = max(temps)
+        sets[timestamp] = {"lowest": lowest, "highest": highest}
+    
+    with open(postproc_path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(["Key", "Timestamp", "Lowest Temperature", "Highest Temperature"])
+        for timestamp, temps in sets.items():
+            writer.writerow([datetime.now().strftime("%d/%m/%Y"), timestamp, temps["lowest"], temps["highest"]])
 
 
 if __name__ == "__main__":

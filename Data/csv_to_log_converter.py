@@ -95,6 +95,8 @@ def _mutate_camera_name(camera_name):
     camera_model = matches[-1] if matches else "(Unknown Model)"
     if camera_model == "(Unknown Model)":
         print(f"Warning: Could not find camera model in camera name '{camera_name}'. Using default string for model.")
+    else:
+        camera_model = f"({camera_model})"
     
     # Return the mutated camera name
     return f"{camera_id} {camera_model}"
@@ -110,24 +112,29 @@ def _update_csv():
     """
     input_path, output_path, date, key, type = _get_args()
 
+    # process
     with open(input_path, newline='') as csvfile:
-        spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
-        for row in spamreader:
-            # row is a list of strings, each string is a column in the CSV file
-            # we need to split the first column by commas to get the actual values
-            row = row[0].split(',')
-            if len(row) != 6:
-                print(f"Skipping row with unexpected number of columns: {row}")
+        for line in csvfile:
+            line = line.strip()
+            if not line:
                 continue
 
-            camera_name, wand_frame_count, world_error, image_error, _, _ = row
+            # Split into columns, ignoring 4th/5th
+            parts = line.rsplit(',', 5)
+            camera_name, wand_frame_count, world_error, image_error = parts[0], parts[1], parts[2], parts[3]
+            # modify name to match rest of log & then save
             camera_name = _mutate_camera_name(camera_name)
             output_row = [type, key, date, camera_name, wand_frame_count, world_error, image_error]
 
-            # write to output CSV file
-            with open(output_path, 'a', newline='') as csvfile_out:
-                spamwriter = csv.writer(csvfile_out, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
-                spamwriter.writerow(output_row)
+            # confirm the file is not open
+            try:
+                # write to output CSV file
+                with open(output_path, 'a', newline='') as csvfile_out:
+                    spamwriter = csv.writer(csvfile_out, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+                    spamwriter.writerow(output_row)
+            except IOError:
+                print(f"Error: The output file '{output_path}' is currently open. Please close it and try again.")
+                return
 
 
 if __name__ == '__main__':
