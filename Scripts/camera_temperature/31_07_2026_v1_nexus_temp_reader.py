@@ -56,6 +56,7 @@ USAGE:
     want more frequent samples.
 """
 
+import sys
 import re
 import csv
 import os
@@ -136,8 +137,10 @@ def main():
 
     # for post-processing we also need to store the new sets
     new_sets = []  # list of (timestamp, camera, temperature) tuples
+    # replaces CSV_PATH with a timestamped filename to avoid overwriting previous runs
+    output_csv_path = os.path.join(OUTPUT_DIR, f"camera_temperatures_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.csv")
 
-    with open(CSV_PATH, "a", newline="", encoding="utf-8") as f:
+    with open(output_csv_path, "a", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         if write_header:
             writer.writerow(["timestamp", "camera", "temperature_c"])
@@ -168,11 +171,40 @@ def main():
         except KeyboardInterrupt:
             print("\nStopped early by user.")
 
-    print(f"\nDone. Log: {CSV_PATH}")
+    print(f"\nDone. Log: {output_csv_path}")
 
 
-# forgot to call this
-def post_processing(new_sets):
+# date_stamp is CLI arg, will default to today if not passed
+def post_processing_from_csv(csv_path, date_stamp=datetime.now().strftime("%d/%m/%Y")):
+    """
+    # version of post processing func that takes a csv instead
+    the csv format is as follows
+        2026-08-28T12:26:18	#1 W Wall C1 (Vero v2.2)	32
+        2026-08-28T12:26:18	#2 NW Corner C2 (Vero v2.2)	32
+        2026-08-28T12:26:18	#3 N Wall C3 (Vero v2.2)	32
+        2026-08-28T12:26:18	#4 SE Corner C4 (Vero v2.2)	32
+
+        so the first column is the timestamp, the second column is the camera name, and the third column is the temperature reading
+        to output to a post proc we must group by timestamp and find the lowest and highest temperature for each timestamp, then output a single line for that timestamp with the following format:
+        Key, Timestamp, Lowest Temperature, Highest Temperature
+
+        NOTE: timestamps must be output as hh:mm:ss without date, and the Key column must be the date in dd/mm/yyyy format
+    """
+    new_sets = []
+    with open(csv_path, "r", newline="", encoding="utf-8") as f:
+        reader = csv.reader(f)
+        for row in reader:
+            if len(row) != 3:
+                continue
+            timestamp, camera, temp = row
+            new_sets.append((timestamp, camera, float(temp)))
+    print(f"Post-processing {len(new_sets)} rows from {csv_path} for date: {date_stamp}")
+    post_processing(new_sets, date_stamp=date_stamp)
+
+
+# if called from the main script, this will be called with new_sets as a list of (timestamp, camera, temperature) tuples
+# date will auto-populate if called from the main script, but can be overridden if called from the post_processing_from_csv function
+def post_processing(new_sets, date_stamp=datetime.now().strftime("%d/%m/%Y")):
     """
     Reads a new CSV set and outputs a dated postproc file with the expected log format
     Iterates over each camera set and finds the lowest and highest temperature for that set, then outputs a single line for that set.
@@ -180,10 +212,12 @@ def post_processing(new_sets):
     Column 2 'Timestamp' = the camera set reading timestamp
     Column 3 'Lowest Temperature' = the lowest camera temp reading for that set
     Column 4 'Highest Temperature' = the highest camera temp reading for that set
+    NOTE: timestamps must be output as hh:mm:ss without date, and the Key column must be the date in dd/mm/yyyy format
     """
+    print(f"Processing post-processing for date: {date_stamp}")
     postproc_dir = os.path.join(OUTPUT_DIR, datetime.now().strftime(POSTPROC_DIR_FORMAT))
     os.makedirs(postproc_dir, exist_ok=True)
-    postproc_path = os.path.join(postproc_dir, POSTPROC_FILENAME)
+    postproc_path = os.path.join(postproc_dir, f"{date_stamp.replace('/', '-')}_{POSTPROC_FILENAME}")
 
     # TODO this is brittle as script needs to finish to call this & if the script is run in short breaks it won't capture earlier data
     # NexusWrapper should take a date argument and save csv by date or process logs by date, output this by date
@@ -194,6 +228,8 @@ def post_processing(new_sets):
     # group the sets
     sets = {}
     for timestamp, camera, temperature in new_sets:
+        # timestamp must be converted to hh:mm:ss format without date
+        timestamp = datetime.fromisoformat(timestamp).strftime("%H:%M:%S")
         if timestamp not in sets:
             sets[timestamp] = []
         sets[timestamp].append({camera: temperature})
@@ -211,8 +247,15 @@ def post_processing(new_sets):
         writer = csv.writer(f)
         writer.writerow(["Key", "Timestamp", "Lowest Temperature", "Highest Temperature"])
         for timestamp, temps in sets.items():
-            writer.writerow([datetime.now().strftime("%d/%m/%Y"), timestamp, temps["lowest"], temps["highest"]])
+            writer.writerow([date_stamp, timestamp, temps["lowest"], temps["highest"]])
 
 
+# if given a csv path, run the post processing on that csv
+# otherwise go to normal behavior of reading the nexus window and outputting to csv
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) > 1:
+        csv_path = sys.argv[1]
+        date_stamp = sys.argv[2] if len(sys.argv) > 2 else datetime.now().strftime("%d/%m/%Y")
+        post_processing_from_csv(csv_path, date_stamp=date_stamp)
+    else:
+        main()
