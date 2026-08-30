@@ -96,17 +96,17 @@ Managed to reconstruct & label a capture!
 8. You can then capture a video of the subject & run reconstruct & label pipeline
 ### References
 https://help.vicon.com/download/attachments/406490967/Vicon%20Nexus%20User%20Guide.pdf
-	for Nexus workflow order
-	for toolbar pipeline shortcuts (reconstruct, ""+label, auto-init, auto gapfill)
-	definition of pipeline (sequence of operations)
+for Nexus workflow order
+for toolbar pipeline shortcuts (reconstruct, ""+label, auto-init, auto gapfill)
+definition of pipeline (sequence of operations)
 
 https://help.vicon.com/download/attachments/11378719/Creating%20labeling%20skeleton%20templates%20(VSTs).pdf
-	vicon 2.15
-	for marker set design guidance
-	labelling skeleton requirements
-	custom-VST use case explanation
-	exemptions for restricted movement segments
-	joint-type guidance
+vicon 2.15
+for marker set design guidance
+labelling skeleton requirements
+custom-VST use case explanation
+exemptions for restricted movement segments
+joint-type guidance
 # Terminology
 - **Markers**: Reflective sphere, radius of 14mm (larger) or 9mm (smaller), both with base 2mm
  - **Subjects**: can be created blank, from labelling skeletons, or from pre-saved subjects

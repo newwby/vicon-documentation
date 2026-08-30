@@ -57,6 +57,10 @@ This file has since been expanded to document full-body marker set design & expe
 5. Don't vary camera settings (i.e. gain, centroid fitting/grayscale, strobe) & use the same calibration, post camera warm-up)
 6. Repeat experiments at different times/days, and vary the starting positions of any fixed mounting point *(though maintain consistency during trials, just don't re-use the same place every single trial)*
 
+## **Learnings**
+
+  ***Unattached Markers, Empty Frames, % of Marker Data Missing** - you can fix with subject/skel edits*
+  *This is worth knowing for higher quality outputs!!*
 ## **Unanswered Questions**
 
 1. Can trials be set up to start on a delay and stop at a fixed length? That would allow for getting into position and repeating movements
