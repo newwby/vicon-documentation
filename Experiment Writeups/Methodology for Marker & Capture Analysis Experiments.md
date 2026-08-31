@@ -174,26 +174,56 @@ Cappozzo, Cappello, Della Croce & Pensalfini (1997), _Surface-Marker Cluster Des
 - https://www.thingiverse.com/thing:4898356#Post-Printing <small>(3d-print fabrication file for cluster mounts w/locations <i>- 2 shoulder, 2 upper arm, 4 elbow, 2 forearm, 2 hand)</i></small>
 
 ---
-## Reduced Body Scope (DN Designed Set, variation of Vicon PiG)
-Reproducing the set with a focus on body movement, and not full capture. Vicon PiG is documented as having limited tracking for hands and feet, and not interested in head tracking at this stage without appropriate clothing/affixing points.
+## Reduced Body Scope Marker Set (Limited Plug-in Gait)
+Reproducing the set with a focus on body movement, and not full capture. VPiG (Vicon Plug-in Gait) is documented as having limited tracking for hands and feet, and not interested in head tracking at this stage without appropriate clothing/affixing points.
 Therefore the minimal number of markers to capture body movement, removing hands/feet/head markers, is **23**.
 This captures the movement of torso/back, pelvis, arms, and legs.
 
+# Note - which version of VPiG am I following?????
+
 **Exact markers utilised detailed as follows:**
-### Top-Half Markers
+
+---
+### LPiG V1 Marker Set
+#### Top-Half Markers
 | Group                | Count             | Marker IDs                |
 | -------------------- | ----------------- | ------------------------- |
 | Torso                | 5                 | C7, T10, CLAV, STRN, RBAK |
 | Left Arm             | 4                 | LSHO, LUPA, LELB, LFRM    |
 | Right Arm            | 4                 | RSHO, RUPA, RELB, RFRM    |
 | <big>**Total**</big> | <big>**13**</big> |                           |
-### Bottom-Half Markers
+#### Bottom-Half Markers
 | Group                | Count             | Marker IDs             |
 | -------------------- | ----------------- | ---------------------- |
 | Pelvis               | 4                 | LASI, RASI, LPSI, RPSI |
 | Left Leg             | 3                 | LTHI, LKNE, LTIB       |
 | Right Leg            | 3                 | RTHI, RKNE, RTIB       |
 | <big>**Total**</big> | <big>**10**</big> |                        |
+![LPiGv1|251](Public%20Files/Experiment%20and%20Error%20Images/2026-08-30%20LPiGv1%20Capture/LPiGv1.png)
+
+**Conclusion**: *Issues with segments/joints due to the set being built from a stripped down version of VPiG*
+
+---
+### LPiG V2 Marker Set
+#### Top-Half Markers
+| Group                | Count             | Marker IDs                | Change/notes                                           |
+| -------------------- | ----------------- | ------------------------- | ------------------------------------------------------ |
+| Torso                | 5                 | C7, T10, CLAV, STRN, RBAK |                                                        |
+| Left Arm             | 4                 | LSHO, LUPA, LELB, LFRM    |                                                        |
+| Right Arm            | 4                 | RSHO, RUPA, RELB, RFRM    |                                                        |
+| Left Hand (Glove)    | 3                 | LWRA, LWRB, LFIN          |                                                        |
+| Right Hand (Glove)   | 3                 | RWRA, RWRB, RFIN          |                                                        |
+| <big>**Total**</big> | <big>**19**</big> |                           | <small><b><i>+6</i></b> markers compared to v1</small> |
+#### Bottom-Half Markers
+| Group                | Count             | Marker IDs             | Change/notes                                                                                     |
+| -------------------- | ----------------- | ---------------------- | ------------------------------------------------------------------------------------------------ |
+| Pelvis               | 4                 | LASI, RASI, LPSI, RPSI |                                                                                                  |
+| Left Leg             | 3                 | LTHI, LKNE, LTIB       |                                                                                                  |
+| Right Leg            | 3                 | RTHI, RKNE, RTIB       |                                                                                                  |
+| <big>**Total**</big> | <big>**10**</big> |                        | <small>No capture clothing for feet.<br>Add ankle to bottoms and/or append toe to shoes?</small> |
+**Conclusion**: *To be built if markers are available*
+Maximum 19x 14mm markers markers spare and need to leave some for calibration unless relying on the 9.5mm markers in future? There are only 7x 9.5mm markers remaining as being utilised in another project currently.
+
 
 ---
 
