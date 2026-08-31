@@ -172,6 +172,7 @@ def main():
             print("\nStopped early by user.")
 
     print(f"\nDone. Log: {output_csv_path}")
+    post_processing(sets)
 
 
 # date_stamp is CLI arg, will default to today if not passed
@@ -192,12 +193,13 @@ def post_processing_from_csv(csv_path, date_stamp=datetime.now().strftime("%d/%m
     """
     new_sets = []
     with open(csv_path, "r", newline="", encoding="utf-8") as f:
+        next(f)
         reader = csv.reader(f)
         for row in reader:
             if len(row) != 3:
                 continue
             timestamp, camera, temp = row
-            new_sets.append((timestamp, camera, float(temp)))
+            new_sets.append((timestamp, camera, float(int(temp))))
     print(f"Post-processing {len(new_sets)} rows from {csv_path} for date: {date_stamp}")
     post_processing(new_sets, date_stamp=date_stamp)
 
