@@ -119,14 +119,29 @@ This file has since been expanded to document full-body marker set design & expe
 **19/08/2026 - Fabric Tape + Vicon Marker**
 	The tape is very hard to apply, incredibly adhesive, and does not stick over base to skin very well, but when wrapped around the base it becomes adhesive to anything it touches (including skin but watch out for any hair in the area). This marker was very trackable by every camera in the room, as expected.
 
-**27/08/2026 - Petal-Wrapped Reflective Tape + Plastic Bearing** (*wrapped 12 short strips in a flowered sphere covering pattern*)
+**27/08/2026 - Petal-Wrapped Reflective Tape + Plastic Bearing** (*short strips in flower sphere-wrap pattern*)
 	**Unable to test due to calibration issues with setup on this day -** <u>update when tested!</u>
 	Wrapping these bearings with petal-strips was incredibly time-consuming even to produce 1 marker.
 	Cheap
 
 **27/08/2026 - Reflective Dots + Full Body Suit Attempt 1 (Top1 + Bottoms1)**
 	Tight clothing - the reflective dots fell off the suit when removing clothing. It was also difficult to place the dots in the correct place as an individual when 
-	Combined with the difficulties of 
+	Combined with the difficulties of capture pretty much eliminates them as an option
+
+**30/08/2026 - Square-Wrapped Reflective Tape + Plastic Bearing** (*wrapped 3 strips x/y/z*)
+	Tested against daily calibration - **captured better than previous experiments, better than petal-wrap!**
+	Tested whilst holding/waving around & taped to shirt
+	Appears inferior to Vicon/B&L markers for labelling/tracking by camera
+
+**30/08/2026 - Petal-Wrapped Reflective Tape + Plastic Bearing** (*short strips in flower sphere-wrap pattern*)
+	Tested against daily calibration - **actually reflected to other light objects (e.g. skin)**
+	Tested whilst holding/waving around & taped to shirt
+	Appears inferior to Vicon/B&L markers for labelling/tracking by camera
+
+**30/08/2026 - LPiG body marker set (Vicon/B&L Markers on Velcro-Hook, to clothing Velcro-Loop)**
+	Tracking for static subject capture/dynamic ROM capture appeared effective
+	Marker set was limited in effectiveness due to joints/segments being build off VPiG
+		*(LPiG compared to VPiG is missing hand/feet)*
 
 ---
 # Full-Body Marker Set Design
