@@ -172,7 +172,7 @@ def main():
             print("\nStopped early by user.")
 
     print(f"\nDone. Log: {output_csv_path}")
-    post_processing(sets)
+    post_processing(new_sets)
 
 
 # date_stamp is CLI arg, will default to today if not passed
