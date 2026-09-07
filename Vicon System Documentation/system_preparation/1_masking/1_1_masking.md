@@ -108,6 +108,15 @@ You can select an individual camera, as before, to view the new masks in place o
 If there are any reflections that have not been captured by the masking process, or a new reflection is introduced, you can also manually add masks.
 <span class="info-text"><b>For more Information</b></span> on this see the [manual masking guide](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/1_2_advanced_masking_and_reflections.md).
 
+Once you have successfully masked the cameras, you are ready to calibrate the system.
+
+
+---
+## Quick-Start Navigation
+| **Previous** | *n/a*                                                                                                                                                     |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Next**     | **[Quick Start Part 2/3: Camera Calibration](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/3_1_calibration_process.md)** |
+
 ---
 ---
 
