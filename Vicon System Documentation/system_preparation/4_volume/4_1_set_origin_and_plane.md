@@ -278,7 +278,6 @@ The dropdown at auto detect has a tolerance level, this should be 2mm (see Vicon
 - Ensure all cameras are casting rays - if not it may be a calibration issue (check world & image error)
 Made a little cross in middle of floor to make volume capturing consistent (*now superseded by wand marker tape)*)
 
-
 - [ ] Try calibrating floor plane with reflective dots?
 	      *feeling is this will work, but they'll also create masks if not covered or removed*
 
