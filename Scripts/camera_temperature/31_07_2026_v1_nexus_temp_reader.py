@@ -72,7 +72,7 @@ K2_INTERVAL_MINUTES = 2      # Time between reads
 K3_DURATION_MINUTES = 30     # Total time the script runs for
 
 OUTPUT_DIR = "nexus_temp_log"
-CSV_PATH = os.path.join(OUTPUT_DIR, "camera_temperatures.csv")
+CSV_PATH = os.path.join(OUTPUT_DIR, "raw_camera_temperatures.csv")
 # postproc paths are saved in OUTPUT_DIR/datetime-stamped subfolders, e.g. "nexus_temp_log/2026-07-31_15-30-00/camera_temperatures_postproc.csv"
 POSTPROC_FILENAME = "camera_temperatures_postproc.csv"
 POSTPROC_DIR_FORMAT = "%Y-%m-%d_%H-%M-%S"
@@ -138,7 +138,7 @@ def main():
     # for post-processing we also need to store the new sets
     new_sets = []  # list of (timestamp, camera, temperature) tuples
     # replaces CSV_PATH with a timestamped filename to avoid overwriting previous runs
-    output_csv_path = os.path.join(OUTPUT_DIR, f"camera_temperatures_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.csv")
+    output_csv_path = os.path.join(OUTPUT_DIR, f"raw_camera_temperatures_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.csv")
 
     with open(output_csv_path, "a", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
@@ -231,6 +231,7 @@ def post_processing(new_sets, date_stamp=datetime.now().strftime("%d/%m/%Y")):
     sets = {}
     for timestamp, camera, temperature in new_sets:
         # timestamp must be converted to hh:mm:ss format without date
+        print(f"POTENTIAL ERROR BUGCHECK FOR NEXT RUN: {timestamp}")
         timestamp = datetime.fromisoformat(timestamp).strftime("%H:%M:%S")
         if timestamp not in sets:
             sets[timestamp] = []

@@ -1,0 +1,8 @@
+used 3x clusters of 3 spread across volume
+palettes in working volume
+brewster tap covered
+catering cage was moved
+cameras calibrated quicker
+Wand technique H
+marker jitter on plane orthogonal view (not exactly jitter, size pulsating?)
+Camera 11 was bumped and had some reflective interference from Kinect sensor markers (did not get masked automatically)

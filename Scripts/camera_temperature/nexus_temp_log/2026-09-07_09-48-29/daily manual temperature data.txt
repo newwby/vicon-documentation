@@ -1,0 +1,10 @@
+HISTORIC 07/09
+
+STARTUP (switch on)
+start @ 9:14
+temp T °C
+
+INTIAL READ (then start script - ensure camera temp properties are visible and you're in live!)
+read @ 9:17
+range 29-32
+
