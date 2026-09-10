@@ -7,6 +7,7 @@ tags:
 parent:
   - "[[_Vicon (Contents & Glossary)]]"
   - "[[_Vicon DB.base]]"
+Section: "[[Public Files/Vicon System Documentation/vicon_system/index (vicon_system)|Vicon System]]"
 ---
 # WIP MISC NOTES FOR SUBJECT CAPTURE
 

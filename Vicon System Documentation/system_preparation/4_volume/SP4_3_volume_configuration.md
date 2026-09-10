@@ -9,13 +9,12 @@ Chapter: Capture Volume
 Chapter Number: "4"
 Page Title: Configuring Custom Volumes
 Page Number: "3"
-Page Status: Draft
 Software:
   - Vicon Nexus 2.18
 Next Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/5_health/5_1_camera_error|5_1_camera_error]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/5_health/SP5_1_camera_error|SP5_1_camera_error]]"
 Last Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/4_volume/4_2_volume_advanced|4_2_volume_advanced]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/4_volume/SP4_2_volume_advanced|SP4_2_volume_advanced]]"
 ---
 ---
 ```table-of-contents

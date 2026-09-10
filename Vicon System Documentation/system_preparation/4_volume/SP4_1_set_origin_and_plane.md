@@ -9,14 +9,13 @@ Chapter: Capture Volume
 Chapter Number: "4"
 Page Title: Setting Origin and Plane
 Page Number: "1"
-Page Status: Draft
 Software:
   - Vicon Nexus 2.18
 Next Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/4_volume/4_2_volume_advanced|4_2_volume_advanced]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/4_volume/SP4_2_volume_advanced|SP4_2_volume_advanced]]"
 Last Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/3_calibrating/3_5_advanced_configuration|3_5_advanced_configuration]]"
-  - "[[Public Files/Vicon System Documentation/system_preparation/3_calibrating/3_1_calibration_process|3_1_calibration_process]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/3_calibrating/SP3_5_advanced_configuration|SP3_5_advanced_configuration]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/3_calibrating/SP3_1_calibration_process|SP3_1_calibration_process]]"
 ---
 ---
 ```table-of-contents
@@ -31,18 +30,18 @@ Last Page:
 - How to confirm your floor plane is accurate
 
 <span class="warning-text">Important - <b>this guide assumes you have already calibrated your cameras.</b></span>
-If you have not yet calibrated your cameras, please go to the [calibrating cameras guide](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/3_1_calibration_process.md) and complete the steps there.
+If you have not yet calibrated your cameras, please go to the [calibrating cameras guide](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_1_calibration_process.md) and complete the steps there.
 
 <span class="info-header">This is the third of the three-part quick-start system preparation guide:</span>
-1. [Masking your Cameras](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/1_1_masking.md)
-2. [Calibrating your Cameras](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/3_1_calibration_process.md)
-3. ***[Setting Volume Origin and Plane](Public%20Files/Vicon%20System%20Documentation/system_preparation/4_volume/4_1_set_origin_and_plane.md)***
+1. [Masking your Cameras](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/SP1_1_masking.md)
+2. [Calibrating your Cameras](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_1_calibration_process.md)
+3. ***[Setting Volume Origin and Plane](Public%20Files/Vicon%20System%20Documentation/system_preparation/4_volume/SP4_1_set_origin_and_plane.md)***
 
 ---
 ---
 # <span class="toc-header">Setting your Volume (Quick-Start Guide)</span>
 
-During the [calibrating cameras guide](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/3_1_calibration_process.md) you will have noticed that your cameras are not parallel to the floor, often instead intersecting the floor plane.
+During the [calibrating cameras guide](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_1_calibration_process.md) you will have noticed that your cameras are not parallel to the floor, often instead intersecting the floor plane.
 
 ![camera_relativity_1_prior|389](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/4_1_set_volume_origin/camera_relativity_1_prior.png)
 
@@ -161,16 +160,16 @@ Click start and set to confirm setting markers.
 ![floor plane marker selection 1 - select as many as possible](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/4_2_set_floor_plane/floor%20plane%20marker%20selection%201%20-%20select%20as%20many%20as%20possible.png)
 
 
+**PLANE MARKERS**
+Setting offset notes for markers when setting plane
+Orthogonal view notes
+Finish the set plane guide
+Reorder the set volume origin sentence
+Add marker demo photo (for correct and 1 for how not to do)
+Markers within clusters should be close-ish together, but clusters should be further apart
+Add plane zoom-in, -X see close to
 
 
-
-
-
----
-## Quick-Start Navigation
-| **Previous** | **[Quick Start Part 2/3: Camera Calibration](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/3_1_calibration_process.md)** |
-| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Next**     | *n/a*                                                                                                                                                     |
 
 ---
 ---
@@ -187,7 +186,7 @@ Maybe move marker volume configuration & checking wand-bubble into an advanced g
 
 Marker plane setup documentation
 
-- [x] Get documentation images for [4_1_set_origin_and_plane](Public%20Files/Vicon%20System%20Documentation/system_preparation/4_volume/4_1_set_origin_and_plane.md)
+- [x] Get documentation images for [SP4_1_set_origin_and_plane](Public%20Files/Vicon%20System%20Documentation/system_preparation/4_volume/SP4_1_set_origin_and_plane.md)
       *Some definitely exist but 3-marker setup is not documented with images*
 
 When setting with 3 markers make sure to place the Y Axis (handle) aka primary marker a further distance away from the origin marker than the X axis (crossbeam) aka secondary marker is. This helps identify them in 3D space (one will be further away from the L-intersection). You can use the active wand lights to help identify where to place markers.

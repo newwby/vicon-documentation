@@ -70,7 +70,7 @@ CTRL+Shift+B = reset bumped status
 **Single camera**: right-click the camera node  (resource tree or 3d view) → Reset Calibration.
 
 **Resetting Mask**
-*this is covered in [1_1_masking](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/1_1_masking.md)*
+*this is covered in [SP1_1_masking](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/SP1_1_masking.md)*
 Clear the mask from the camera button in the Camera view toolbar, per selected camera(s).
 
 **Include selection shortcuts for non-technical users?**

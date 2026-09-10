@@ -4,12 +4,11 @@ tags:
   - Documentation
   - Live
   - Calibration
-Section: System Preparation
+Section: "[[Public Files/Vicon System Documentation/system_preparation/index (system_preparation)|System Preparation]]"
 Chapter: Aiming
 Chapter Number: "2"
 Page Title: Aiming Standing Cameras
 Page Number: "1"
-Page Status: Draft
 Software:
   - Vicon Nexus 2.18
 Next Page:

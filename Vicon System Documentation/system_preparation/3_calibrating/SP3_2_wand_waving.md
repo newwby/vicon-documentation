@@ -9,13 +9,12 @@ Chapter: Calibrating Cameras
 Chapter Number: "3"
 Page Title: Wand Waving
 Page Number: "2"
-Page Status: Draft
 Software:
   - Vicon Nexus 2.18
 Next Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/3_calibrating/3_3_calibration_errors|3_3_calibration_errors]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/3_calibrating/SP3_3_calibration_errors|SP3_3_calibration_errors]]"
 Last Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/3_calibrating/3_1_calibration_process|3_1_calibration_process]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/3_calibrating/SP3_1_calibration_process|SP3_1_calibration_process]]"
 ---
 ---
 ```table-of-contents
@@ -40,7 +39,7 @@ Lorem Ipsum
 
 - [ ] Review v4 wand doc for calibration docs update
 - [x] Complete [2026-08-11 Wand Wave Technique TODO](../Public%20Files/Experiment%20Writeups/2026-08-06%20Removing%20Reflective%20Shelves%20TODO.md)
-- [ ] Need to document for [[3_2_wand_waving]]:
+- [ ] Need to document for [[Public Files/Vicon System Documentation/system_preparation/3_calibrating/SP3_2_wand_waving]]:
 	  *how use the TV/second screen*
 	  *how to get popout window*
 	  *what calibration triangles look like*
@@ -87,7 +86,7 @@ what's happening during (what are they doing)
 **What happens to calibration process if you change the minimum frames**
 
 ### **TO REVIEW**
-all notes currently in [3_1_calibration_process](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/3_1_calibration_process.md) at moment
+all notes currently in [SP3_1_calibration_process](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_1_calibration_process.md) at moment
 (and [2026-08-11 Wand Wave Technique](Public%20Files/Experiment%20Writeups/2026-08-11%20Wand%20Wave%20Technique.md))
 ###### (Until Removed This Is A Draft Note Do Not Push To live)
 *Do not push to live!*

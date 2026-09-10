@@ -9,15 +9,14 @@ Chapter: Calibrating Cameras
 Chapter Number: "3"
 Page Title: Calibrating Cameras
 Page Number: "1"
-Page Status: Draft
 Software:
   - Vicon Nexus 2.18
 Next Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/3_calibrating/3_2_wand_waving|3_2_wand_waving]]"
-  - "[[Public Files/Vicon System Documentation/system_preparation/4_volume/4_1_set_origin_and_plane|4_1_set_origin_and_plane]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/3_calibrating/SP3_2_wand_waving|SP3_2_wand_waving]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/4_volume/SP4_1_set_origin_and_plane|SP4_1_set_origin_and_plane]]"
 Last Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/1_masking/1_2_advanced_masking_and_reflections|1_2_advanced_masking_and_reflections]]"
-  - "[[Public Files/Vicon System Documentation/system_preparation/1_masking/1_1_masking|1_1_masking]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/1_masking/SP1_2_advanced_masking_and_reflections|SP1_2_advanced_masking_and_reflections]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/1_masking/SP1_1_masking|SP1_1_masking]]"
 ---
 ---
 ```table-of-contents
@@ -35,13 +34,13 @@ Last Page:
 
 <span class="warning-text">Important - <b>this guide assumes you have already set your camera masks.</b></span>
 If you have not yet masked your cameras, please complete this through the steps in one of the following guides:
-- [Automatic masking](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/1_1_masking.md)
-- [Manual masking](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/1_2_advanced_masking_and_reflections.md)
+- [Automatic masking](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/SP1_1_masking.md)
+- [Manual masking](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/SP1_2_advanced_masking_and_reflections.md)
 
 <span class="info-header">This is the second of the three-part quick-start system preparation guide:</span>
-1. [Masking your Cameras](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/1_1_masking.md)
-2. ***[Calibrating your Cameras](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/3_1_calibration_process.md)***
-3. [Setting Volume Origin and Plane](Public%20Files/Vicon%20System%20Documentation/system_preparation/4_volume/4_1_set_origin_and_plane.md)
+1. [Masking your Cameras](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/SP1_1_masking.md)
+2. ***[Calibrating your Cameras](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_1_calibration_process.md)***
+3. [Setting Volume Origin and Plane](Public%20Files/Vicon%20System%20Documentation/system_preparation/4_volume/SP4_1_set_origin_and_plane.md)
 
 ---
 ---
@@ -51,6 +50,8 @@ In order for you to begin capturing your subject's 3D motion tracking data, the 
 The cameras are very sensitive to changes in temperature and light, as well as being physically disturbed. As such it is recommended that you calibrate at the beginning of any new day or capture session, and re-calibrate if the environment has changed or been disturbed.
 
 Calibration is what allows each camera to determine the position of a tracked marker relative to itself, and the position of other cameras relative to itself. This positional data is synchronised between every camera in order to determine the 3D space (*the volume*) and where within that volume that the marker currently is.
+
+<span class="warning-text"><b>Important:</b></span> The recommended practice is perform a calibration at the start of each day, or when beginning a capture session if the environment has changed. Before calibrating your cameras you should always re-apply their masks, following the [camera masking](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/SP1_1_masking.md) guide.
 
 ---
 ---
@@ -85,20 +86,23 @@ Once you are ready to calibrate your cameras, look to **tools** panel on (by def
 
 ---
 ### <span class="toc-header">Resetting Calibration</span>
-In order to ensure previous calibrations do not influence the day's calibration, you will need to remove the calibration profile from every camera.
+Calibrations can be repeated to improve accuracy. You can read more about this in the [advanced calibration and configuration](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_5_advanced_configuration.md) guide.
 
-<span class="warning-text">If this is <u>not</u> a brand new calibration, do not reset camera calibration. </span>
-<span class="warning-text">This will remove all previous camera information about their relative position to each other and the volume.</span>
+**If you attempt a calibration at the start of a new session without resetting the existing calibration data, you will instead influence the previous calibration.**
+
+Capture environments change over time and what was accurate earlier may no longer be accurate. In order to ensure previous calibrations do not influence the day's calibration, you will need to remove the calibration profile from every camera.
+
+<span class="warning-text">If this is <u>not</u> a brand new calibration, do not reset camera calibration. </span> <span class="warning-text">This will remove all previous camera information about their relative position to each other and the volume.</span>
 
 At the bottom of the **system preparation** tab you will see the **manage camera calibration** section.
 
 ![calibration_start_0_reset_calibration](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/3_1_calibration_process/calibration_start_0_reset_calibration.png)
 
+<span class="warning-text">Do not select '<u>auto number cameras</u>' - this will reassign camera IDs and put them out of sync with the lab's physical labelling. </span>
+
 Click the **Reset** button in . If you are in 3D Perspective view, and the cameras were previously calibrated, you will see the cameras either disappear or reposition into a straight line (depending on view option selected).
 
 This represents that the cameras no longer know where each other are, relative to themselves.
-
-<span class="warning-text">Do not select '<u>auto number cameras</u>' - this will reassign camera IDs and put them out of sync with the lab's physical labelling. </span>
 
 ---
 ### <span class="toc-header">Calibration Parameters</span>
@@ -118,7 +122,7 @@ Underneath the '**Calibrate Cameras**' section you will see ''*Show/Hide Advance
 - **Auto Stop Minimum Frames**: 1000
 - **Auto Stop**: Yes ☑️
 
-<span class="info-text">For more information on recalibration, calibrating individual cameras, or auto-stop:</span> check the [advanced calibration configuration](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/3_5_advanced_configuration.md) guide.
+<span class="info-text">For more information on recalibration, calibrating individual cameras, or auto-stop:</span> check the [advanced calibration configuration](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_5_advanced_configuration.md) guide.
 
 Once you are happy with these settings, start your camera calibration by clicking the *Start* button.
 
@@ -153,7 +157,7 @@ Ensure the active wand is in '**strobe**' not '**continuous**' mode.
 ---
 ### <span class="toc-header">Wand Waving</span>
 
-To calibrate the cameras you must wave the wand within the volume, so that they are able to see the wand LEDs, until all cameras receive enough frames to reach their auto-stop minimum. This section covers the minimum you will need to know to calibrate your system; the dedicated **[wand waving guide](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/3_2_wand_waving.md)** covers this topic in more detail.
+To calibrate the cameras you must wave the wand within the volume, so that they are able to see the wand LEDs, until all cameras receive enough frames to reach their auto-stop minimum. This section covers the minimum you will need to know to calibrate your system; the dedicated **[wand waving guide](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_2_wand_waving.md)** covers this topic in more detail.
 
 <span class="info-text">To ensure a successful calibration</span>:
 * Start from the inside of the volume, and 'paint' the space.
@@ -211,10 +215,16 @@ Once this has been completed you are ready to set the volume origin and floor pl
 
 
 ---
-## Quick-Start Navigation
-| **Previous** | **[Quick Start Part 1/3: Camera Masking](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/1_1_masking.md)**                      |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Next**     | **[Quick Start Part 3/3: Volume Origin and Plane](Public%20Files/Vicon%20System%20Documentation/system_preparation/4_volume/4_1_set_origin_and_plane.md)** |
+
+**FOR CALIBRATION**
+NOTE > only 3 cameras are needed to start tracking (labelling) but 2 cameras to continue
+Redundancy matters
+If starting fresh don't reset - explain what starting fresh means
+Auto number text about camera reordering needs to move up
+0% on calibration feedback means finished
+Should show what camera bump errors look like? Or at start of calibration quick guide state if you're doing a fresh cal to ignore that symbol and reference camera bumping guide
+Multiple people or moving things in the volume throw off masking due to new reflections etc, need to ensure masking happens with what will be in the volume and nothing else
+move the don't auto number button higher up
 
 ---
 
@@ -223,6 +233,8 @@ Once this has been completed you are ready to set the volume origin and floor pl
 REALLY SHOULD SAVE THE CONFIGS AS DEFAULTS
 WHAT DO CONFIGS CONFIRM?
 SAVE DIFFERENT CONFIG/VIEW TYPE PRESETS FOR USERS?
+
+**If you reset calibration when no cameras are online they all vanish from Vicon Nexus**
 
 # TODO 07/09/2026
 **Calibration feedback advanced notes below**
@@ -305,7 +317,7 @@ Somewhere else need instructions on how to enable and connect/remove/troubleshoo
 ***System state probably doesn't belong in this guide, maybe in the intro UI guide/landing page guide or something?***
 **Same for tools/system preparation sections**
 
-Move to 3_5 [3_5_advanced_configuration](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/3_5_advanced_configuration.md)
+Move to 3_5 [SP3_5_advanced_configuration](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_5_advanced_configuration.md)
 * Cameras can be calibrated independently of each other
   *you can recalibrate specific cams to reintroduce to the vol-plane after reset or setting loss/bumping, a full setup recalibration is not needed*
 

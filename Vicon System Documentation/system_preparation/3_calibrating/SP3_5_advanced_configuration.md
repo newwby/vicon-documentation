@@ -9,13 +9,12 @@ Chapter: Calibrating Cameras
 Chapter Number: "3"
 Page Title: Advanced Camera Configuration
 Page Number: "5"
-Page Status: Draft
 Software:
   - Vicon Nexus 2.18
 Next Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/4_volume/4_1_set_origin_and_plane|4_1_set_origin_and_plane]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/4_volume/SP4_1_set_origin_and_plane|SP4_1_set_origin_and_plane]]"
 Last Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/3_calibrating/3_4_calibration_profiles|3_4_calibration_profiles]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/3_calibrating/SP3_4_calibration_profiles|SP3_4_calibration_profiles]]"
 ---
 ---
 ```table-of-contents
@@ -81,6 +80,8 @@ https://help.vicon.com/space/Nexus218/406488171
 - [ ] [2026-08-08 Auto-Stop TODO](../Public%20Files/Experiment%20Writeups/2026-08-08%20Auto-Stop%20TODO.md)
 *Add relevant data from experiments & spreadsheets*
 
+- **Circle-fit**: Nexus's process of resolving a 2D blob into a clean marker centroid; needs adequate focus/brightness to work.
+
 Confirm greyscale/centroid fitting settings can't capture the poor quality reflective marker balls (careful petal strip & overlaid strips)
 
 **Ensure you have about loading older calibrations in here** from tools/system-prep/manage-camera-calibration
@@ -121,13 +122,13 @@ https://help.vicon.com/space/Nexus218/406487668/Manage+configurations+in+Vicon+N
 	      grayscale auto during capture
 	      minimum circularity default 0.5 with higher values for calibration if necessary
 
-**This may also overlap with [5_1_camera_error](Public%20Files/Vicon%20System%20Documentation/system_preparation/5_health/5_1_camera_error.md) or that section should be brought forward?**
+**This may also overlap with [SP5_1_camera_error](Public%20Files/Vicon%20System%20Documentation/system_preparation/5_health/SP5_1_camera_error.md) or that section should be brought forward?**
 
 **THINGS WORTH MOVING TO FREE-STANDING CAMERA DOCS**
   **rigid/isolated mounting** *(check mounts for problem cameras)*
   **locked zoom/focus rings**
 ### **TO REVIEW**
-all notes currently in [3_1_calibration_process](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/3_1_calibration_process.md) at moment
+all notes currently in [SP3_1_calibration_process](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_1_calibration_process.md) at moment
 ###### (Until Removed This Is A Draft Note Do Not Push To live)
 *Do not push to live!*
 
@@ -165,7 +166,9 @@ https://help.vicon.com/space/Nexus218/406490496/System+Preparation+tools#Manage-
 Resetting calibration will remove their understanding of the volume but you can recalibrate a selected camera to return them to calibration
 
 ---
-
+[2026-08-05 Marker Cluster Layout (v1) TODO](Public%20Files/Experiment%20Writeups/2026-08-05%20Marker%20Cluster%20Layout%20(v1)%20TODO.md)
+[2026-08-06 Removing Reflective Shelves TODO](Public%20Files/Experiment%20Writeups/2026-08-06%20Removing%20Reflective%20Shelves%20TODO.md)
+[2026-08-08 Auto-Stop TODO](Public%20Files/Experiment%20Writeups/2026-08-08%20Auto-Stop%20TODO.md)
 # Embed from [2026-08-08 Auto-Stop TODO](Public%20Files/Experiment%20Writeups/2026-08-08%20Auto-Stop%20TODO.md)
 
 ![2026-08-08 Auto-Stop TODO](Public%20Files/Experiment%20Writeups/2026-08-08%20Auto-Stop%20TODO.md)

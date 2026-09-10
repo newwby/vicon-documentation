@@ -5,13 +5,12 @@ tags:
   - Live
   - Calibration
   - LandingPage
-Section: System Preparation
+Section: "[[Public Files/Vicon System Documentation/system_preparation/index (system_preparation)|System Preparation]]"
 Software:
   - Vicon Nexus 2.18
 cssclasses:
 Next Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/1_masking/1_1_masking|1_1_masking]]"
-Last Page:
+  - "[[Public Files/Vicon System Documentation/system_preparation/1_masking/SP1_1_masking|SP1_1_masking]]"
 ---
 ---
 ```table-of-contents
@@ -28,32 +27,41 @@ Once you feel comfortable, or when you need to troubleshoot any calibration issu
 ---
 ## **<span class="info-header">System Preparation Quick-Start</span>**
 
-1. [Camera Masking](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/1_1_masking.md)
-2. [Camera Calibration](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/3_1_calibration_process.md)
-3. [Setting Volume Origin and Plane](Public%20Files/Vicon%20System%20Documentation/system_preparation/4_volume/4_1_set_origin_and_plane.md)
+1. [Camera Masking](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/SP1_1_masking.md)
+2. [Camera Calibration](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_1_calibration_process.md)
+3. [Setting Volume Origin and Plane](Public%20Files/Vicon%20System%20Documentation/system_preparation/4_volume/SP4_1_set_origin_and_plane.md)
 
 ---
 ## System Preparation Guide
 
 ### Camera Masking
-1. [1_1_masking](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/1_1_masking.md)
-2. [1_2_advanced_masking_and_reflections](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/1_2_advanced_masking_and_reflections.md)
+
+1. [SP1_1_masking](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/SP1_1_masking.md)
+2. [SP1_2_advanced_masking_and_reflections](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/SP1_2_advanced_masking_and_reflections.md)
+
 ### Aiming Cameras
-*This section is a placeholder as the INB0104 fixed camera-setup does not require aiming.*
-	1. ~~[2_1_aiming](Public%20Files/Vicon%20System%20Documentation/system_preparation/2_aiming/2_1_aiming.md)~~
+<small><i>This section is a placeholder as the INB0104 fixed camera-setup does not require aiming.<br><b>TODO:</b> remove this section and update?</i></small>
+
+1. ~~[SP2_1_aiming](Public%20Files/Vicon%20System%20Documentation/system_preparation/2_aiming/SP2_1_aiming.md)~~
+
 ### Camera Calibration
-1. [3_1_calibration_process](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/3_1_calibration_process.md)
-2. [3_2_wand_waving](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/3_2_wand_waving.md)
-3. [3_3_calibration_errors](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/3_3_calibration_errors.md)
-4. [3_4_calibration_profiles](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/3_4_calibration_profiles.md)
-5. [3_5_advanced_configuration](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/3_5_advanced_configuration.md)
+
+1. [SP3_1_calibration_process](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_1_calibration_process.md)
+2. [SP3_2_wand_waving](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_2_wand_waving.md)
+3. [SP3_3_calibration_errors](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_3_calibration_errors.md)
+4. [SP3_4_calibration_profiles](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_4_calibration_profiles.md)
+5. [SP3_5_advanced_configuration](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_5_advanced_configuration.md)
+
 ### Volume
-1. [4_1_set_origin_and_plane](Public%20Files/Vicon%20System%20Documentation/system_preparation/4_volume/4_1_set_origin_and_plane.md)
-2. [4_2_volume_advanced](Public%20Files/Vicon%20System%20Documentation/system_preparation/4_volume/4_2_volume_advanced.md)
-3. [4_3_volume_configuration](Public%20Files/Vicon%20System%20Documentation/system_preparation/4_volume/4_3_volume_configuration.md)
-### Health
-1. [5_1_camera_error](Public%20Files/Vicon%20System%20Documentation/system_preparation/5_health/5_1_camera_error.md)
-2. [5_2_bumped_cameras](Public%20Files/Vicon%20System%20Documentation/system_preparation/5_health/5_2_bumped_cameras.md)
+
+1. [SP4_1_set_origin_and_plane](Public%20Files/Vicon%20System%20Documentation/system_preparation/4_volume/SP4_1_set_origin_and_plane.md)
+2. [SP4_2_volume_advanced](Public%20Files/Vicon%20System%20Documentation/system_preparation/4_volume/SP4_2_volume_advanced.md)
+3. [SP4_3_volume_configuration](Public%20Files/Vicon%20System%20Documentation/system_preparation/4_volume/SP4_3_volume_configuration.md)
+
+### Camera Health
+
+1. [SP5_1_camera_error](Public%20Files/Vicon%20System%20Documentation/system_preparation/5_health/SP5_1_camera_error.md)
+2. [SP5_2_bumped_cameras](Public%20Files/Vicon%20System%20Documentation/system_preparation/5_health/SP5_2_bumped_cameras.md)
 
 ---
 

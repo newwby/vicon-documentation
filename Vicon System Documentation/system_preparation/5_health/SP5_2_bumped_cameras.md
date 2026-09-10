@@ -9,12 +9,11 @@ Chapter: Camera Health Checking
 Chapter Number: "5"
 Page Title: Bumped Cameras
 Page Number: "2"
-Page Status: Draft
 Software:
   - Vicon Nexus 2.18
 Next Page:
 Last Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/5_health/5_1_camera_error|5_1_camera_error]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/5_health/SP5_1_camera_error|SP5_1_camera_error]]"
 ---
 ---
 ```table-of-contents

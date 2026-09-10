@@ -9,13 +9,12 @@ Chapter: Masking
 Chapter Number: "1"
 Page Title: Advanced Masking and Reflections
 Page Number: "2"
-Page Status: Draft
 Software:
   - Vicon Nexus 2.18
 Next Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/3_calibrating/3_1_calibration_process|3_1_calibration_process]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/3_calibrating/SP3_1_calibration_process|SP3_1_calibration_process]]"
 Last Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/1_masking/1_1_masking|1_1_masking]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/1_masking/SP1_1_masking|SP1_1_masking]]"
 ---
 ---
 ```table-of-contents
@@ -68,14 +67,14 @@ The marks displayed in the camera view are the motion tracking cameras attemptin
 
 Where the *grayscale blobs* reflect enough light, it is marked as a candidate point for a marker. If the candidate point resembles a sphere, the camera will identify it as a marker and attempt to fit a centroid; **this is false positive identification and will impair tracking.**
 
-If the object or reflection cannot be removed from the environment (see the [removing reflections guide](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/1_2_advanced_masking_and_reflections.md)) then a mask is necessary to prevent it interacting with the camera.
+If the object or reflection cannot be removed from the environment (see the [removing reflections guide](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/SP1_2_advanced_masking_and_reflections.md)) then a mask is necessary to prevent it interacting with the camera.
 
 **You may see the following icons on the camera display**:
 
 ![masking_ui_symbol_guide|408](_assets/system_preparation/1_1_masking/masking_ui_symbol_guide.png)
 <small><i>Interface icons during calibration</i></small>
 
-<span class="info-text"><b>For more information</b></span> on centroids and grayscale modes see the [advanced camera configuration](system_preparation/3_calibrating/3_5_advanced_configuration.md) guide.
+<span class="info-text"><b>For more information</b></span> on centroids and grayscale modes see the [advanced camera configuration](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_5_advanced_configuration.md) guide.
 
 ---
 ## <span class="toc-header">Manual Masking</span>

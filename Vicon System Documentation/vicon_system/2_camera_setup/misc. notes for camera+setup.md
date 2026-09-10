@@ -7,6 +7,7 @@ tags:
 parent:
   - "[[_Vicon (Contents & Glossary)]]"
   - "[[_Vicon DB.base]]"
+Section: "[[Public Files/Vicon System Documentation/vicon_system/index (vicon_system)|Vicon System]]"
 ---
 # TOPICS
 
@@ -38,11 +39,11 @@ the bolded camera name is the synchronisation camera source - this is the primar
 
 Centroid fitting thresholds and minimum circularity can be adjusted to affect what the camera regards as a marker, lowering the threshold for reflective materials.
 
-**see [3_5_advanced_configuration](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/3_5_advanced_configuration.md) guides for more info on this**
+**see [SP3_5_advanced_configuration](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_5_advanced_configuration.md) guides for more info on this**
 
 Cameras use UV strobe light to identify **markers** - these are very reflective. Strobe intensity can be adjusted to stop cameras interfering with each other - cameras shoot UV strobe rays and these can make less reflective materials be picked up as reflective. You can test this by using a Vero camera close to a subject and observing that their whole body is tracked in Nexus.
 
-**See [2_1_aiming](Public%20Files/Vicon%20System%20Documentation/system_preparation/2_aiming/2_1_aiming.md) for preview mode**
+**See [SP2_1_aiming](Public%20Files/Vicon%20System%20Documentation/system_preparation/2_aiming/SP2_1_aiming.md) for preview mode**
 
 ---
 ##  The Start-Up Process

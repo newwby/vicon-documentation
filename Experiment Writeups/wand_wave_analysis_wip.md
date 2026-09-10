@@ -126,7 +126,7 @@ Your output should be provided as a csv structure with the following headers:
 
 ---
 ## **Update files** *(where relevant)*
-- [ ] [3_2_wand_waving](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/3_2_wand_waving.md)
+- [ ] [SP3_2_wand_waving](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_2_wand_waving.md)
 - [ ] [2026-08-11 Wand Wave Technique](Public%20Files/Experiment%20Writeups/2026-08-11%20Wand%20Wave%20Technique.md)
 
 ---

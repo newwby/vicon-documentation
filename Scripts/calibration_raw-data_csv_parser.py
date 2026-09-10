@@ -135,8 +135,9 @@ def _update_csv():
             except IOError:
                 print(f"Error: The output file '{output_path}' is currently open. Please close it and try again.")
                 return
-            print(f"wrote to {output_path}")
-
+        print(f"Raw data from \"{input_path}\".")
+        print(f"Output data written to \"{output_path}\". {date}/{type}/{key}")
+    
 
 if __name__ == '__main__':
     _update_csv()

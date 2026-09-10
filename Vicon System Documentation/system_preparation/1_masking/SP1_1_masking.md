@@ -9,13 +9,12 @@ Chapter: Masking
 Chapter Number: "1"
 Page Title: Masking Cameras
 Page Number: "1"
-Page Status: Draft
 Software:
   - Vicon Nexus 2.18
 cssclasses:
 Next Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/1_masking/1_2_advanced_masking_and_reflections|1_2_advanced_masking_and_reflections]]"
-  - "[[Public Files/Vicon System Documentation/system_preparation/3_calibrating/3_1_calibration_process|3_1_calibration_process]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/1_masking/SP1_2_advanced_masking_and_reflections|SP1_2_advanced_masking_and_reflections]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/3_calibrating/SP3_1_calibration_process|SP3_1_calibration_process]]"
 Last Page: "[[Public Files/Vicon System Documentation/system_preparation/index (system_preparation)|index (system_preparation)]]"
 ---
 ---
@@ -32,9 +31,9 @@ Last Page: "[[Public Files/Vicon System Documentation/system_preparation/index (
 - How cameras identify reflections and subjects..
 
 <span class="info-header">This is the first of the three-part quick-start system preparation guide:</span>
-1. ***[Masking your Cameras](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/1_1_masking.md)***
-2. [Calibrating your Cameras](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/3_1_calibration_process.md)
-3. [Setting Volume Origin and Plane](Public%20Files/Vicon%20System%20Documentation/system_preparation/4_volume/4_1_set_origin_and_plane.md)
+1. ***[Masking your Cameras](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/SP1_1_masking.md)***
+2. [Calibrating your Cameras](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_1_calibration_process.md)
+3. [Setting Volume Origin and Plane](Public%20Files/Vicon%20System%20Documentation/system_preparation/4_volume/SP4_1_set_origin_and_plane.md)
 
 ---
 ---
@@ -44,7 +43,9 @@ Last Page: "[[Public Files/Vicon System Documentation/system_preparation/index (
 <span class="image-caption">Camera Mask Display</span>
 
 <b><big>What are Masks?</big></b>
-Masks tell the camera *"*<u>ignore all light values coming from this area</u>*"*. The motion capture cameras strobe UV light, and track reflections of these rays to determine positions. When static object or light reflections create visual data for the camera it can degrade 3D data accuracy - this noisy data would otherwise be misinterpreted and tracked by the camera.
+The image above shows a motion capture camera sensor display, and the blue squares within are **masks**.
+
+Masks tell the camera *"*<u>ignore all light values coming from this area</u>*"*. They are areas the camera will not track. The motion capture cameras strobe UV light, and track reflections of these rays to determine positions. When static object or light reflections create visual data for the camera it can degrade 3D data accuracy - this noisy data would otherwise be misinterpreted and tracked by the camera.
 
 The **Mask Cameras** tool automatically applies these masks, represented as blue squares, to the camera view where it is detecting reflections.
 
@@ -52,6 +53,7 @@ The **Mask Cameras** tool automatically applies these masks, represented as blue
 ## <span class="toc-header">Preparing the Room</span>
 Because masks are set *once* during **system preparation**, you should make sure the objects in the room are not going to move.
 
+### <span class="toc-header">Removing Markers</span>
 Since they are used in tracking - the most important thing to do before masking the cameras is to *remove all markers from the environment*.
 
 ![Example of a marker|391](_assets/system_preparation/1_1_masking/masking_marker_example.png)
@@ -61,19 +63,32 @@ Markers are highly reflective - the ones pictured are attached to a base, but th
 
 **If markers are present in the environment when you start masking the system will treat this as an area to be ignored. They are designed to be noticed by the cameras.**
 
-<span class="info-text"><b>For more Information</b></span> see the [removing reflections guide](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/1_2_advanced_masking_and_reflections.md). This covers how to identify reflective objects and prepare your environment before calibration.
+### <span class="toc-header">Removing Reflections</span>
+Any reflective object within a camera view will have a masked created by automatic masking process, when you run the **Mask Cameras** function.
 
-<span class="warning-text"><b>Important:</b></span> The recommended practice is perform a calibration at the start of each day, or when beginning a capture session if the environment has changed. 
+Anything that will remain in the same place throughout your calibration and trial capture, will be masked. As long as enough cameras have redundancy to provide a view around the area, this is acceptable.
+
+Objects that are not remaining in the capture volume throughout, however, should be removed prior to applying camera masks. This also applies to individuals and machines moving through the capture volume; moving objects create additional reflections through material shifting. As the cameras will attempt to mask these reflections, and **will not remove these masks later unless they are manually edited**, any unnecessary mask degrades camera performance. The masks prevent the camera from assisting other cameras with accurate tracking within that area.
+
+**You should only run the Mask Cameras function and your [camera calibration](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_1_calibration_process.md) once the volume is clear of unnecessary obstructions, reflective objects, and moving objects.**
+ 
+<span class="info-text"><b>For more Information</b></span> see the [advanced masking and removing reflections guide](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/SP1_2_advanced_masking_and_reflections.md). This covers how to identify reflective objects and optimise an environment for motion capture.
 
 ---
 ## <span class="toc-header">Starting Camera Masking</span>
 
 ![How to Start Camera Masking|398](_assets/system_preparation/1_1_masking/masking_ui_how_to_start.png)
-<span class="image-caption">How to start camera masking</span>
+<span class="image-caption">How to start camera masking from the tools panel 'system preparation' menu</span>
 
-With the '**System Preparation**' tab open, on the right-hand '**Tools**' panel, you can click the *Start* button to begin creating camera masks.
+<span class="info-text">A full interface layout is available in the</span> [Vicon System Layout](Public%20Files/Vicon%20System%20Documentation/vicon_system/1_ecosystem/VS1_1%20layout.md) <span class="info-text">guide.</span>
 
-When you start this process the '**Vicon Nexus**' **View** panel (located, by default, in the middle of the user interface) will change to display all cameras.
+The '**Tools**' panel is on the right-hand side of Vicon Nexus by default, and on system start-up the '**System Preparation**' tab (*the highlighted circular icon pictured above*) will be selected. 
+
+Once you have selected this view you will see the '**Mask Cameras**' section.
+
+Click the **Start** button to begin creating camera masks.
+
+When you start this process the **View** panel (located, by default, in the middle of the user interface) will change to display all cameras.
 
 ![Masking View - All Cameras|610](_assets/system_preparation/1_1_masking/masking_pre_all_cameras.png)
 <span class="image-caption">Masking View at Start - All Cameras</span>
@@ -106,16 +121,9 @@ You can select an individual camera, as before, to view the new masks in place o
 <span class="image-caption">Single camera masks</span>
 
 If there are any reflections that have not been captured by the masking process, or a new reflection is introduced, you can also manually add masks.
-<span class="info-text"><b>For more Information</b></span> on this see the [manual masking guide](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/1_2_advanced_masking_and_reflections.md).
+<span class="info-text"><b>For more Information</b></span> on this see the [manual masking guide](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/SP1_2_advanced_masking_and_reflections.md).
 
 Once you have successfully masked the cameras, you are ready to calibrate the system.
-
-
----
-## Quick-Start Navigation
-| **Previous** | *n/a*                                                                                                                                                     |
-| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Next**     | **[Quick Start Part 2/3: Camera Calibration](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/3_1_calibration_process.md)** |
 
 ---
 ---

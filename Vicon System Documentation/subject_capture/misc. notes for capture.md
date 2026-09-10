@@ -7,6 +7,7 @@ tags:
 parent:
   - "[[_Vicon (Contents & Glossary)]]"
   - "[[_Vicon DB.base]]"
+Section: TODO-ADD-INDEX-FOR-SUBJECT-CAPTURE
 ---
 # **see [Subject Capture Process](Public%20Files/Topic%20Notes/Subject%20Capture%20Process.md)**
 

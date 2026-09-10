@@ -9,13 +9,12 @@ Chapter: Capture Volume
 Chapter Number: "4"
 Page Title: Advanced Volume Mechanics and Errors
 Page Number: "2"
-Page Status: Draft
 Software:
   - Vicon Nexus 2.18
 Next Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/4_volume/4_3_volume_configuration|4_3_volume_configuration]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/4_volume/SP4_3_volume_configuration|SP4_3_volume_configuration]]"
 Last Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/4_volume/4_1_set_origin_and_plane|4_1_set_origin_and_plane]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/4_volume/SP4_1_set_origin_and_plane|SP4_1_set_origin_and_plane]]"
 ---
 ---
 ```table-of-contents
