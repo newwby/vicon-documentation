@@ -1,0 +1,21 @@
+Wand Technique H
+Auto-Stop 1000
+Temp 23.5
+Start Time: 20:47
+End Time: 20:49
+Feedback End Time: 20:58 (delayed wand wave export, not accurate)
+
+Room has experienced a lot of changes due to technician activity
+Grease/muck on floor that could be impacting reflectivity
+Palettes in volume with boxes on them
+Cage beside windows instead of sink
+Returned warehouse shelving to original point
+Fabrication lab doors partially open
+
+Volume origin set is correct, cameras are relative to each other
+
+Floor plane went wrong.
+Marker wobble data recorded, bad camera rays & orthogonal plane some markers offset vertically
+-6.75mm Z offset on 9.5mm markers with 2mm base - 2x 3 marker cluster & 1x 4 marker cluster (total 10)
+
+Captured comparison image/videos of camera ray and marker wobble error

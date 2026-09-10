@@ -1,0 +1,20 @@
+
+        # Processing post-processing for date: 10/09/2026
+        # POTENTIAL ERROR BUGCHECK FOR NEXT RUN: 2026-09-10 20:47:54.133015
+        print(f"POTENTIAL ERROR BUGCHECK FOR NEXT RUN: {timestamp}")
+
+Done. Log: nexus_temp_log\raw_camera_temperatures_2026-09-10_20-47-54.csv
+Processing post-processing for date: 10/09/2026
+POTENTIAL ERROR BUGCHECK FOR NEXT RUN: 2026-09-10 20:47:54.133015
+Traceback (most recent call last):
+  File "C:\Users\VICON\Documents\Vicon Experiment Data\lcas-vicon-docs\Scripts\camera_temperature\31_07_2026_v1_nexus_temp_reader.py", line 264, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\VICON\Documents\Vicon Experiment Data\lcas-vicon-docs\Scripts\camera_temperature\31_07_2026_v1_nexus_temp_reader.py", line 175, in main
+    post_processing(new_sets)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\VICON\Documents\Vicon Experiment Data\lcas-vicon-docs\Scripts\camera_temperature\31_07_2026_v1_nexus_temp_reader.py", line 235, in post_processing
+    timestamp = datetime.fromisoformat(timestamp).strftime("%H:%M:%S")
+                ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: fromisoformat: argument must be str
+PS C:\Users\VICON\Documents\Vicon Experiment Data\lcas-vicon-docs\Scripts\camera_temperature> 

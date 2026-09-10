@@ -231,6 +231,8 @@ def post_processing(new_sets, date_stamp=datetime.now().strftime("%d/%m/%Y")):
     sets = {}
     for timestamp, camera, temperature in new_sets:
         # timestamp must be converted to hh:mm:ss format without date
+        # Processing post-processing for date: 10/09/2026
+        # POTENTIAL ERROR BUGCHECK FOR NEXT RUN: 2026-09-10 20:47:54.133015
         print(f"POTENTIAL ERROR BUGCHECK FOR NEXT RUN: {timestamp}")
         timestamp = datetime.fromisoformat(timestamp).strftime("%H:%M:%S")
         if timestamp not in sets:
