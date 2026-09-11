@@ -19,3 +19,5 @@ Marker wobble data recorded, bad camera rays & orthogonal plane some markers off
 -6.75mm Z offset on 9.5mm markers with 2mm base - 2x 3 marker cluster & 1x 4 marker cluster (total 10)
 
 Captured comparison image/videos of camera ray and marker wobble error
+
+Wasn't moved so should've been masked, but a marker cluster strip was present on Vicon workstation desk.

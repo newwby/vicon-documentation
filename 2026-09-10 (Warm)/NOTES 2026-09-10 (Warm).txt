@@ -18,3 +18,5 @@ Successful plane setting, minimal marker wobble
 -6.75mm Z offset on 9.5mm markers with 2mm base - 2x 3 marker cluster & 1x 4 marker cluster (total 10)
 
 Captured comparison image/videos to cold calibration
+
+Wasn't moved so should've been masked, but a marker cluster strip was present on Vicon workstation desk.
