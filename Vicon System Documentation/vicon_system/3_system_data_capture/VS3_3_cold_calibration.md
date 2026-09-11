@@ -50,11 +50,33 @@ In order to capture this data your system must be in the following state.
 
 **TODO** - ensure relevant guides are linked within this guide.
 
+# Having review cold/warm these are pretty much identical now the temperature data is included, combine one calibration data capturing guide
+# Include marker set/trial capture methodology as separate guide?
+
+
 ---
 ## <span class="toc-header">Capture Process</span>
 Follow these steps to capture the data.
 **TODO** - describe
 
+**NEED TO CONFIRM WHERE FILES ARE STORED FOR SAVING, AND HOW TO USE THE COMPANION SCRIPTS**
+
+Note for cold docs you have or should have the camera temps from the initial run of script
+Formatting of file names structure
+
+**Data List** (*in order of capture*)
+- **Notes** on calibration txt (*throughout, use `Calibration Notes Template.txt` in `Data/`*)
+- **Error image/videos** of camera relativity/camera rays/marker wobble errors (*throughout*)
+- **Camera Temperature Before**-Screenshot (*immediately prior to wand wave*)
+- **Camera Temperature After**-Screenshot (*immediately following wand wave*)
+- **Wand Wave Data Image** (*immediately after wand wave completion*)
+- Raw Calibration CSV (*export after calibration feedback*)
+- Parsed Calibration CSV (*run csv parser script on raw*)
+- Latest Calibration file (*after setting origin/plane*)
+- Latest Set Origin file (*after setting origin/plane*)
+- Latest X2D file (*after setting origin/plane*)
+
+NOTE DATA CAPTURE ORDER IN PROCESS I.E. TIMESTAMPS
 
 **Note** - data subsection for the docs?
 *Note - do this guide as two separate not one combined, the cold calibration guide is more complicated & factors in with the temperature capturing guide*

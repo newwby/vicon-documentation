@@ -55,6 +55,16 @@ In order to capture this data your system must be in the following state.
 Follow these steps to capture the data.
 **TODO** - describe
 
+**Data List**
+- Camera Temperature Screenshot (Before & After)
+- Raw Calibration CSV
+- Wand Wave Data Image
+- Parsed Calibration CSV
+- Latest Calibration file
+- Latest Set Origin file
+- Latest X2D file
+- Any errors in camera relativity/camera rays/marker wobble captured (image/video)
+- Notes on calibration txt
 
 **Note** - data subsection for the docs?
 *Note - do this guide as two separate not one combined, the cold calibration guide is more complicated & factors in with the temperature capturing guide*
