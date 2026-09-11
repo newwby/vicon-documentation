@@ -1,0 +1,8 @@
+
+STARTUP (switch on)
+start @ 10:36
+temp 23 °C
+
+INTIAL READ (then start script - ensure camera temp properties are visible and you're in live!)
+read @ 10:38
+range 28-30

@@ -22,7 +22,7 @@ Origin Set:	True
 Plane Set:	True (Errors)
 Marker Size:	9.5mm w/2mm base
 Plane Z Offset:	-6.75mm
-Plane Clusters:	2x3, 1x4 (total 10)
+Plane Clusters:	3x3 (total 9)
 
 Note: Relativity is whether cameras are all relative to the each other, not the volume/plane.
 Note: Origin and Plane set refer to whether volume origin/plane set successfully and confirmed.

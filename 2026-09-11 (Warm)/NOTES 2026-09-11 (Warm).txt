@@ -2,17 +2,17 @@
 
 ## CALIBRATION VARIABLES
 Wand Technique:	H
-Auto-Stop:	x
-Room Temp.:	y °C
+Auto-Stop:	1000
+Room Temp.:	23.5 °C
 
 Note: Wand technique is a letter referring to a documented technique, use description if undocumented.
 Note: Room temperature is gathered from lab thermostat reading, always degrees in Celsius.
 
 ## TIMESTAMPS
-Start Time:	hh:mm
-Wand-Wave End:	hh:mm
-Feedback End:	hh:mm
-Finish Time:	hh:mm
+Start Time:	12:47
+Wand-Wave End:	12:49
+Feedback End:	12:51
+Finish Time:	12:56
 
 Note: Times are manually gathered and approximate.
 
@@ -22,7 +22,7 @@ Origin Set:	True
 Plane Set:	True
 Marker Size:	9.5mm w/2mm base
 Plane Z Offset:	-6.75mm
-Plane Clusters:	2x3, 1x4 (total 10)	
+Plane Clusters:	3x3 (total 9)
 
 Note: Relativity is whether cameras are all relative to the each other, not the volume/plane.
 Note: Origin and Plane set refer to whether volume origin/plane set successfully and confirmed.
@@ -37,7 +37,7 @@ Note: Plane clusters are the configuration of marker clusters used to set the pl
 - Palettes in volume with boxes on them
 - Cage beside windows instead of sink
 - Warehouse shelving in normal project location per July/August calibrations
-- Recently mopped floor on south edge of volume
+- Recently mopped floor on south edge of volume, allowed to dry before continuing
 
 ## OTHER NOTES
 
