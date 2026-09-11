@@ -12,7 +12,7 @@ Page Number: "2"
 Software:
   - Vicon Nexus 2.18
 Next Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/3_calibrating/SP3_1_calibration_process|SP3_1_calibration_process]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/2_calibrating/SP2_1_calibration_process|SP2_1_calibration_process]]"
 Last Page:
   - "[[Public Files/Vicon System Documentation/system_preparation/1_masking/SP1_1_masking|SP1_1_masking]]"
 ---
@@ -74,7 +74,7 @@ If the object or reflection cannot be removed from the environment (see the [rem
 ![masking_ui_symbol_guide|408](_assets/system_preparation/1_1_masking/masking_ui_symbol_guide.png)
 <small><i>Interface icons during calibration</i></small>
 
-<span class="info-text"><b>For more information</b></span> on centroids and grayscale modes see the [advanced camera configuration](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_5_advanced_configuration.md) guide.
+<span class="info-text"><b>For more information</b></span> on centroids and grayscale modes see the [advanced camera configuration](Public%20Files/Vicon%20System%20Documentation/system_preparation/2_calibrating/SP2_4_advanced_configuration.md) guide.
 
 ---
 ## <span class="toc-header">Manual Masking</span>

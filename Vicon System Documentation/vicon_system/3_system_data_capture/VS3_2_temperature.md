@@ -26,7 +26,7 @@ Last Page:
 
 <span class="info-text">INB0104</span>: this guide is specific to the INB0104 Vicon setup. It details the lab data capture process for the ongoing development of a data set.
 
-<span class="warning-text"><u>This is a system data capture guide.</u></span><br>If you are not already familiar with the Vicon Nexus 2.18 system, it is advisable to work through the documentation guides relating to [camera start-up](Public%20Files/Vicon%20System%20Documentation/vicon_system/2_camera_setup/VS2_1_system_startup.md) and the [calibration process](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_1_calibration_process.md) before attempting to follow these data capture guides.
+<span class="warning-text"><u>This is a system data capture guide.</u></span><br>If you are not already familiar with the Vicon Nexus 2.18 system, it is advisable to work through the documentation guides relating to [camera start-up](Public%20Files/Vicon%20System%20Documentation/vicon_system/2_camera_setup/VS2_1_system_startup.md) and the [calibration process](Public%20Files/Vicon%20System%20Documentation/system_preparation/2_calibrating/SP2_1_calibration_process.md) before attempting to follow these data capture guides.
 
 ---
 ---

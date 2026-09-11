@@ -14,7 +14,7 @@ Software:
 cssclasses:
 Next Page:
   - "[[Public Files/Vicon System Documentation/system_preparation/1_masking/SP1_2_advanced_masking_and_reflections|SP1_2_advanced_masking_and_reflections]]"
-  - "[[Public Files/Vicon System Documentation/system_preparation/3_calibrating/SP3_1_calibration_process|SP3_1_calibration_process]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/2_calibrating/SP2_1_calibration_process|SP2_1_calibration_process]]"
 Last Page: "[[Public Files/Vicon System Documentation/system_preparation/index (system_preparation)|index (system_preparation)]]"
 ---
 ---
@@ -32,8 +32,8 @@ Last Page: "[[Public Files/Vicon System Documentation/system_preparation/index (
 
 <span class="info-header">This is the first of the three-part quick-start system preparation guide:</span>
 1. ***[Masking your Cameras](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/SP1_1_masking.md)***
-2. [Calibrating your Cameras](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_1_calibration_process.md)
-3. [Setting Volume Origin and Plane](Public%20Files/Vicon%20System%20Documentation/system_preparation/4_volume/SP4_1_set_origin_and_plane.md)
+2. [Calibrating your Cameras](Public%20Files/Vicon%20System%20Documentation/system_preparation/2_calibrating/SP2_1_calibration_process.md)
+3. [Setting Volume Origin and Plane](Public%20Files/Vicon%20System%20Documentation/system_preparation/4_volume/SP3_1_set_origin_and_plane.md)
 
 ---
 ---
@@ -70,7 +70,7 @@ Anything that will remain in the same place throughout your calibration and tria
 
 Objects that are not remaining in the capture volume throughout, however, should be removed prior to applying camera masks. This also applies to individuals and machines moving through the capture volume; moving objects create additional reflections through material shifting. As the cameras will attempt to mask these reflections, and **will not remove these masks later unless they are manually edited**, any unnecessary mask degrades camera performance. The masks prevent the camera from assisting other cameras with accurate tracking within that area.
 
-**You should only run the Mask Cameras function and your [camera calibration](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_1_calibration_process.md) once the volume is clear of unnecessary obstructions, reflective objects, and moving objects.**
+**You should only run the Mask Cameras function and your [camera calibration](Public%20Files/Vicon%20System%20Documentation/system_preparation/2_calibrating/SP2_1_calibration_process.md) once the volume is clear of unnecessary obstructions, reflective objects, and moving objects.**
  
 <span class="info-text"><b>For more Information</b></span> see the [advanced masking and removing reflections guide](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/SP1_2_advanced_masking_and_reflections.md). This covers how to identify reflective objects and optimise an environment for motion capture.
 

@@ -26,6 +26,6 @@ debugInConsole: false # Print debug info in Obsidian console
 
 ---
 
-**Most notes moved to [misc. notes for camera+setup](Public%20Files/Vicon%20System%20Documentation/vicon_system/2_camera_setup/misc.%20notes%20for%20camera+setup.md) or [SP3_5_advanced_configuration](Public%20Files/Vicon%20System%20Documentation/system_preparation/3_calibrating/SP3_5_advanced_configuration.md)**
+**Most notes moved to [misc. notes for camera+setup](Public%20Files/Vicon%20System%20Documentation/vicon_system/2_camera_setup/misc.%20notes%20for%20camera+setup.md) or [SP2_4_advanced_configuration](Public%20Files/Vicon%20System%20Documentation/system_preparation/2_calibrating/SP2_4_advanced_configuration.md)**
 
 ---

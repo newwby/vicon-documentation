@@ -73,3 +73,19 @@ If dark you can temporarily adjust aperture to make lighter (not very easy given
 	   *Setup of Vero 2.2 onto a tripod w/492 ball head, metal screw cap (name?)**
 	
 **Camera ring properties and their effects**
+
+## Aiming Mode
+**Why isn't it useful?**
+
+***should this go in general camera guide?***
+
+Aiming mode is a positioning aid - it positions the volume using the wand markers.
+	`(Target volume dimensions can be set in Window/Options -> General View Options)`
+	`Centroid fitting/grayscale must be appropriate to target wand`
+
+Aiming mode is used for system building and camera layouts; positioning cameras for the first time, or after physically relocating cameras.
+It allows coverage to be evaluated using the wand labelling within the volume space, rather than utilising a full calibration cycle.
+
+If the system cameras are already stable then it's not required.
+
+With a fixed wall rig the cameras don't move so there's nothing to re-aim; if baseline coverage is good the tool has no job.
