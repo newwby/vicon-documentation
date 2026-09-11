@@ -61,6 +61,8 @@ Follow these steps to capture the data.
 
 **NEED TO CONFIRM WHERE FILES ARE STORED FOR SAVING, AND HOW TO USE THE COMPANION SCRIPTS**
 
+Exporting the entire CSV requires ctrl+A
+
 Note for cold docs you have or should have the camera temps from the initial run of script
 Formatting of file names structure
 

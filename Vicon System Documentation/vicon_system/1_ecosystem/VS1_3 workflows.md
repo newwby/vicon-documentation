@@ -50,4 +50,6 @@ Text!
 ---
 ---
 
-   
+   Include options here? Advanced functionality?
+**Advanced Nexus 2.18 options** (F7)
+or include the menu in [VS1_1 layout](Public%20Files/Vicon%20System%20Documentation/vicon_system/1_ecosystem/VS1_1%20layout.md) and put actual functionality in specific guides?

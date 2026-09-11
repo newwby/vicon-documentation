@@ -48,3 +48,4 @@ Text!
    
 placeholder for the reflection identification workflow in [2026-08-21 Reflection Analysis (Camera Specific)](Public%20Files/Experiment%20Writeups/2026-08-21%20Reflection%20Analysis%20(Camera%20Specific).md)
 
+preview mode info in [VS2_3_standing_cameras](Public%20Files/Vicon%20System%20Documentation/vicon_system/2_camera_setup/VS2_3_standing_cameras.md)

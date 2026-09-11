@@ -49,3 +49,7 @@ all notes currently in [SP3_1_calibration_process](Public%20Files/Vicon%20System
 
 **origin_error_floor_plane_offset.png**
 floor plane offset bug - this is caused by not selecting the origin/primary/secondary axis correctly (it believes all 3 axis are a line)
+
+**Errors and Bugs you might encounter**
+	1. See [[Vicon Bugs, Experiments & Questions#Known Bugs]]
+	2. [[Public Files/Error Writeups/(TODO) 2026-07-29 Camera ID Bug (Sample Data)]]
