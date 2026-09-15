@@ -36,6 +36,11 @@ Note: Plane clusters are the configuration of marker clusters used to set the pl
 - Note 1
 - Note 2
 
+## DATA ACCURACY
+
+- All data accurate unless otherwise noted.
+
+---
 ## OTHER NOTES
 
 - Note 1
