@@ -3,7 +3,6 @@ tags:
   - Vicon
   - Experiment
   - todo
-  - Cameras
 parent:
   - "[[_Vicon (Contents & Glossary)]]"
   - "[[_Vicon DB.base]]"

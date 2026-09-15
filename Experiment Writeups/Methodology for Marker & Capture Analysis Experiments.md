@@ -2,7 +2,6 @@
 tags:
   - Vicon
   - Experiment
-  - SubjectCapture
 parent:
   - "[[_Vicon (Contents & Glossary)]]"
   - "[[_Vicon DB.base]]"
@@ -151,7 +150,7 @@ This file has since been expanded to document full-body marker set design & expe
 **10/09/2026 - Starglow Reflective Pigment Powder on 3D Printed Marker**
 	Centroid & grayscale blob tracking is comparative to Vicon/B&L pearl marker - promising!
 	<span class="image-caption">In-editor comparison:</span>
-![2026-09-10 homemade marker comparison#|141](Public%20Files/Experiment%20and%20Error%20Images/2026-09-10%20homemade%20marker%20comparison.png)
+![2026-09-10 homemade marker comparison#|141](Public%20Files/Vicon%20System%20Documentation/_assets/datasets_and_trials/dt2_1_3d_printed_markers/2026-09-10%20homemade%20marker%20comparison.png)
 	
 ---
 # Full-Body Marker Set Design

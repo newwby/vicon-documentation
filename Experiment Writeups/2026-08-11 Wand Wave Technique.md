@@ -140,7 +140,7 @@ Specific cameras preferred different techniques.
 | D    | Minimal occlusion of markers by body and wand        |
 | G    | Less body occlusion, some wand occlusion of markers. |
 
-![camera only layout INB0104 robotics lab](Public%20Files/Experiment%20and%20Error%20Images/2026-07-28%20Bumped%20Cameras/camera%20only%20layout%20INB0104%20robotics%20lab.png)*camera positioning guide for reference, with camera 1 being above the workstation where calibration begins and wand-waving calibration moving anti-clockwise from there.*
+![camera only layout INB0104 robotics lab](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp4_2_bumped_cameras/camera%20only%20layout%20INB0104%20robotics%20lab.png)*camera positioning guide for reference, with camera 1 being above the workstation where calibration begins and wand-waving calibration moving anti-clockwise from there.*
 
 A&B are similar techniques, the best error was gathered by the camera that needed the most additional focus - camera 13 - at the end of the calibration walkthrough. Camera 12 was peferred by G, in the same space - potentially due to additional attention gained during a 13 calibration effort.
 D was  preferred by 8, another problem camera with a floor-pointing frustrum. Technique C was preferred by 14, a camera next to 8 who possibly benefitted from additional attention provided to 8.
