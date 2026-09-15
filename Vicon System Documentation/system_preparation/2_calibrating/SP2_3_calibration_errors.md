@@ -3,7 +3,7 @@ tags:
   - Vicon
   - Documentation
   - Live
-  - Calibration
+  - SystemPrepartion
 Section: "[[Public Files/Vicon System Documentation/system_preparation/index (system_preparation)|System Preparation]]"
 Chapter: Calibrating Cameras
 Chapter Number: "3"

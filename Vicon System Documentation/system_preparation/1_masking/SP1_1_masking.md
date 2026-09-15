@@ -3,7 +3,7 @@ tags:
   - Vicon
   - Documentation
   - Live
-  - Calibration
+  - SystemPrepartion
 Section: "[[Public Files/Vicon System Documentation/system_preparation/index (system_preparation)|System Preparation]]"
 Chapter: Masking
 Chapter Number: "1"
@@ -13,7 +13,7 @@ Software:
   - Vicon Nexus 2.18
 cssclasses:
 Next Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/1_masking/SP1_2_advanced_masking_and_reflections|SP1_2_advanced_masking_and_reflections]]"
+  - "[[Public Files/Vicon System Documentation/system_preparation/1_masking/SP1_2_advanced_masking|SP1_2_advanced_masking]]"
   - "[[Public Files/Vicon System Documentation/system_preparation/2_calibrating/SP2_1_calibration_process|SP2_1_calibration_process]]"
 Last Page: "[[Public Files/Vicon System Documentation/system_preparation/index (system_preparation)|index (system_preparation)]]"
 ---
@@ -39,7 +39,7 @@ Last Page: "[[Public Files/Vicon System Documentation/system_preparation/index (
 ---
 # **<span class="toc-header">Masking (Quick-Start Guide)</span>**
 
-![Camera Mask Display|548](_assets/system_preparation/1_1_masking/masking_ui_example_camera_view_cropped.png)
+![Camera Mask Display|548](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp1_1_masking/masking_ui_example_camera_view_cropped.png)
 <span class="image-caption">Camera Mask Display</span>
 
 <b><big>What are Masks?</big></b>
@@ -56,7 +56,7 @@ Because masks are set *once* during **system preparation**, you should make sure
 ### <span class="toc-header">Removing Markers</span>
 Since they are used in tracking - the most important thing to do before masking the cameras is to *remove all markers from the environment*.
 
-![Example of a marker|391](_assets/system_preparation/1_1_masking/masking_marker_example.png)
+![Example of a marker|391](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp1_1_masking/masking_marker_example.png)
 <span class="image-caption">Reflective markers</span>
 
 Markers are highly reflective - the ones pictured are attached to a base, but these can be removed and markers can be attached directly to objects as well. As [markers are machined hemispheres](https://bleng.com/pages/mocapinfo), the centroid (the marker's centre) can be identified at distance by the camera. This allows for object tracking.
@@ -72,15 +72,15 @@ Objects that are not remaining in the capture volume throughout, however, should
 
 **You should only run the Mask Cameras function and your [camera calibration](Public%20Files/Vicon%20System%20Documentation/system_preparation/2_calibrating/SP2_1_calibration_process.md) once the volume is clear of unnecessary obstructions, reflective objects, and moving objects.**
  
-<span class="info-text"><b>For more Information</b></span> see the [advanced masking and removing reflections guide](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/SP1_2_advanced_masking_and_reflections.md). This covers how to identify reflective objects and optimise an environment for motion capture.
+<span class="info-text"><b>For more Information</b></span> see the [advanced masking and removing reflections guide](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/SP1_2_advanced_masking.md). This covers how to identify reflective objects and optimise an environment for motion capture.
 
 ---
 ## <span class="toc-header">Starting Camera Masking</span>
 
-![How to Start Camera Masking|398](_assets/system_preparation/1_1_masking/masking_ui_how_to_start.png)
+![How to Start Camera Masking|398](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp1_1_masking/masking_ui_how_to_start.png)
 <span class="image-caption">How to start camera masking from the tools panel 'system preparation' menu</span>
 
-<span class="info-text">A full interface layout is available in the</span> [Vicon System Layout](Public%20Files/Vicon%20System%20Documentation/vicon_system/1_ecosystem/VS1_1%20layout.md) <span class="info-text">guide.</span>
+<span class="info-text">A full interface layout is available in the</span> [Vicon System Layout](Public%20Files/Vicon%20System%20Documentation/vicon_system/1_ecosystem/VS1_1_layout.md) <span class="info-text">guide.</span>
 
 The '**Tools**' panel is on the right-hand side of Vicon Nexus by default, and on system start-up the '**System Preparation**' tab (*the highlighted circular icon pictured above*) will be selected. 
 
@@ -90,17 +90,17 @@ Click the **Start** button to begin creating camera masks.
 
 When you start this process the **View** panel (located, by default, in the middle of the user interface) will change to display all cameras.
 
-![Masking View - All Cameras|610](_assets/system_preparation/1_1_masking/masking_pre_all_cameras.png)
+![Masking View - All Cameras|610](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp1_1_masking/masking_pre_all_cameras.png)
 <span class="image-caption">Masking View at Start - All Cameras</span>
 
 If you have adjusted the view you can re-select all cameras by holding *shift* and clicking the first camera in the **Resource** panel, and then the last.
 
-![masking_selecting_all_cameras|428](_assets/system_preparation/1_1_masking/masking_selecting_all_cameras.png)
+![masking_selecting_all_cameras|428](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp1_1_masking/masking_selecting_all_cameras.png)
 <span class="image-caption">Selecting multiple camera views</span>
 
 Over the next couple of seconds the cameras will detect these reflections and place a marker (a blue square) over that area of the camera's sensor window.
 
-![masking_post_all_cameras|610](_assets/system_preparation/1_1_masking/masking_post_all_cameras.png)
+![masking_post_all_cameras|610](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp1_1_masking/masking_post_all_cameras.png)
 <span class="image-caption">Masking View at End - All Cameras</span>
 
 This process is very quick and should be completed within 20 seconds.
@@ -110,18 +110,18 @@ Once all the flickers are replaced with blue mask squares (see above) the proces
 ---
 ## <span class="toc-header">Finishing Camera Masking</span>
 
-![masking_ui_how_to_stop](_assets/system_preparation/1_1_masking/masking_ui_how_to_stop.png)
+![masking_ui_how_to_stop](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp1_1_masking/masking_ui_how_to_stop.png)
 <span class="image-caption">How to stop camera masking</span>
 
 Once the masks have been placed in the camera view you can stop the masking process, using the same button you started the process with.
 
 You can select an individual camera, as before, to view the new masks in place over the camera sensor view.
 
-![masking_post_one_camera|543](_assets/system_preparation/1_1_masking/masking_post_one_camera.png)
+![masking_post_one_camera|543](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp1_1_masking/masking_post_one_camera.png)
 <span class="image-caption">Single camera masks</span>
 
 If there are any reflections that have not been captured by the masking process, or a new reflection is introduced, you can also manually add masks.
-<span class="info-text"><b>For more Information</b></span> on this see the [manual masking guide](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/SP1_2_advanced_masking_and_reflections.md).
+<span class="info-text"><b>For more Information</b></span> on this see the [manual masking guide](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/SP1_2_advanced_masking.md).
 
 Once you have successfully masked the cameras, you are ready to calibrate the system.
 

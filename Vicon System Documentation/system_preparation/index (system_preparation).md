@@ -3,7 +3,7 @@ tags:
   - Vicon
   - Documentation
   - Live
-  - Calibration
+  - SystemPrepartion
   - LandingPage
 Section: "[[Public Files/Vicon System Documentation/system_preparation/index (system_preparation)|System Preparation]]"
 Software:
@@ -37,7 +37,7 @@ Once you feel comfortable, or when you need to troubleshoot any calibration issu
 ### Camera Masking
 
 1. [SP1_1_masking](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/SP1_1_masking.md)
-2. [SP1_2_advanced_masking_and_reflections](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/SP1_2_advanced_masking_and_reflections.md)
+2. [SP1_2_advanced_masking](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/SP1_2_advanced_masking.md)
 
 ### Camera Calibration
 

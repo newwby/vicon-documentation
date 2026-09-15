@@ -3,7 +3,7 @@ tags:
   - Vicon
   - Documentation
   - Live
-  - Calibration
+  - SystemPrepartion
 Section: "[[Public Files/Vicon System Documentation/system_preparation/index (system_preparation)|System Preparation]]"
 Chapter: Calibrating Cameras
 Chapter Number: "3"
@@ -147,6 +147,8 @@ what does show differences do in export of calibration data
 
 ---
 
+| **What are grayscale circle references - to markers?** | Documented partially in notes |
+| ------------------------------------------------------ | ----------------------------- |
 
 ### Resetting Calibration
 **The options menu has additional sections when you click properties**

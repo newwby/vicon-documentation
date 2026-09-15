@@ -3,7 +3,6 @@ tags:
   - Vicon
   - Documentation
   - Live
-  - Cameras
 parent:
   - "[[_Vicon (Contents & Glossary)]]"
   - "[[_Vicon DB.base]]"
@@ -43,7 +42,7 @@ Centroid fitting thresholds and minimum circularity can be adjusted to affect wh
 
 Cameras use UV strobe light to identify **markers** - these are very reflective. Strobe intensity can be adjusted to stop cameras interfering with each other - cameras shoot UV strobe rays and these can make less reflective materials be picked up as reflective. You can test this by using a Vero camera close to a subject and observing that their whole body is tracked in Nexus.
 
-[VS2_3_standing_cameras](Public%20Files/Vicon%20System%20Documentation/vicon_system/2_camera_setup/VS2_3_standing_cameras.md) includes preview mode information, it may need to live elsewhere like [VS3_5_reflection_identification](Public%20Files/Vicon%20System%20Documentation/vicon_system/3_system_data_capture/VS3_5_reflection_identification.md)
+[VS2_3_standing_cameras](Public%20Files/Vicon%20System%20Documentation/vicon_system/2_camera_setup/VS2_3_standing_cameras.md) includes preview mode information, it may need to live elsewhere like [DT1_4_reflection_identification](Public%20Files/Vicon%20System%20Documentation/datasets_and_trials/1_system_data_capture/DT1_4_reflection_identification.md)
 
 ---
 ##  The Start-Up Process

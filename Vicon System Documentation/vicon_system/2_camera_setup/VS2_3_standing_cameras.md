@@ -3,7 +3,7 @@ tags:
   - Vicon
   - Documentation
   - Live
-  - Nexus
+  - ViconSystem
 Section: "[[Public Files/Vicon System Documentation/vicon_system/index (vicon_system)|Vicon System]]"
 Chapter: PLACEHOLDER
 Chapter Number: "2"
@@ -13,7 +13,7 @@ Software:
   - Vicon Nexus 2.18
 cssclasses:
 Next Page:
-  - "[[Public Files/Vicon System Documentation/vicon_system/3_system_data_capture/VS3_1 resources|VS3_1 resources]]"
+  - "[[Public Files/Vicon System Documentation/datasets_and_trials/1_system_data_capture/DT1_1 resources|DT1_1 resources]]"
 Last Page:
   - "[[Public Files/Vicon System Documentation/vicon_system/2_camera_setup/VS2_2_camera_properties|VS2_2_camera_properties]]"
 ---

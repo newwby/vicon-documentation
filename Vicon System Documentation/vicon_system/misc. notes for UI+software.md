@@ -3,7 +3,7 @@ tags:
   - Vicon
   - Documentation
   - Live
-  - Nexus
+  - ViconSystem
 parent:
   - "[[_Vicon (Contents & Glossary)]]"
   - "[[_Vicon DB.base]]"

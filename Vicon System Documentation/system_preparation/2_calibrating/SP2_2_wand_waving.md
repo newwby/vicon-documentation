@@ -3,7 +3,7 @@ tags:
   - Vicon
   - Documentation
   - Live
-  - Calibration
+  - SystemPrepartion
 Section: "[[Public Files/Vicon System Documentation/system_preparation/index (system_preparation)|System Preparation]]"
 Chapter: Calibrating Cameras
 Chapter Number: "3"
@@ -78,8 +78,15 @@ what's happening during (what are they doing)
 **image for camera blinking blue (side-by-side blinked on/off)**
 **image for camera calibrating success (green)**
 
+**FIND WHERE YOU WROTE THAT YOU CAN'T CHANGE SCREEN COS YOU CAN CHANGE CAMERA IT JUST DISAPPEARS ON VIEW CHANGE**
+**I.E. YOU CAN HAVE SELECTED ONE CAMERA BUT REVERT TO ALL IN SELECTION JUST DON'T CHANGE VIEW TYPE**
+
+**Is there a best practice for waving the active wand and how does it impact calibration?**
 ## QUESTIONS
 **No-auto-stop does what?** Does auto-stop impact wand count/error negatively or improve calibration accuracy? Will cameras still turn green when hitting minimum frames?? Otherwise got to manually check the wand count
+
+| **Can you record wand wave technique as a trial and get the blur from wand wave data?** | Docs don't establish that you can't find this after the screen disappears, and unclear on how to create multi-frame trail render |
+| --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 
 **note sure if auto-stop belongs in this doc or wand-waving**
 *increasing auto-stop appeared to increase wand count and negatively impact, but this was tested with an alternate wand wave technique so bares repeating*

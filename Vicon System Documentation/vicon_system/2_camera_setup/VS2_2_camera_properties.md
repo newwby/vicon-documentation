@@ -3,7 +3,7 @@ tags:
   - Vicon
   - Documentation
   - Live
-  - Nexus
+  - ViconSystem
 Section: "[[Public Files/Vicon System Documentation/vicon_system/index (vicon_system)|Vicon System]]"
 Chapter: Camera Setup
 Chapter Number: "2"
@@ -45,4 +45,6 @@ Text!
 ---
 ---
 
-   
+# Notes
+
+ [Cameras (Vero) in Nexus](../Public%20Files/Topic%20Notes/Cameras%20(Vero)%20in%20Nexus.md) (& [2026-07-24 Camera Start-Up Experiment](../Public%20Files/Experiment%20Writeups/2026-07-24%20Camera%20Start-Up%20Experiment.md))
