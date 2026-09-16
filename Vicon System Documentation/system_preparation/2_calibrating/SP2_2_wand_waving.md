@@ -45,6 +45,53 @@ Lorem Ipsum
 	  *what calibration triangles look like*
 
 Mention technique guidance videos on disk
+# Images
+
+## sp2_2
+
+### active_wand
+
+- active_wand_v2ir_1
+- active_wand_v2ir_10
+- active_wand_v2ir_11
+- active_wand_v2ir_12
+- active_wand_v2ir_13
+- active_wand_v2ir_14
+- active_wand_v2ir_15
+- active_wand_v2ir_16
+- active_wand_v2ir_2
+- active_wand_v2ir_3
+- active_wand_v2ir_4
+- active_wand_v2ir_5
+- active_wand_v2ir_6
+- active_wand_v2ir_7
+- active_wand_v2ir_8
+- active_wand_v2ir_9
+
+### wand_waving
+
+- 2026_08_13_technique_vs_image_error
+- 2026_08_13_technique_vs_time
+- 2026_08_13_technique_vs_world_error
+- calibration wand wave view post wave 2
+- camera_calibration_triangle_1_unstarted
+- camera_calibration_triangle_2_in_progress
+- camera_calibration_triangle_3_completed
+- camera_calibration_triangle_4_comparison
+- how_to_get_floating_workspace
+- technique_frame_quality
+- wand_calibration_camera_1_slow_blink
+- wand_calibration_camera_2_fast_blink
+- wand_calibration_camera_3_done
+### wand_waving_technique
+
+- 2026_08_13_technique_vs_image_error
+- 2026_08_13_technique_vs_time
+- 2026_08_13_technique_vs_world_error
+- 2026_08_17_technique_vs_image_error_normalised
+- 2026_08_17_technique_vs_world_error_normalised
+- technique_frame_quality
+
 # Note Dump
 link to wand wave doc, covered in more detail
 **add image of the active wand IR2**

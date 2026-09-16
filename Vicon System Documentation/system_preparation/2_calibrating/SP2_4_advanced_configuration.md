@@ -175,6 +175,21 @@ Resetting calibration will remove their understanding of the volume but you can 
 [2026-08-05 Marker Cluster Layout (v1) TODO](Public%20Files/Experiment%20Writeups/2026-08-05%20Marker%20Cluster%20Layout%20(v1)%20TODO.md)
 [2026-08-06 Removing Reflective Shelves TODO](Public%20Files/Experiment%20Writeups/2026-08-06%20Removing%20Reflective%20Shelves%20TODO.md)
 [2026-08-08 Auto-Stop TODO](Public%20Files/Experiment%20Writeups/2026-08-08%20Auto-Stop%20TODO.md)
-# Embed from [2026-08-08 Auto-Stop TODO](Public%20Files/Experiment%20Writeups/2026-08-08%20Auto-Stop%20TODO.md)
 
-![2026-08-08 Auto-Stop TODO](Public%20Files/Experiment%20Writeups/2026-08-08%20Auto-Stop%20TODO.md)
+# Images
+
+## sp2_4
+
+### advanced_configuration
+
+- c9_grayscale_all
+- c9_grayscale_auto
+- c9_grayscale_edges
+- c9_grayscale_no_edges
+- c9_grayscale_none
+- c9_grayscale_only
+- c9_preview
+- camera_options_1_show_uncalibrated_cameras
+- exporting-calibration
+- identifying_uncalibrated_cameras.png
+- reset_calibration_1_all

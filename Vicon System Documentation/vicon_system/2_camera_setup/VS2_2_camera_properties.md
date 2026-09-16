@@ -48,3 +48,13 @@ Text!
 # Notes
 
  [Cameras (Vero) in Nexus](../Public%20Files/Topic%20Notes/Cameras%20(Vero)%20in%20Nexus.md) (& [2026-07-24 Camera Start-Up Experiment](../Public%20Files/Experiment%20Writeups/2026-07-24%20Camera%20Start-Up%20Experiment.md))
+
+---
+# Images
+## vs2_2
+
+### standing_camera_diagram
+
+- Vicon Vero2 Camera - annotated
+- Vicon Vero2 Camera
+---

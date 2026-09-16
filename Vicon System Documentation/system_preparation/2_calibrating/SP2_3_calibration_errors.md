@@ -35,6 +35,23 @@ Last Page:
 Lorem Ipsum
 
 ---
+# Images
+
+## sp2_3
+
+### calibration_errors
+
+- origin_error_floor_plane_offset
+### glove_trial_calibration_error
+
+- badcal_error_diagonal_plane
+- badcal_error_ghost_markers
+- badcal_error_ghost_wand
+### marker_wobble
+
+- error_marker_wobble_1_3d
+- error_marker_wobble_2_orthogonal
+
 # Note Dump
 ### **TO REVIEW**
 all notes currently in [SP2_1_calibration_process](Public%20Files/Vicon%20System%20Documentation/system_preparation/2_calibrating/SP2_1_calibration_process.md) at moment

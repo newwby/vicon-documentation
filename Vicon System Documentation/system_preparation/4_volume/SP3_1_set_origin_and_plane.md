@@ -202,8 +202,73 @@ When setting with 3 markers make sure to place the Y Axis (handle) aka primary m
 All 5 markers should be visible to all cameras
 Wand should always be placed in same place to remain valid relative to Vicon's origin
 
+# Images
+## sp3_1
 
-### **TO REVIEW**
+### marker_layout
+
+- vicon_marker_layout_1
+- vicon_marker_layout_2
+- vicon_marker_layout_3
+- vicon_marker_layout_4
+### marker_layout_bugged
+
+- floor plane result 1 - bug
+- floor plane result 2 - fixed
+- marker layout in room 1 - bug
+- marker layout in room 2 - fixed
+### set_origin_and_plane
+
+- floor plane setup - check all cameras have rays
+- floor plane alignment error 2 - skewed line on 3 markers in 1 cluster
+- floor plane calibration options - turning grid off to select markers
+- floor plane camera calibration rays 1
+- floor plane camera calibration rays 2 - offset+autodetect
+- floor plane correct - 8 markers from multiple clusters in volume
+- floor plane marker alignment correct 1 - use orthogonal -x view
+- floor plane marker alignment correct 2
+- floor plane marker selection 1 - select as many as possible
+- floor plane marker selection 2 - select as many as possible
+- floor plane marker selection 3 - select as many as possible
+- floor plane selecting markers without volume grid
+- volume_origin_camera_relativity_1_prior
+- volume_origin_camera_relativity_2_successful
+- volume_origin_lab_indicator_1_horizontal
+- volume_origin_lab_indicator_2_vertical
+- volume_origin_lab_indicator_3_full
+- volume_origin_nexus_ui_set_volume_0_wand
+- volume_origin_nexus_ui_set_volume_0a_advanced
+- volume_origin_nexus_ui_set_volume_origin_1_start
+- volume_origin_nexus_ui_set_volume_origin_2_set_origin
+- volume_origin_set_origin_with_markers_1_starting
+- volume_origin_set_origin_with_markers_2_layout_with_wand
+- volume_origin_set_origin_with_markers_2b_layout_with_wand_labelled
+- volume_origin_set_origin_with_markers_3_layout_without_wand
+- volume_origin_set_origin_with_markers_3b_layout_without_wand_labelled
+- volume_origin_set_origin_with_markers_4_layout_ui_origin
+- volume_origin_set_origin_with_markers_4b_layout_ui_primary
+- volume_origin_set_origin_with_markers_4c_layout_ui_secondary
+- volume_origin_set_origin_with_markers_5_successful
+- volume_origin_set_origin_with_wand_1_placement
+- volume_origin_set_origin_with_wand_2_level_bubble
+- wand_in_volume_1_prior
+- wand_in_volume_2_tracking
+- wand_in_volume_3_orthogonal
+### volume origin and plane
+
+- ui_origin_set
+- ui_plane_1_autodetect
+- ui_plane_2_start
+- ui_plane_3_set_on_selection
+- ui_wand_in_volume_1_unlabelled
+- ui_wand_in_volume_2_labelled
+- ui_wand_in_volume_3_orthogonal
+### wobbling_markers_on_plane
+
+- daily marker comparison (slight elevate)
+- error markers - vibrating markers on set plane
+
+# **TO REVIEW**
 ###### (Until Removed This Is A Draft Note Do Not Push To live)
 *Do not push to live!*
 

@@ -283,6 +283,36 @@ SAVE DIFFERENT CONFIG/VIEW TYPE PRESETS FOR USERS?
 
 **If you reset calibration when no cameras are online they all vanish from Vicon Nexus**
 
+# Images
+
+## sp2_1
+
+### calibration
+
+- calibration_trial_quality_test_1
+- calibration_trial_quality_test_2
+- ui_unsuccessful calibration
+
+### calibration_process
+
+- calibration_failure_relative_positions
+- calibration_feedback_1_wand_wave_data
+- calibration_feedback_2_camera_pairs
+- calibration_feedback_3_merging
+- calibration_feedback_4_final
+- calibration_start_0_reset_calibration
+- calibration_start_1_all
+- calibration_start_2_selecting
+- calibration_start_3_camera_selection
+- calibration_start_4_click
+- calibration_success_relative_positions
+- calibration_wand_1_starting_view
+- calibration_wand_2_processing_data
+- nexus_ui_1_toggle_live
+- nexus_ui_2_tools_panel
+- nexus_ui_3_system_preparation
+- nexus_ui_4_toggle_3d_perspective_view
+
 # TODO 07/09/2026
 **Calibration feedback advanced notes below**
 

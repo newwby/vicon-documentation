@@ -102,6 +102,43 @@ text
 - [ ] [2026-08-06 Removing Reflective Shelves TODO]
       *There was a repeat of this experiment documented*
 
+# Images
+## sp1_1 masking
+
+- masking_marker_example
+- masking_post_all_cameras
+- masking_post_one_camera
+- masking_pre_all_cameras
+- masking_pre_one_camera
+- masking_selecting_all_cameras
+- masking_selecting_camera_view
+- masking_ui_all_cameras
+- masking_ui_example_camera_view
+- masking_ui_example_camera_view_cropped
+- masking_ui_how_to_start
+- masking_ui_how_to_stop
+- masking_ui_show_advanced
+- masking_ui_symbol_guide
+
+## sp1_2
+### advanced_masking
+
+- advanced_masking_masking_selected_only
+- manual_masking_1_paint_mask_button
+- manual_masking_2_masking_grid
+- manual_masking_3_painting_masks
+- manual_masking_4_clearing_masks
+- manual_masking_5_invalid_views.png
+- manual_masking_6_valid_views
+- manual_masking_7_unmasked_reflections
+- manual_masking_8_masked_reflections
+### reflective_shelf_removal_v1
+
+- reflection stat comparison
+- reflection stat parameters
+- shelves_removed
+
+---
 # Note Dump
 These properties are worth touching upon, though proper experimentation has still not happened yet (as of 22/08/26).
 

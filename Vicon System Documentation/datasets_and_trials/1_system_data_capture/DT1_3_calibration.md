@@ -34,21 +34,17 @@ Last Page:
 ---
 # # **<span class="toc-header">Calibration Data Capture (Cold)</span>**
 
-<span class="toc-header">![IMAGE]</span>
-<span class="image-caption">TODO add relevant data capture screenshot</span>
+<span class="toc-header">SCREENSHOT TODO</span>
+<span class="image-caption">Relevant data capture screenshot</span>
 
 <span class="info-text"><b><big>What data is recorded?</big></b></span>
 Explain the captured data purposes and what it is
-**TODO** - describe
 
 <span class="info-text"><b><big>Why record this data?</big></b></span>
 Outline the purpose of this data capture!
 
 <span class="info-text"><b><big>When should this data be recorded?</big></b></span>
 In order to capture this data your system must be in the following state.
-**TODO** - describe
-
-**TODO** - ensure relevant guides are linked within this guide.
 
 ---
 ## <span class="toc-header">Calibration Data Capture Process</span>

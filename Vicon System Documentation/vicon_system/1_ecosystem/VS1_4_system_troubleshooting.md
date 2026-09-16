@@ -45,4 +45,18 @@ Text!
 ---
 ---
 
-   
+# Images
+## vs1_4
+
+### camera_id_bug
+
+- camera calibration position error 1
+- camera calibration position error 2
+- camera calibration position error 3
+- camera calibration position error 4 - with volume
+- camera calibration position error 5 - complete chaos
+- correct camera calibration layout for reference
+- floor plane alignment error 1 - duplicated markers
+- reordering camera ids 1 - window
+- reordering camera ids 2 - how to access
+- reordering camera ids 3 - ghost cameras

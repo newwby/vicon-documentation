@@ -4,7 +4,7 @@ tags:
   - Documentation
   - Live
   - SubjectCapture
-Section: "[[Public Files/Vicon System Documentation/capture_and_subjects/index (capture and subjects) 1TODO|index (capture and subjects) 1TODO]]"
+Section: "[[Public Files/Vicon System Documentation/capture_and_subjects/index (capture and subjects)|index (capture and subjects)]]"
 Chapter: Data Processing
 Chapter Number: "3"
 Page Title: External Integrations
@@ -15,7 +15,7 @@ cssclasses:
 Next Page:
   - n/a
 Last Page:
-  - "[[Public Files/Vicon System Documentation/capture_and_subjects/3_data_processing/CS3_4_external_integrations|CS3_4_external_integrations]]"
+  - "[[Public Files/Vicon System Documentation/capture_and_subjects/3_data_processing/CS3_3_external_integrations|CS3_3_external_integrations]]"
 ---
 ---
 ```table-of-contents

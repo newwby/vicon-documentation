@@ -53,3 +53,15 @@ Text!
 # Notes
 * Takes about 3 minutes for cameras to start up
 * 30 mins is about correct for temperature consistency, with 20-25 almost enough for 50°+
+
+# Images
+
+## vs2_1
+
+### camera_lights
+
+- vicon_camera_startup_1_offline
+- vicon_camera_startup_2_flickering
+- vicon_camera_startup_3_purple
+- vicon_camera_startup_4_red
+- vicon_camera_startup_5_blue

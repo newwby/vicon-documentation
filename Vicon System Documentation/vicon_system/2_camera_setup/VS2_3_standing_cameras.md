@@ -89,3 +89,64 @@ It allows coverage to be evaluated using the wand labelling within the volume sp
 If the system cameras are already stable then it's not required.
 
 With a fixed wall rig the cameras don't move so there's nothing to re-aim; if baseline coverage is good the tool has no job.
+
+# Images
+## vs2_3
+
+### standing_camera_experiment
+
+- standing_camera_experiment_1
+- standing_camera_experiment_10
+- standing_camera_experiment_12
+- standing_camera_experiment_13
+- standing_camera_experiment_14
+- standing_camera_experiment_15
+- standing_camera_experiment_16
+- standing_camera_experiment_17
+- standing_camera_experiment_18
+- standing_camera_experiment_19
+- standing_camera_experiment_2
+- standing_camera_experiment_20
+- standing_camera_experiment_21
+- standing_camera_experiment_3
+- standing_camera_experiment_4
+- standing_camera_experiment_5
+- standing_camera_experiment_6
+- standing_camera_experiment_7
+- standing_camera_experiment_8
+- standing_camera_experiment_9
+- standing_camera_experiment_c19
+- standing_camera_experiment_c20
+- standing_camera_experiment_c21
+- standing_camera_ring_position_1
+- standing_camera_ring_position_10
+- standing_camera_ring_position_2
+- standing_camera_ring_position_3
+- standing_camera_ring_position_4
+- standing_camera_ring_position_5
+- standing_camera_ring_position_6
+- standing_camera_ring_position_7
+- standing_camera_ring_position_8
+- standing_camera_ring_position_9
+### standing_cameras_2026-08-18_aim_overlay_bug
+
+- 2026-08-18_aim_overlay_bug
+### standing_cameras_calibration_error
+
+- post mask noise at full aperture
+- pre mask noise at full aperture
+- standing_camera_capture_test_cam19
+- standing_camera_capture_test_cam20
+- standing_camera_capture_test_cam21
+### standing_cameras_preview_mode
+
+- campre1
+- campre10
+- campre2
+- campre3
+- campre4
+- campre5
+- campre6
+- campre7
+- campre8
+- campre9

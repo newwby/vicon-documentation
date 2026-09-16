@@ -44,3 +44,25 @@ Lorem Ipsum
 - **TODO**: Remove this header
 
 ---
+
+# Images
+
+## sp3_3
+
+### volume_configuration
+
+- configuring_volume_size (1)
+- configuring_volume_size (10)
+- configuring_volume_size (11)
+- configuring_volume_size (12)
+- configuring_volume_size (2)
+- configuring_volume_size (3)
+- configuring_volume_size (4)
+- configuring_volume_size (5)
+- configuring_volume_size (6)
+- configuring_volume_size (7)
+- configuring_volume_size (8)
+- configuring_volume_size (9)
+- new_volume_3marker_camera_ray_error_1_daily
+- new_volume_3marker_camera_ray_error_2_floor_plane
+- new_volume_3marker_camera_ray_error_3_shelving_test

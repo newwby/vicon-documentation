@@ -50,6 +50,14 @@ Lorem Ipsum
 
 ---
 
-# Experiment embed from [2026-07-28 Bumping Experiment](Public%20Files/Experiment%20Writeups/2026-07-28%20Bumping%20Experiment.md)
+# [2026-07-28 Bumping Experiment](Public%20Files/Experiment%20Writeups/2026-07-28%20Bumping%20Experiment.md)
 
-![2026-07-28 Bumping Experiment](Public%20Files/Experiment%20Writeups/2026-07-28%20Bumping%20Experiment.md)
+# Images
+
+## sp4_2
+
+### bumped_cameras
+
+- Nexus Calibration Crosshair Check Multiple
+- Nexus Calibration Crosshair Check Single
+- camera only layout INB0104 robotics lab
