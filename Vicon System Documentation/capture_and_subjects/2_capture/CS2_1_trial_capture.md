@@ -15,7 +15,7 @@ cssclasses:
 Next Page:
   - "[[Public Files/Vicon System Documentation/capture_and_subjects/2_capture/CS2_2_trial_quality|CS2_2_trial_quality]]"
 Last Page:
-  - "[[Public Files/Vicon System Documentation/capture_and_subjects/1_preparation/CS1_4_full_body_marker_sets|CS1_4_full_body_marker_sets]]"
+  - "[[Public Files/Vicon System Documentation/capture_and_subjects/1_preparation/CS1_3_skeleton_setup|CS1_3_skeleton_setup]]"
 ---
 ---
 ```table-of-contents

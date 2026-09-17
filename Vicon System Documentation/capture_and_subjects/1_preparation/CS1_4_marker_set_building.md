@@ -8,13 +8,14 @@ Section: "[[Public Files/Vicon System Documentation/capture_and_subjects/index (
 Chapter: Capture Preparation
 Chapter Number: "1"
 Page Title: Building a Marker Set
-Page Number: "1"
+Page Number: "4"
 Software:
   - Vicon Nexus 2.18
 cssclasses:
 Next Page:
+  - "[[Public Files/Vicon System Documentation/capture_and_subjects/1_preparation/CS1_5_full_body_marker_sets|CS1_5_full_body_marker_sets]]"
 Last Page:
-  - "[[Public Files/Vicon System Documentation/capture_and_subjects/index (capture and subjects)|index (capture and subjects)]]"
+  - "[[Public Files/Vicon System Documentation/capture_and_subjects/1_preparation/CS1_3_skeleton_setup|CS1_3_skeleton_setup]]"
 ---
 ---
 ```table-of-contents

@@ -15,7 +15,7 @@ cssclasses:
 Next Page:
   - "[[Public Files/Vicon System Documentation/capture_and_subjects/3_data_processing/CS3_2_sample_data|CS3_2_sample_data]]"
 Last Page:
-  - "[[Public Files/Vicon System Documentation/capture_and_subjects/1_preparation/CS1_2_database_setup|CS1_2_database_setup]]"
+  - "[[Public Files/Vicon System Documentation/capture_and_subjects/1_preparation/CS1_1_database_setup|CS1_1_database_setup]]"
 ---
 ---
 ```table-of-contents

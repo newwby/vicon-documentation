@@ -6,16 +6,16 @@ tags:
   - SubjectCapture
 Section: "[[Public Files/Vicon System Documentation/capture_and_subjects/index (capture and subjects)|index (capture and subjects)]]"
 Chapter: Data Processing
-Chapter Number: "3"
-Page Title: Setting Up A Database
+Chapter Number: "1"
+Page Title: Setting up a Pro-Eclipse Database
 Page Number: "1"
 Software:
   - Vicon Nexus 2.18
 cssclasses:
 Next Page:
-  - "[[Public Files/Vicon System Documentation/capture_and_subjects/3_data_processing/CS3_1_pipelines|CS3_1_pipelines]]"
+  - "[[Public Files/Vicon System Documentation/capture_and_subjects/1_preparation/CS1_2_subject_setup|CS1_2_subject_setup]]"
 Last Page:
-  - "[[Public Files/Vicon System Documentation/capture_and_subjects/2_capture/CS2_3_capture_troubleshooting|CS2_3_capture_troubleshooting]]"
+  - "[[Public Files/Vicon System Documentation/capture_and_subjects/index (capture and subjects)|index (capture and subjects)]]"
 ---
 ---
 ```table-of-contents

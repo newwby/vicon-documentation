@@ -27,19 +27,21 @@ To get started, begin with the **<span class="info-header">Subject Capture Quick
 ---
 ## **<span class="info-header">Subject Capture Quick-Start</span>**
 
-1. [Setting up a Database](Public%20Files/Vicon%20System%20Documentation/capture_and_subjects/1_preparation/CS1_2_database_setup.md)
-2. [Preparing the Subject Skeleton](Public%20Files/Vicon%20System%20Documentation/capture_and_subjects/1_preparation/CS1_3_subjects_and_skeletons.md)
+1. [Setting up a Database](Public%20Files/Vicon%20System%20Documentation/capture_and_subjects/1_preparation/CS1_1_database_setup.md)
+2. [Calibrating a Subject to an existing VST](Public%20Files/Vicon%20System%20Documentation/capture_and_subjects/1_preparation/CS1_2_subject_setup.md)
 3. [Capturing a Trial](Public%20Files/Vicon%20System%20Documentation/capture_and_subjects/2_capture/CS2_1_trial_capture.md)
+
+<span class="info-text">Note:</span> if you do not intend to use an existing labelling skeleton you should follow the direction in '[calibrating a subject to an existing VST](Public%20Files/Vicon%20System%20Documentation/capture_and_subjects/1_preparation/CS1_2_subject_setup.md)' to create your own marker set and labelling skeleton, as indicated by the '[marker set building](Public%20Files/Vicon%20System%20Documentation/capture_and_subjects/1_preparation/CS1_4_marker_set_building.md)' and '[labelling skeleton creation](Public%20Files/Vicon%20System%20Documentation/capture_and_subjects/1_preparation/CS1_3_skeleton_setup.md)' guides.
 
 ---
 ## <span class="toc-header">Subject Capture Guides</span>
 
 ### Capture Preparation
 
-1. [CS1_1_marker_set_building](Public%20Files/Vicon%20System%20Documentation/capture_and_subjects/1_preparation/CS1_1_marker_set_building.md)
-2. [CS1_2_database_setup](Public%20Files/Vicon%20System%20Documentation/capture_and_subjects/1_preparation/CS1_2_database_setup.md)
-3. [CS1_3_subjects_and_skeletons](Public%20Files/Vicon%20System%20Documentation/capture_and_subjects/1_preparation/CS1_3_subjects_and_skeletons.md)
-4. [CS1_4_full_body_marker_sets](Public%20Files/Vicon%20System%20Documentation/capture_and_subjects/1_preparation/CS1_4_full_body_marker_sets.md)
+1. [CS1_4_marker_set_building](Public%20Files/Vicon%20System%20Documentation/capture_and_subjects/1_preparation/CS1_4_marker_set_building.md)
+2. [CS1_1_database_setup](Public%20Files/Vicon%20System%20Documentation/capture_and_subjects/1_preparation/CS1_1_database_setup.md)
+3. [CS1_2_subject_setup](Public%20Files/Vicon%20System%20Documentation/capture_and_subjects/1_preparation/CS1_2_subject_setup.md)
+4. [CS1_3_skeleton_setup](Public%20Files/Vicon%20System%20Documentation/capture_and_subjects/1_preparation/CS1_3_skeleton_setup.md)
 
 ### Capturing Trials
 

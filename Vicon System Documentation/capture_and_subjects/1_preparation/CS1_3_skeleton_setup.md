@@ -7,14 +7,15 @@ tags:
 Section: "[[Public Files/Vicon System Documentation/capture_and_subjects/index (capture and subjects)|index (capture and subjects)]]"
 Chapter: Capture Preparation
 Chapter Number: "1"
-Page Title: Full-Body Marker Sets
-Page Number: "5"
+Page Title: Creating a Labelling Skeleton
+Page Number: "3"
 Software:
   - Vicon Nexus 2.18
 cssclasses:
 Next Page:
-  - "[[Public Files/Vicon System Documentation/capture_and_subjects/2_capture/CS2_1_trial_capture|CS2_1_trial_capture]]"
+  - "[[Public Files/Vicon System Documentation/capture_and_subjects/1_preparation/CS1_4_marker_set_building|CS1_4_marker_set_building]]"
 Last Page:
+  - "[[Public Files/Vicon System Documentation/capture_and_subjects/1_preparation/CS1_2_subject_setup|CS1_2_subject_setup]]"
 ---
 ---
 ```table-of-contents
