@@ -1,0 +1,49 @@
+# DATA
+
+## CALIBRATION VARIABLES
+Wand Technique:	H
+Auto-Stop:	1000
+Room Temp.:	23 °C
+
+Note: Wand technique is a letter referring to a documented technique, use description if undocumented.
+Note: Room temperature is gathered from lab thermostat reading, always degrees in Celsius.
+
+## TIMESTAMPS
+Start Time:	10:31
+Wand-Wave End:	10:32
+Feedback End:	10:36
+Finish Time:	10:40
+
+Note: Times are manually gathered and approximate.
+
+## OUTCOME
+Relativity:	True
+Origin Set:	True
+Plane Set:	True
+Marker Size:	9.5mm w/2mm base
+Plane Z Offset:	-6.13mm
+Plane Clusters:	2x2, 1x3 (total 7)	
+
+Note: Relativity is whether cameras are all relative to the each other, not the volume/plane.
+Note: Origin and Plane set refer to whether volume origin/plane set successfully and confirmed.
+Note: Plane clusters are the configuration of marker clusters used to set the plane, total number of clusters by the number of markers in each cluster (t*n), e.g. '3x3' is 3 clusters of 3 markers.
+
+---
+
+# NOTES
+## ENVRIONMENT CHANGES/DESCRIPTION
+
+- Static environment unchanged from recent calibrations
+- Plane Z Offset adjusted after measuring marker diameter - inconsistent with stated
+
+## DATA ACCURACY
+
+- All data accurate unless otherwise noted.
+
+---
+## OTHER NOTES
+
+- Some marker wobble but alignment is close to perfect
+
+---
+

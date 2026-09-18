@@ -1,0 +1,8 @@
+
+STARTUP (switch on)
+start @ X1:X2
+temp T °C
+
+INTIAL READ (then start script - ensure camera temp properties are visible and you're in live!)
+read @ X3:X4
+range Y-Z
