@@ -73,9 +73,9 @@ In order to capture 3D data of an individual or object the Vicon Nexus system mu
 
 ---
 ## <span class="toc-header">Creating a Subject from a Labelling Skeleton</span>
-Text! What is a subject/labelling skeleton? Glossary?
 
-**Create a new subject from a labelling skeleton**
+**To create a new subject from a labelling skeleton**:
+
 1. Navigate to the Resources panel/subject tab
 2. Click the '**Create a new subject from a Labelling Skeleton**' button
 
@@ -93,9 +93,7 @@ Text! What is a subject/labelling skeleton? Glossary?
    *Need explanation of why you calibrate a skeleton template to a specific subject, and a labelling skeleton template setup guide*
 
 ---
-## <span class="toc-header">Saving and Loading Subject VSKs</span>
-Text!
-
+## <span class="toc-header">Saving and Loading Subject FIles</span>
 ### <span class="toc-header">Save an existing subject</span>
 
 To save an existing subject - right click the subject and click 'Save Subject'.

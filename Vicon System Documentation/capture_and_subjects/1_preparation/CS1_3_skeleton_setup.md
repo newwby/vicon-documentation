@@ -25,65 +25,81 @@ Last Page:
 # <span class="toc-header">Introduction</span>
 
 **This guide covers:**
-- Point 1
-- Point 2
+- Recording a Marker Set as a Labelling Skeleton
+- Static Capture and Reconstruction
+- Labelling Markers and Segments
+- Customising Marker Size and Colour
+- Linking Segments
 
 ---
----
-# <span class="toc-header">Creating a New Labelling Skeleton</span>
-
-<span class="toc-header">![IMAGE]</span>
-<span class="image-caption">TODO add relevant data capture screenshot</span>
-
-<b><big>Question?</big></b>
-Text
-
 ---
 ## <span class="toc-header">Recording a Marker Set as a Labelling Skeleton</span>
-Text!
 
 1. **Note that you need calibrated environment and no other markers in environment**
 2. Navigate to **Tools panel**/**Subject tab**
-3. You will need to wear your marker set (*photo of glove*)
-4. `photo of glove`
-5. Your marker set does not have to be a glove, it can be anything. This is an example.
+
+3. You will need to have your marker set to hand in order to capture it; in the example below the marker set is a simple segment running across a glove. This could be captured by wearing the glove or by placing it in the capture volume, but more complex marker sets (such as full body marker sets) may need a volunteer to wear them whilst the static capture is operated.
+
+![cs1_3_glove_for_creating_labelling_skeleton|209](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_creating_labelling_skeletons/cs1_3_glove_for_creating_labelling_skeleton.jpg)
+
+4. Your marker set does not have to be a glove, it can be anything. This is an example of a very simple marker set.
 
 ---
 ## <span class="toc-header">Static Capture and Reconstruction</span>
-Text!
 
 1. Within the target volume create a static capture of your markers.
 2. Go to the '**Subject Capture**' section of the aforementioned tab, click the start button.
 3. Stay stationary in the target volume then click stop.
-4. `cs1_4_create_labelling_skeleton_1.png`
-5. This will create a trial file in your capture session.
-6. `cs1_4_create_labelling_skeleton_2.png`
-7. Double click the trial file to load it.
-8. This opens the recording of your previous capture - during playback you will notice nothing shows up.
-9. Under the '**Subject Calibration**' section of Tools/Subject click `Reconstruct`
-10. `cs1_4_create_labelling_skeleton_4.png`
-11. Run the pipeline by clicking start
-12. You will now see your markers in the playback.
+
+![cs1_3_create_labelling_skeleton_1](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_creating_labelling_skeletons/cs1_3_create_labelling_skeleton_1.png)
+
+4. This will create a trial file in your capture session.
+
+![cs1_3_create_labelling_skeleton_2](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_creating_labelling_skeletons/cs1_3_create_labelling_skeleton_2.png)
+
+![cs1_3_create_labelling_skeleton_3](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_creating_labelling_skeletons/cs1_3_create_labelling_skeleton_3.png)
+
+5. Double click the trial file to load it.
+6. This opens the recording of your previous capture - during playback you will notice nothing shows up.
+7. Under the '**Subject Calibration**' section of Tools/Subject click `Reconstruct`
+
+![cs1_3_create_labelling_skeleton_4](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_creating_labelling_skeletons/cs1_3_create_labelling_skeleton_4.png)
+
+8. Run the pipeline by clicking start
+9. You will now see your markers in the playback.
 
 ---
 ## <span class="toc-header">Labelling Markers and Segments</span>
-Text!
 
 1. Under the '**Labelling Template Builder**' section of Tools/Subject add a name to the '**Create Segments**' field and click '**Create**'.
-2. `cs1_4_create_labelling_skeleton_5.png`
-3. This will prompt you to select the **Origin Marker** - this should be the start of the segment, it is the root that will attach to other segments later.
-4. `cs1_4_create_labelling_skeleton_6.png`
-5. This will then prompt you to select the **Primary Axis Marker**.
-6. `cs1_4_create_labelling_skeleton_7.png`
-7. This will then prompt you to select the **Secondary Axis Marker**.
-8. `cs1_4_create_labelling_skeleton_8.png`
-    ***note -** define origin and primary/secondary axis markers*
-9. Run the **Calibrate Labelling Skeleton Static** pipeline
-10. `cs1_4_create_labelling_skeleton_9.png`
-11. Save labelling skeleton as template (VST) and attach to the subject.
-12. `cs1_4_create_labelling_skeleton_10.png`
-13. Remember to save the subject!
-14. `cs1_4_create_labelling_skeleton_11.png`
+
+![cs1_3_create_labelling_skeleton_5](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_creating_labelling_skeletons/cs1_3_create_labelling_skeleton_5.png)
+
+2. This will prompt you to select the **Origin Marker** - this should be the start of the segment, it is the root that will attach to other segments later.
+
+![cs1_3_create_labelling_skeleton_6](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_creating_labelling_skeletons/cs1_3_create_labelling_skeleton_6.png)
+
+3. This will then prompt you to select the **Primary Axis Marker**.
+
+![cs1_3_create_labelling_skeleton_7](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_creating_labelling_skeletons/cs1_3_create_labelling_skeleton_7.png)
+
+4. This will then prompt you to select the **Secondary Axis Marker**.
+
+![cs1_3_create_labelling_skeleton_8](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_creating_labelling_skeletons/cs1_3_create_labelling_skeleton_8.png)
+
+***note -** define origin and primary/secondary axis markers*
+
+6. Run the **Calibrate Labelling Skeleton Static** pipeline
+
+![cs1_3_create_labelling_skeleton_9](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_creating_labelling_skeletons/cs1_3_create_labelling_skeleton_9.png)
+
+7. Save labelling skeleton as template (VST) and attach to the subject.
+
+![cs1_3_create_labelling_skeleton_10](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_creating_labelling_skeletons/cs1_3_create_labelling_skeleton_10.png)
+
+8. Remember to save the subject!
+
+![cs1_3_create_labelling_skeleton_11](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_creating_labelling_skeletons/cs1_3_create_labelling_skeleton_11.png)
 
 ---
 ## <span class="toc-header">Linking Segments</span>
@@ -93,7 +109,27 @@ Text!
 
 ---
 ## <span class="toc-header">Customising Displays</span>
-Text!
+
+Here's one I made earlier:
+
+![LSkel - properties 1 color|693](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20properties%201%20color.png)
+
+
+![LSkel - properties 2 radius|706](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20properties%202%20radius.png)
+
+
+![LSkel - properties 2b radius without camera rays|758](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20properties%202b%20radius%20without%20camera%20rays.png)
+
+
+| Changing marker names<br><br>                                                                                                                                                                                                                                  | Changing marker colours                                                                                                                                                                                                                                                                                                                                           |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![LSkel - properties 3 quick commands\|406](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20properties%203%20quick%20commands.png)<br><br>You can rename your markers by double-clicking them. | ![LSkel - properties 4 multi select\|207](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20properties%204%20multi%20select.png)<br><br>You can edit the colours of your markers within the Nexus view using the **Properties section** of the **Subjects tab** within the **Resources panel**.<br> |
+
+
+
+
+
+
 ### <span class="toc-header">Changing Marker Size</span>
 
 ### <span class="toc-header">Changing Marker Colour</span>
@@ -114,6 +150,13 @@ Text!
 ---
 
 # Notes
+
+## Fitting to Subjects
+
+1. **Auto initialise labelling pipeline**
+2. **Kinematic fit pipeline**
+
+---
 
 manual label/edit screenshots?
 
@@ -166,11 +209,7 @@ If your physical marker placement has drifted (markers re-glued, repositioned, e
 
 - [LSkel - attach to subject](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20attach%20to%20subject.png)
 - [LSkel - multiple skeletons on subject](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20multiple%20skeletons%20on%20subject.png)
-- [LSkel - properties 1 color](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20properties%201%20color.png)
-- [LSkel - properties 2 radius](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20properties%202%20radius.png)
-- [LSkel - properties 2b radius without camera rays](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20properties%202b%20radius%20without%20camera%20rays.png)
-- [LSkel - properties 3 quick commands](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20properties%203%20quick%20commands.png)
-- [LSkel - properties 4 multi select](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20properties%204%20multi%20select.png)
+- 
 - [LSkel - save skeleton and attach to subject](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20save%20skeleton%20and%20attach%20to%20subject.png)
 - [LSkel - segment 1 set origin marker](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20segment%201%20set%20origin%20marker.png)
 - [LSkel - segment 2 set primary marker](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20segment%202%20set%20primary%20marker.png)
@@ -179,10 +218,10 @@ If your physical marker placement has drifted (markers re-glued, repositioned, e
 - [LSkel - static capture](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20static%20capture.png)
 - [LSkel errors - file name too long](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20errors%20-%20file%20name%20too%20long.png)
 - [LSkel errors - forgot to link](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20errors%20-%20forgot%20to%20link.png)
-- [joint setup 1](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/joint%20setup%201.png)
-- [joint setup 2](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/joint%20setup%202.png)
-- [joint setup 3](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/joint%20setup%203.png)
-- [joint setup 4](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/joint%20setup%204.png)
+- ![joint setup 1](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/joint%20setup%201.png)
+- ![joint setup 2](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/joint%20setup%202.png)
+- ![joint setup 3](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/joint%20setup%203.png)
+- ![joint setup 4](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/joint%20setup%204.png)
 ### screenshots - manual_labelling
 
 - [tools_label_and_edit_1_manual_labelling](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_manual_labelling/tools_label_and_edit_1_manual_labelling.png)
