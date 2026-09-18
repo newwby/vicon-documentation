@@ -44,30 +44,32 @@ Text!
 
 ---
 ---
-
+# Images
 ### glove_marker_set_1
 
-- Assembling a Marker Set (Unorganised Pictures) (1)
-- Assembling a Marker Set (Unorganised Pictures) (10)
-- Assembling a Marker Set (Unorganised Pictures) (11)
-- Assembling a Marker Set (Unorganised Pictures) (2)
-- Assembling a Marker Set (Unorganised Pictures) (3)
-- Assembling a Marker Set (Unorganised Pictures) (4)
-- Assembling a Marker Set (Unorganised Pictures) (5)
-- Assembling a Marker Set (Unorganised Pictures) (6)
-- Assembling a Marker Set (Unorganised Pictures) (7)
-- Assembling a Marker Set (Unorganised Pictures) (8)
-- Assembling a Marker Set (Unorganised Pictures) (9)
-- subject capture - markers in nexus
-- subject capture - markers in real life
+- [Assembling a Marker Set (Unorganised Pictures) (1)](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_4_glove_marker_set_1/Assembling%20a%20Marker%20Set%20(Unorganised%20Pictures)%20(1).jpg)
+- [Assembling a Marker Set (Unorganised Pictures) (2)](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_4_glove_marker_set_1/Assembling%20a%20Marker%20Set%20(Unorganised%20Pictures)%20(2).jpg)
+- [Assembling a Marker Set (Unorganised Pictures) (3)](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_4_glove_marker_set_1/Assembling%20a%20Marker%20Set%20(Unorganised%20Pictures)%20(3).jpg)
+- [Assembling a Marker Set (Unorganised Pictures) (4)](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_4_glove_marker_set_1/Assembling%20a%20Marker%20Set%20(Unorganised%20Pictures)%20(4).jpg)
+- [Assembling a Marker Set (Unorganised Pictures) (5)](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_4_glove_marker_set_1/Assembling%20a%20Marker%20Set%20(Unorganised%20Pictures)%20(5).jpg)
+- [Assembling a Marker Set (Unorganised Pictures) (6)](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_4_glove_marker_set_1/Assembling%20a%20Marker%20Set%20(Unorganised%20Pictures)%20(6).jpg)
+- [Assembling a Marker Set (Unorganised Pictures) (7)](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_4_glove_marker_set_1/Assembling%20a%20Marker%20Set%20(Unorganised%20Pictures)%20(7).jpg)
+- [Assembling a Marker Set (Unorganised Pictures) (8)](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_4_glove_marker_set_1/Assembling%20a%20Marker%20Set%20(Unorganised%20Pictures)%20(8).jpg)
+- [Assembling a Marker Set (Unorganised Pictures) (9)](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_4_glove_marker_set_1/Assembling%20a%20Marker%20Set%20(Unorganised%20Pictures)%20(9).jpg)
+- [Assembling a Marker Set (Unorganised Pictures) (10)](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_4_glove_marker_set_1/Assembling%20a%20Marker%20Set%20(Unorganised%20Pictures)%20(10).jpg)
+- [Assembling a Marker Set (Unorganised Pictures) (11)](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_4_glove_marker_set_1/Assembling%20a%20Marker%20Set%20(Unorganised%20Pictures)%20(11).jpg)
+- [subject capture - markers in nexus](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_4_glove_marker_set_1/subject%20capture%20-%20markers%20in%20nexus.png)
+- [subject capture - markers in real life](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_4_glove_marker_set_1/subject%20capture%20-%20markers%20in%20real%20life.jpg)
 
 ### glove_marker_set_2
 
-- glove_marker_set_comparison_1
-- glove_marker_set_comparison_2
-- glove_marker_set_comparison_3
-- glove_marker_set_comparison_4
-- glove_marker_set_comparison_5
-- glove_marker_set_comparison_6
-- glove_marker_set_comparison_7
-- glove_marker_set_comparison_8
+- [glove_marker_set_comparison_1](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_4_glove_marker_set_2/glove_marker_set_comparison_1.jpg)
+- [glove_marker_set_comparison_2](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_4_glove_marker_set_2/glove_marker_set_comparison_2.jpg)
+- [glove_marker_set_comparison_3](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_4_glove_marker_set_2/glove_marker_set_comparison_3.jpg)
+- [glove_marker_set_comparison_4](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_4_glove_marker_set_2/glove_marker_set_comparison_4.jpg)
+- [glove_marker_set_comparison_5](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_4_glove_marker_set_2/glove_marker_set_comparison_5.jpg)
+- [glove_marker_set_comparison_6](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_4_glove_marker_set_2/glove_marker_set_comparison_6.jpg)
+- [glove_marker_set_comparison_7](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_4_glove_marker_set_2/glove_marker_set_comparison_7.jpg)
+- [glove_marker_set_comparison_8](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_4_glove_marker_set_2/glove_marker_set_comparison_8.jpg)
+
+# Notes

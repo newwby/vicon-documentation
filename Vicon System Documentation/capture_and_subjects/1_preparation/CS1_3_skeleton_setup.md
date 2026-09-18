@@ -7,7 +7,7 @@ tags:
 Section: "[[Public Files/Vicon System Documentation/capture_and_subjects/index (capture and subjects)|index (capture and subjects)]]"
 Chapter: Capture Preparation
 Chapter Number: "1"
-Page Title: Creating a Labelling Skeleton
+Page Title: Attaching a Labelling Skeleton
 Page Number: "3"
 Software:
   - Vicon Nexus 2.18
@@ -30,7 +30,7 @@ Last Page:
 
 ---
 ---
-# **<span class="toc-header">Full-Body Marker Sets</span>**
+# <span class="toc-header">Creating a New Labelling Skeleton</span>
 
 <span class="toc-header">![IMAGE]</span>
 <span class="image-caption">TODO add relevant data capture screenshot</span>
@@ -39,78 +39,155 @@ Last Page:
 Text
 
 ---
-## <span class="toc-header">Header</span>
+## <span class="toc-header">Recording a Marker Set as a Labelling Skeleton</span>
+Text!
+
+1. **Note that you need calibrated environment and no other markers in environment**
+2. Navigate to **Tools panel**/**Subject tab**
+3. You will need to wear your marker set (*photo of glove*)
+4. `photo of glove`
+5. Your marker set does not have to be a glove, it can be anything. This is an example.
+
+---
+## <span class="toc-header">Static Capture and Reconstruction</span>
+Text!
+
+1. Within the target volume create a static capture of your markers.
+2. Go to the '**Subject Capture**' section of the aforementioned tab, click the start button.
+3. Stay stationary in the target volume then click stop.
+4. `cs1_4_create_labelling_skeleton_1.png`
+5. This will create a trial file in your capture session.
+6. `cs1_4_create_labelling_skeleton_2.png`
+7. Double click the trial file to load it.
+8. This opens the recording of your previous capture - during playback you will notice nothing shows up.
+9. Under the '**Subject Calibration**' section of Tools/Subject click `Reconstruct`
+10. `cs1_4_create_labelling_skeleton_4.png`
+11. Run the pipeline by clicking start
+12. You will now see your markers in the playback.
+
+---
+## <span class="toc-header">Labelling Markers and Segments</span>
+Text!
+
+1. Under the '**Labelling Template Builder**' section of Tools/Subject add a name to the '**Create Segments**' field and click '**Create**'.
+2. `cs1_4_create_labelling_skeleton_5.png`
+3. This will prompt you to select the **Origin Marker** - this should be the start of the segment, it is the root that will attach to other segments later.
+4. `cs1_4_create_labelling_skeleton_6.png`
+5. This will then prompt you to select the **Primary Axis Marker**.
+6. `cs1_4_create_labelling_skeleton_7.png`
+7. This will then prompt you to select the **Secondary Axis Marker**.
+8. `cs1_4_create_labelling_skeleton_8.png`
+    ***note -** define origin and primary/secondary axis markers*
+9. Run the **Calibrate Labelling Skeleton Static** pipeline
+10. `cs1_4_create_labelling_skeleton_9.png`
+11. Save labelling skeleton as template (VST) and attach to the subject.
+12. `cs1_4_create_labelling_skeleton_10.png`
+13. Remember to save the subject!
+14. `cs1_4_create_labelling_skeleton_11.png`
+
+---
+## <span class="toc-header">Linking Segments</span>
+Text!
+
+**TODO** linked segments and joints
+
+---
+## <span class="toc-header">Customising Displays</span>
+Text!
+### <span class="toc-header">Changing Marker Size</span>
+
+### <span class="toc-header">Changing Marker Colour</span>
+
+---
+---
+# <span class="toc-header">Using Existing Labelling Skeletons</span>
+## <span class="toc-header">Manual Labelling</span>
 Text!
 
 ---
+## <span class="toc-header">Dynamic Subject Calibration</span>
+Text!
+
+**TODO** need how to calibrate this to a subject
+
 ---
+---
+
 # Notes
-##### **Full-Body Scoped Marker Set Analysis**
 
-| Model                                                                            | Total Markers                                      | Notes & Links                                                                                                                                                                                                                                     |
-| -------------------------------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Vicon Plug-in Gait**                                                           | 39<br><small><i>(35 without head)</i></small>      | <small>No precise hand/foot tracking.<br>Vicon offers the '**Oxford Foot Model**' (*requestable through support*) for foot modelling.<br>Not a gold standard (see [Pycgm2 criticisms](https://pycgm2.netlify.app/background/weaknesses/))</small> |
-| **Full-body modified IOR/CAST set**<br><small>(6DoF rigid body clusters)</small> | 52                                                 | <small>[Paper](https://arxiv.org/pdf/2402.09479)</small>                                                                                                                                                                                          |
-| **CGM2**                                                                         | 27-35<br><small><i>(version dependent)</i></small> | <small>[Paper](https://www.sciencedirect.com/science/article/pii/S0966636219304333)<br>[Webpage](https://pycgm2.netlify.app/cgm/)<br><i>Lower marker counts are lower-body only.</i></small>                                                      |
-##### **Full Gait Marker Layout**
-| Group                | Count             | Marker IDs                               |
-| -------------------- | ----------------- | ---------------------------------------- |
-| Head                 | 4                 | LFHD, RFHD, LBHD, RBHD                   |
-| Torso                | 5                 | C7, T10, CLAV, STRN, RBAK                |
-| Left Arm             | 7                 | LSHO, LUPA, LELB, LFRM, LWRA, LWRB, LFIN |
-| Right Arm            | 7                 | RSHO, RUPA, RELB, RFRM, RWRA, RWRB, RFIN |
-| Pelvis               | 4                 | LASI, RASI, LPSI, RPSI                   |
-| Left Leg             | 6                 | LTHI, LKNE, LTIB, LANK, LHEE, LTOE       |
-| Right Leg            | 6                 | RTHI, RKNE, RTIB, RANK, RHEE, RTOE       |
-| <big>**Total**</big> | <big>**39**</big> |                                          
-##### **Cluster Marker Building**
-Cappozzo, Cappello, Della Croce & Pensalfini (1997), _Surface-Marker Cluster Design Criteria for 3-D Bone Movement Reconstruction_, IEEE Trans. Biomed.
-- **4-marker cluster is the practical sweet spot**
-- Planar clusters are fine if the markers are in a quasi-isotropic (non-collinear, roughly evenly spread) layout.
-- RMS distance of markers from the cluster centroid should be more than 10× your marker-position measurement error.
-- Basis for every CAST-derived protocol (inc. CGM2.3's thigh/shank clusters)
-##### **Links**
-[Doku3DReferences](https://has-motion.com/wiki/doku.php?id=visual3d:references)
-[HAS-Motion, _Rizzoli/IOR foot marker sets documentation_](https://wiki.has-motion.com/doku.php?id=other:ior_gait:documentation:marker_sets)
+manual label/edit screenshots?
 
- https://www.thingiverse.com/thing:4898356#Post-Printing
-fabrication file; 3D-printable upper-body cluster mounts - shows placement locations *(2 shoulder, 2 upper arm, 4 elbow, 2 forearm, 2 hand)*
+**vicon_pi_gait_39_markers_static_capture.png**
+this default calibration file is also a good example of static capture before dynamic range of motion capture
+## Doc Notes
 
-### full_body_marker_set
+### static capture
+You can create a new subject from labelling skeleton if you run 'calibrate labelling skeleton static pipeline'
+Starting at a static neutral position you will still need to go start > subject capture to calibrate, and should be over 500 frames
+### skeletons
+- Missing from labelling skeleton notes - **explanation of/appropriate link types?**
+- In labelling skeletons you can double click to change marker name
 
-- marker_set_full_body_1
-- marker_set_full_body_10
-- marker_set_full_body_11
-- marker_set_full_body_12
-- marker_set_full_body_13
-- marker_set_full_body_14
-- marker_set_full_body_2
-- marker_set_full_body_3
-- marker_set_full_body_4
-- marker_set_full_body_5
-- marker_set_full_body_6
-- marker_set_full_body_7
-- marker_set_full_body_8
-- marker_set_full_body_9
-- velcro_markers_for_full_body_1
-- velcro_markers_for_full_body_2
-- velcro_markers_for_full_body_3
-- velcro_markers_for_full_body_4
-- velcro_markers_for_full_body_5
-- velcro_markers_for_full_body_6
+**How to -** Run auto initialise labelling pipeline (auto-label static frame, scale subject, marker-only subject calibration)
+### manual labelling
+[tools_label_and_edit_1_manual_labelling](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_manual_labelling/tools_label_and_edit_1_manual_labelling.png)
+You can manually label markers from the tools -> label/edit -> manual labelling section
+If you reassign a marker its original will become unlabelled
+You can make unlabelled markers obvious using F7 menu
 
-### lpigv1_capture
+SubjectViewer view in Nexus is useful for labelling skeletons
 
-- LPiGv1
-### lpigv1_setup
+### Calibrating Templates to Subjects
 
-- LPiGv1 Labelling from VPiG
-- VPiG Full Segment List
-- VPiG Full Segment Map
-### lpigv2_setup
+Generally if same subject and labelling skeleton still fits - don't recalibrate your skeleton/subject
+If your physical marker placement has drifted (markers re-glued, repositioned, etc.) even slightly, that counts as "markers moved" and does warrant a fresh calibration.
+- **.VST files** are templates
+- **.VSK files** are applications of a VST file to a specific person. You can create a .VSK file by performing a brief capture of a subject, and then you can view the covariance between markers in the on-disk file.
+  *.VSK files cannot be edited manually through Nexus but they are XML so 3rd party solution may be viable.*
 
-- LPiGv2
-- VPiG phantom markers (comparison)
-### vpig
+---
+## Labelling Process
 
-- vicon_pi_gait_39_markers_static_capture
+### Original Process I took
+1. Placed glove on chair, put in capture volume (placing outside is an annoyance)
+2. Captured a very brief (barely over 100 frames) static video to get 3d data
+3. Then had to run the reconstruct pipeline to make it visible in the playback view
+4. Then you need to set the segment up with the labelling template builder
+	1. name & click create
+	2. select origin, primary, secondary markers
+	3. click create again when done
+5. For readability - set marker colours and resize!
+	   *(hold shift to select more than one and adjust properties all at once)*
+6. Go through the linking process by clicking link, selecting parent/root and child segment, until linked all segments, then click link again to stop (can customise ball joint here if needed)
+7. You then right click & save as labelling skeleton template to get the .vsk file
+		*(or save & attach to use as subject calibrated .vsk right now!)*
+8. You can then capture a video of the subject & run reconstruct & label pipeline
+### screenshots - labelling_skeleton
+
+- [LSkel - attach to subject](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20attach%20to%20subject.png)
+- [LSkel - multiple skeletons on subject](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20multiple%20skeletons%20on%20subject.png)
+- [LSkel - properties 1 color](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20properties%201%20color.png)
+- [LSkel - properties 2 radius](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20properties%202%20radius.png)
+- [LSkel - properties 2b radius without camera rays](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20properties%202b%20radius%20without%20camera%20rays.png)
+- [LSkel - properties 3 quick commands](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20properties%203%20quick%20commands.png)
+- [LSkel - properties 4 multi select](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20properties%204%20multi%20select.png)
+- [LSkel - save skeleton and attach to subject](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20save%20skeleton%20and%20attach%20to%20subject.png)
+- [LSkel - segment 1 set origin marker](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20segment%201%20set%20origin%20marker.png)
+- [LSkel - segment 2 set primary marker](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20segment%202%20set%20primary%20marker.png)
+- [LSkel - segment 3 set secondary marker](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20segment%203%20set%20secondary%20marker.png)
+- [LSkel - segment 4 set additional marker](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20segment%204%20set%20additional%20marker.png)
+- [LSkel - static capture](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20-%20static%20capture.png)
+- [LSkel errors - file name too long](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20errors%20-%20file%20name%20too%20long.png)
+- [LSkel errors - forgot to link](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/LSkel%20errors%20-%20forgot%20to%20link.png)
+- [joint setup 1](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/joint%20setup%201.png)
+- [joint setup 2](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/joint%20setup%202.png)
+- [joint setup 3](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/joint%20setup%203.png)
+- [joint setup 4](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_labelling_skeleton/joint%20setup%204.png)
+### screenshots - manual_labelling
+
+- [tools_label_and_edit_1_manual_labelling](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_manual_labelling/tools_label_and_edit_1_manual_labelling.png)
+### screenshots - subject_naming_bug
+
+- [vst space naming bug 1](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_subject_naming_bug/vst%20space%20naming%20bug%201.png)
+- [vst space naming bug 2](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_subject_naming_bug/vst%20space%20naming%20bug%202.png)
+- [vst space naming bug 3](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_subject_naming_bug/vst%20space%20naming%20bug%203.png)

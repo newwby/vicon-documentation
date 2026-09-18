@@ -65,3 +65,12 @@ this will need documenting how the dynamic range of motion & static capturing al
 **vicon_sample_data_walking_2_entering_and_leaving_volume.png**
 going inside/outside volume - walking across & getting labelled once within volume
 this will have application with the vicon system labelling parameters (this is system level)
+
+
+Needs to cover multiple subject assignment or include that in [CS2_1_trial_capture](Public%20Files/Vicon%20System%20Documentation/capture_and_subjects/2_capture/CS2_1_trial_capture.md)
+## cs1_3
+
+### final_capture_test
+
+- [final capture test 1 - reconstruct & label](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_final_capture_test/final%20capture%20test%201%20-%20reconstruct%20&%20label.png)
+- [final capture test 2 - live reconstructed and labelled](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_3_final_capture_test/final%20capture%20test%202%20-%20live%20reconstructed%20and%20labelled.png)

@@ -12,6 +12,10 @@ parent:
 ---
 # **Marker & Capture Analysis Experiments**
 
+- 
+- [Full-Body Marker Set Design](#Full-Body%20Marker%20Set%20Design)
+- [Glove Capture Experiment 26/08/26](#Glove%20Capture%20Experiment%2026/08/26)
+
 **These notes cover information relevant to subject capturing, pipelines, and post-processing.**
 *Relevant to documentation for these topics as well.*
 
@@ -208,7 +212,7 @@ This captures the movement of torso/back, pelvis, arms, and legs.
 | Left Leg             | 3                 | LTHI, LKNE, LTIB       |
 | Right Leg            | 3                 | RTHI, RKNE, RTIB       |
 | <big>**Total**</big> | <big>**10**</big> |                        |
-![LPiGv1|251](Public%20Files/Experiment%20and%20Error%20Images/2026-08-30%20LPiGv1%20Capture/LPiGv1.png)
+![LPiGv1](Public%20Files/Vicon%20System%20Documentation/_assets/capture_and_subjects/cs1_5_lpigv1_capture/LPiGv1.png)
 
 **Conclusion**: *Issues with segments/joints due to the set being built from a stripped down version of VPiG*
 
@@ -251,10 +255,10 @@ Maximum 19x 14mm markers markers spare and need to leave some for calibration un
 - ghost markers plus origin and floor plane setting bugs that necessitated calibration with an angled plane
 
 <b><u>Ghost Wand</u></b>
-![badcal_error_ghost_wand|341](Public%20Files/Experiment%20and%20Error%20Images/2026-08-26%20Calibration%20Glove%20Capture%20Trial/badcal_error_ghost_wand.png)
+![badcal_error_ghost_wand](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp2_3_glove_trial_calibration_error/badcal_error_ghost_wand.png)
 
 <b><u>Ghost Markers</u></b>
-![badcal_error_ghost_markers|309](Public%20Files/Experiment%20and%20Error%20Images/2026-08-26%20Calibration%20Glove%20Capture%20Trial/badcal_error_ghost_markers.png)
+![badcal_error_ghost_markers](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp2_3_glove_trial_calibration_error/badcal_error_ghost_markers.png)
 
 ### Trial Gap Frames
 | Trial | D Gap | H Gap | N/A Gap | Trial Notes/Type                                                                                                                                                                                          |
