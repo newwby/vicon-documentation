@@ -51,6 +51,8 @@ Overlay screenshots, update specific analysis
 	  *Developing an LLM skill could assist with this.*
   12. **Reset greyscale mode**: select `'greyscale mode: auto'` for all cameras.
 
+[[camera]]
+
 ---
 ## Actions to Take Post-Camera Analysis
 
