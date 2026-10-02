@@ -50,4 +50,4 @@ placeholder for the reflection identification workflow in [2026-08-21 Reflection
 
 preview mode info in [VS2_3_standing_cameras](Public%20Files/Vicon%20System%20Documentation/vicon_system/2_camera_setup/VS2_3_standing_cameras.md)
 
-		- [ ] [Methodology for Marker & Capture Analysis Experiments](Public%20Files/Experiment%20Writeups/Methodology%20for%20Marker%20&%20Capture%20Analysis%20Experiments.md)
+- [ ] [Methodology for Marker & Capture Analysis Experiments](Public%20Files/Experiment%20Writeups/Methodology%20for%20Marker%20&%20Capture%20Analysis%20Experiments.md)
