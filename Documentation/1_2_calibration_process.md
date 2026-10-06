@@ -4,19 +4,17 @@ tags:
   - Documentation
   - Live
   - SystemPrepartion
-Section: "[[Public Files/Vicon System Documentation/system_preparation/index (system_preparation)|System Preparation]]"
-Chapter: Calibrating Cameras
-Chapter Number: "3"
+Chapter: System Preparation
+Chapter Number: "1"
 Page Title: Calibrating Cameras
-Page Number: "1"
+Page Number: "2"
 Software:
   - Vicon Nexus 2.18
 Next Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/2_calibrating/SP2_2_wand_waving|SP2_2_wand_waving]]"
-  - "[[Public Files/Vicon System Documentation/system_preparation/SP3_1_set_origin_and_plane|SP3_1_set_origin_and_plane]]"
+  - "[[Public Files/Documentation/1_3_set_origin_and_plane|1_3_set_origin_and_plane]]"
 Last Page:
-  - "[[Public Files/Vicon System Documentation/system_preparation/1_masking/SP1_2_advanced_masking|SP1_2_advanced_masking]]"
-  - "[[Public Files/Vicon System Documentation/1_1_masking|1_1_masking]]"
+  - "[[Public Files/Documentation/1_1_masking|1_1_masking]]"
+Parent Page: "[[Public Files/Documentation/index (documentation main)|index (documentation main)]]"
 ---
 ---
 ```table-of-contents
@@ -33,14 +31,12 @@ Last Page:
 - How to confirm a successful calibration
 
 <span class="warning-text">Important - <b>this guide assumes you have already set your camera masks.</b></span>
-If you have not yet masked your cameras, please complete this through the steps in one of the following guides:
-- [Automatic masking](Public%20Files/Vicon%20System%20Documentation/1_1_masking.md)
-- [Manual masking](Public%20Files/Vicon%20System%20Documentation/system_preparation/1_masking/SP1_2_advanced_masking.md)
+If you have not yet masked your cameras, please complete this through the steps in the masking guide.
 
-<span class="info-header">This is the second of the three-part quick-start system preparation guide:</span>
-1. [Masking your Cameras](Public%20Files/Vicon%20System%20Documentation/1_1_masking.md)
-2. ***[Calibrating your Cameras](Public%20Files/Vicon%20System%20Documentation/1_2_calibration_process.md)***
-3. [Setting Volume Origin and Plane](Public%20Files/Vicon%20System%20Documentation/system_preparation/SP3_1_set_origin_and_plane.md)
+<span class="info-header">This is the second of the three system preparation guides:</span>
+1. [Masking your Cameras](Public%20Files/Documentation/1_1_masking.md)
+2. ***[Calibrating your Cameras](Public%20Files/Documentation/1_2_calibration_process.md)***
+3. [Setting Volume Origin and Plane](Public%20Files/Documentation/1_3_set_origin_and_plane.md)
 
 ---
 ---
@@ -51,7 +47,7 @@ The cameras are very sensitive to changes in temperature and light, as well as b
 
 Calibration is what allows each camera to determine the position of a tracked marker relative to itself, and the position of other cameras relative to itself. This positional data is synchronised between every camera in order to determine the 3D space (*the volume*) and where within that volume that the marker currently is.
 
-<span class="warning-text"><b>Important:</b></span> The recommended practice is perform a calibration at the start of each day, or when beginning a capture session if the environment has changed. Before calibrating your cameras you should always re-apply their masks, following the [camera masking](Public%20Files/Vicon%20System%20Documentation/1_1_masking.md) guide.
+<span class="warning-text"><b>Important:</b></span> The recommended practice is perform a calibration at the start of each day, or when beginning a capture session if the environment has changed. Before calibrating your cameras you should always re-apply their masks, following the [camera masking](Public%20Files/Documentation/1_1_masking.md) guide.
 
 ---
 ---
@@ -71,24 +67,24 @@ In order to calibrate your cameras you must first ensure that you are in the cor
 
 <u>For calibration and system preparation purposes you must ensure the system is in <span class="info-text">live mode</span>.</u>
 
-![calibration_start_0_toggle_live](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp2_1_calibration_process/nexus_ui_1_toggle_live.png)
+![nexus_ui_1_toggle_live](Public%20Files/Assets/system_preparation/sp2_1_calibration_process/nexus_ui_1_toggle_live.png)
 <span class="image-caption">Vicon camera display state based on <u>offline</u> (left) and <u>live</u> (right) mode.</span>
 
 If your cameras are not currently displaying under the '**Vicon Cameras**' device group, click the '<i>*<span class="info-text">Go live</span></i>' button to change system state.
 
 Once you are ready to calibrate your cameras, look to **tools** panel on (by default) the right hand side, and make sure the **system preparation** tab is selected.
 
-![nexus_ui_1_tools_panel|327](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp2_1_calibration_process/nexus_ui_2_tools_panel.png)
+![nexus_ui_2_tools_panel|286](Public%20Files/Assets/system_preparation/sp2_1_calibration_process/nexus_ui_2_tools_panel.png)
 <span class="image-caption">Tools panel, in system preparation view</span>
 
-![nexus_ui_2_system_preparation|326](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp2_1_calibration_process/nexus_ui_3_system_preparation.png)
+![nexus_ui_3_system_preparation|391](Public%20Files/Assets/system_preparation/sp2_1_calibration_process/nexus_ui_3_system_preparation.png)
 <span class="image-caption">How to select the system preparation tab from the tools panel</span>
 
 ---
 ### <span class="toc-header">Resetting Calibration</span>
-Calibrations can be repeated to improve accuracy. You can read more about this in the [advanced calibration and configuration](Public%20Files/Vicon%20System%20Documentation/system_preparation/2_calibrating/SP2_4_advanced_configuration.md) guide.
+Calibrations can be repeated to improve accuracy.
 
-**If you attempt a calibration at the start of a new session without resetting the existing calibration data, you will instead influence the previous calibration.**
+<span class="info-text">If you attempt a calibration at the start of a new session without resetting the existing calibration data, you will instead influence the previous calibration.</span>
 
 Capture environments change over time and what was accurate earlier may no longer be accurate. In order to ensure previous calibrations do not influence the day's calibration, you will need to remove the calibration profile from every camera.
 
@@ -96,7 +92,8 @@ Capture environments change over time and what was accurate earlier may no longe
 
 At the bottom of the **system preparation** tab you will see the **manage camera calibration** section.
 
-![calibration_start_0_reset_calibration](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp2_1_calibration_process/calibration_start_0_reset_calibration.png)
+![calibration_start_0_reset_calibration](Public%20Files/Assets/system_preparation/sp2_1_calibration_process/calibration_start_0_reset_calibration.png)
+<span class="image-caption">Camera calibration behaviour should be managed with care</span>
 
 <span class="warning-text">Do not select '<u>auto number cameras</u>' - this will reassign camera IDs and put them out of sync with the lab's physical labelling. </span>
 
@@ -108,7 +105,7 @@ This represents that the cameras no longer know where each other are, relative t
 ### <span class="toc-header">Calibration Parameters</span>
 Underneath the '**Calibrate Cameras**' section you will see ''*Show/Hide Advanced*" - ensure this is toggled to display all calibration properties.
 
-![calibration_start_1_all](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp2_1_calibration_process/calibration_start_1_all.png)
+![calibration_start_1_all](Public%20Files/Assets/system_preparation/sp2_1_calibration_process/calibration_start_1_all.png)
 <span class="image-caption">Calibrate cameras section with all properties displayed</span>
 
 <span class="info-text">The properties here are as follows:</span>
@@ -122,11 +119,9 @@ Underneath the '**Calibrate Cameras**' section you will see ''*Show/Hide Advance
 - **Auto Stop Minimum Frames**: 1000
 - **Auto Stop**: Yes ☑️
 
-<span class="info-text">For more information on recalibration, calibrating individual cameras, or auto-stop:</span> check the [advanced calibration configuration](Public%20Files/Vicon%20System%20Documentation/system_preparation/2_calibrating/SP2_4_advanced_configuration.md) guide.
-
 Once you are happy with these settings, start your camera calibration by clicking the *Start* button.
 
-![calibration_start_4_click](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp2_1_calibration_process/calibration_start_4_click.png)
+![calibration_start_4_click](Public%20Files/Assets/system_preparation/sp2_1_calibration_process/calibration_start_4_click.png)
 <span class="image-caption">Position of the calibration start button</span>
 
 ---
@@ -137,7 +132,7 @@ Once you begin your your calibration the Nexus window will automatically switch 
 
 <span class="warning-text">This includes disabled, disconnected, and missing cameras.</span> When calibrating with '**all cameras**' ensure the cameras present in the System/Resources view are the cameras you wish to calibrate.
 
-![calibration_wand_1_starting_view|532](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp2_1_calibration_process/calibration_wand_1_starting_view.png)
+![calibration_wand_1_starting_view|570](Public%20Files/Assets/system_preparation/sp2_1_calibration_process/calibration_wand_1_starting_view.png)
 <span class="image-caption">View of all cameras ready to begin calibration</span>
 
 ---
@@ -147,8 +142,8 @@ To calibrate your cameras you must wave the **active wand** within the capture v
 
 Ensure the active wand is in '**strobe**' not '**continuous**' mode before you begin wand waving. One switch controls the wand LED mode, and one switch controls whether the wand is **on** or **off**.
 
-<span class="toc-header">SCREENSHOT TODO</span>
-<span class="image-caption">Annotated image of active wand IRv2</span>
+![volume_origin_lab_indicator_3_full|270](Public%20Files/Assets/system_preparation/sp3_1_set_origin_and_plane/volume_origin_lab_indicator_3_full.jpg)
+<span class="image-caption">Image of active wand IRv2</span>
 
 ---
 ### <span class="toc-header">The Capture Volume</span>
@@ -157,20 +152,17 @@ The capture volume is the area that is covered by the camera setup, a guideline 
 
 You can use the **Options shortcut (F7 by default)** to access the Nexus options menu, and toggle the volume display **on** or **off**.
 
-<span class="toc-header">SCREENSHOT TODO</span>
+![reference - F7 options menu|337](Public%20Files/Assets/_miscellaneous_images/reference%20-%20F7%20options%20menu.png)
 <span class="image-caption">Image of the Vicon Nexus 2.18 options menu</span>
 
 This display is prominent on the **view panel**, and many other functions within the Vicon Nexus software are simpler to work with whilst the display is toggled off.
 
 Whilst in the **3d perspective view**, the target volume will appear as a box around the floor grid.
 
-<span class="toc-header">SCREENSHOT TODO</span>
+![camera calibration position error 4 - with volume|338](Public%20Files/Assets/vicon_system/vs1_4_camera_id_bug/camera%20calibration%20position%20error%204%20-%20with%20volume.png)
 <span class="image-caption">Image of the target volume in Vicon Nexus 2.18.</span>
 
 <span class="info-text">INB0104 only:</span> Within the INB0104 laboratory the target volume is mapped to the edges of the square denoted by white plastic tape on the north/south edges, and yellow/black striped warning tape on the east/west edges. Calibration, and capture, should take place within these boundaries.
-
-<span class="toc-header">SCREENSHOT TODO</span>
-<span class="image-caption">Image of the physical INB0104 volume.</span>
 
 ---
 ### <span class="toc-header">Calibration Frame Feedback</span>
@@ -179,25 +171,22 @@ On starting calibration with a specified auto-stop frame count, all the cameras 
 
 Initially the cameras will not show any lights, indicating that they have not received any calibration frames.
 
-<span class="toc-header">SCREENSHOT TODO</span>
-<span class="image-caption">Image of camera state through calibration states - this camera has not received any calibration frames.</span>
-
 Once you begin calibration the camera lights within the room will begin to flash blue, indicating they are observing calibration frames. 
 
-<span class="toc-header">SCREENSHOT TODO</span>
-<span class="image-caption">Image of camera state through calibration states - this camera has received some calibration frames but needs more.</span>
+![wand_calibration_camera_1_slow_blink](Private%20Files/Full%20Vicon%20System%20Documentation%20(Unfinished)/_assets/system_preparation/sp2_2_wand_waving/wand_calibration_camera_1_slow_blink.gif)
+<span class="image-caption">Camera during calibration that has received some calibration frames but needs more.</span>
+
+![wand_calibration_camera_2_fast_blink](Public%20Files/Assets/system_preparation/sp2_2_wand_waving/wand_calibration_camera_2_fast_blink.gif)
+<span class="image-caption">Camera during calibration that has received almost all calibration frames it needs.</span>
 
 As the cameras accept calibration frames they will begin to flash quicker, until switching to a solid green hue once they have reached their minimum frame value for the auto-stop setting.
 
 Using the defaults given in the previous part of this guide (<span class="info-text">auto-stop: 1000</span>), this would be after they have tracked 1000 frames of the wand.
 
-<span class="toc-header">SCREENSHOT TODO</span>
-<span class="image-caption">Image/s of camera state through calibration states - this camera has reached their target calibration frames.</span>
+![wand_calibration_camera_3_done](Public%20Files/Assets/system_preparation/sp2_2_wand_waving/wand_calibration_camera_3_done.jpg)
+<span class="image-caption">This camera has reached their target calibration frames.</span>
 
-When all cameras have met the auto-stop calibration frame goal, they will all turn a solid blue colour.
-
-<span class="toc-header">SCREENSHOT TODO</span>
-<span class="image-caption">Image/s of camera state through calibration states - all cameras hves reached their target calibration frames.</span>
+<span class="info-text">When all cameras have met the auto-stop calibration frame goal, they will all turn a solid blue colour.</span>
 
 ---
 ### <span class="toc-header">Wand Waving</span>
@@ -214,7 +203,11 @@ To calibrate the cameras you must wave the wand within the volume, so that they 
 
 <span class="info-text">Your goal whilst calibrating is to provide as much visual data to the cameras as possible, covering the space and ensuring as many cameras as possible see the wand within every area of the volume.</span>
 
-<span class="warning-text">Do not spend disproportionate time on one area of the volume until the volume has been fully covered.</span> Calibration occurs on a per-camera basis, and any camera that is not effectively calibrated will provide misleading information for other cameras. 
+<span class="warning-text">Do not spend disproportionate time on one area of the volume until the volume has been fully covered.</span> 
+
+Calibration occurs on a per-camera basis, and any camera that is not effectively calibrated will provide misleading information for other cameras. 
+
+<span class="info-text">Further information:</span> 3D captures of wand waving technique are available with the documentation dataset.
 
 ---
 ### <span class="toc-header">Successful Calibration</span>
@@ -223,212 +216,44 @@ Once you have completed calibration, all camera lights will change from green to
 
 The Nexus window will continue to display the wand wave trail data until you leave this view. This is a visual representation of where the cameras saw the wand whilst you were calibrating.
 
-![calibration_wand_2_processing_data|532](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp2_1_calibration_process/calibration_wand_2_processing_data.png)
+![calibration_wand_2_processing_data|618](Public%20Files/Assets/system_preparation/sp2_1_calibration_process/calibration_wand_2_processing_data.png)
 <span class="image-caption">Wand wave data output</span>
 
 <span class="info-text">The above wand wave trail data is not saved by Vicon Nexus.</span>
-<span class="warning-text">If you wish to preserve this image for any data collection purposes it is prudent to take a screenshot of it now.</span>
+<span class="warning-text">If you wish to preserve this image for any data collection purposes - take a screenshot of it now.</span>
 
 If you switch to '3d perspective' view you will be able to see immediate effects from the calibration.
 
-![nexus_ui_4_toggle_3d_perspective_view](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp2_1_calibration_process/nexus_ui_4_toggle_3d_perspective_view.png)
+![nexus_ui_4_toggle_3d_perspective_view](Public%20Files/Assets/system_preparation/sp2_1_calibration_process/nexus_ui_4_toggle_3d_perspective_view.png)
 
 <span class="info-text">Once you are in 3D perspective view, note the position of each camera in the software, relative to each other.</span>
 
-![calibration_success_relative_positions|530](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp2_1_calibration_process/calibration_success_relative_positions.png)
+![calibration_success_relative_positions](Public%20Files/Assets/system_preparation/sp2_1_calibration_process/calibration_success_relative_positions.png)
 <span class="image-caption">View of a successful calibration - all cameras are spaced as per setup in the room.</span>
 
 If this is representative of their position to each other, the calibration was successful for determining camera position.
 
-<span class="warning-text">This is not a guarantee of successful calibration for capture, but it is the minimum to expect at this stage.</span> If any camera is unexpectedly out of position, consider that the calibration needs to be reattempted.
+<span class="warning-text">This is not a guarantee of successful calibration, but it is the minimum to expect at this stage.</span>
+If any camera is unexpectedly out of position, consider that the calibration needs to be reattempted.
 
-![calibration_failure_relative_positions|521](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp2_1_calibration_process/calibration_failure_relative_positions.png)
+![calibration_failure_relative_positions](Public%20Files/Assets/system_preparation/sp2_1_calibration_process/calibration_failure_relative_positions.png)
 <span class="image-caption">View of an unsuccessful calibration - one camera is isolated, away from where it should be within the camera ordering (left hand side).</span>
 
 At the bottom of the <u><b>tools panel</b></u>, underneath the *camera calibration feedback* section, you will see a progress bar. This is Nexus determining the camera calibration from the wand wave data you have just provided.
 
-![calibration_feedback_1_wand_wave_data](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp2_1_calibration_process/calibration_feedback_1_wand_wave_data.png)
+![calibration_feedback_1_wand_wave_data](Public%20Files/Assets/system_preparation/sp2_1_calibration_process/calibration_feedback_1_wand_wave_data.png)
 <span class="image-caption">Calibration feedback initial state</span>
 
-![calibration_feedback_2_camera_pairs](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp2_1_calibration_process/calibration_feedback_2_camera_pairs.png)
+![calibration_feedback_2_camera_pairs](Public%20Files/Assets/system_preparation/sp2_1_calibration_process/calibration_feedback_2_camera_pairs.png)
 <span class="image-caption">Calibration feedback progressing</span>
 
-![calibration_feedback_3_merging](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp2_1_calibration_process/calibration_feedback_3_merging.png)
+![calibration_feedback_3_merging](Public%20Files/Assets/system_preparation/sp2_1_calibration_process/calibration_feedback_3_merging.png)
 <span class="image-caption">Calibration feedback merging information from cameras</span>
 
-![calibration_feedback_4_final](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp2_1_calibration_process/calibration_feedback_4_final.png)
+![calibration_feedback_4_final](Public%20Files/Assets/system_preparation/sp2_1_calibration_process/calibration_feedback_4_final.png)
 <span class="image-caption">Calibration feedback readying to output data</span>
 
-Once this has been completed you are ready to set the volume origin and floor plane.
+Once this has been completed you are ready to [set the volume origin and floor plane](Public%20Files/Documentation/1_3_set_origin_and_plane.md).
 
 ---
-
-**FOR CALIBRATION**
-NOTE > only 3 cameras are needed to start tracking (labelling) but 2 cameras to continue
-Redundancy matters
-If starting fresh don't reset - explain what starting fresh means
-Auto number text about camera reordering needs to move up
-0% on calibration feedback means finished
-Should show what camera bump errors look like? Or at start of calibration quick guide state if you're doing a fresh cal to ignore that symbol and reference camera bumping guide
-Multiple people or moving things in the volume throw off masking due to new reflections etc, need to ensure masking happens with what will be in the volume and nothing else
-move the don't auto number button higher up
-
 ---
-
----
-# TODO NOTE DUMP FROM 25/08/2026
-REALLY SHOULD SAVE THE CONFIGS AS DEFAULTS
-WHAT DO CONFIGS CONFIRM?
-SAVE DIFFERENT CONFIG/VIEW TYPE PRESETS FOR USERS?
-
-**If you reset calibration when no cameras are online they all vanish from Vicon Nexus**
-
-# Images
-
-## sp2_1
-
-### calibration
-
-- calibration_trial_quality_test_1
-- calibration_trial_quality_test_2
-- ui_unsuccessful calibration
-
-### calibration_process
-
-- calibration_failure_relative_positions
-- calibration_feedback_1_wand_wave_data
-- calibration_feedback_2_camera_pairs
-- calibration_feedback_3_merging
-- calibration_feedback_4_final
-- calibration_start_0_reset_calibration
-- calibration_start_1_all
-- calibration_start_2_selecting
-- calibration_start_3_camera_selection
-- calibration_start_4_click
-- calibration_success_relative_positions
-- calibration_wand_1_starting_view
-- calibration_wand_2_processing_data
-- nexus_ui_1_toggle_live
-- nexus_ui_2_tools_panel
-- nexus_ui_3_system_preparation
-- nexus_ui_4_toggle_3d_perspective_view
-
-# TODO 07/09/2026
-**Calibration feedback advanced notes below**
-
-**Processing**
-
-	   calibration will stop once all cameras hit the default 1000 frames by default
-	   *once all cameras done the LED will reset*
-	   cameras will turn green when they've done so you can update your attention
-	   if camera is flashing then it needs more calibration frames
-	   cameras flash faster when they're closer to hitting minimum auto-stop frames
-	   
-once you've done calibrating you'll see success
-*images are collected for this already*
-**they all turn blue, re-use this image from above**
-**image of wand wave post-data** - note shown on Nexus
-
-	   afterwards the calibration feedback will process, and this takes time
-**Interface** - to view calibration feedback you may need to collapse previous sections
-
-**image of success relative positions** - note to flip to 3d perspective
-- User needs to switch to 3d perspective after calibration feedback data processes (**note**: slow in 2.18) to confirm that it works (note that if you reset, as you should have, you'll see nothing until this feedback does complete)
-
-**Advanced doc/plane doc?**
-You can export feedback data here but you can't get full calibration or origin set data until after you set with wand (not with marker)
-
-
----
-CALIBRATION PROCESS
-
-Masking first, skip aiming
-Straight to calibration
-
-Calibrate cameras - make sure expanded
-Show advanced
-select all cameras
-what do properties here mean, make sure explained
-include screenshots fo these
-START > then do wand waving
-provide basic general wand waving tips
-about health triangles and camera blinking?
-
-that's it, then you're onto volume origin
-You should see all the cameras relative to each other, check that in 3d perspective first
-they won't be correct/relative to grid/volume if enabled (screenshot)
-
-Which is show advanced, make sure expanded
-for UI helps to collapse calibration/advanced from previous section
-
-Ensure grid is on (F7) - screenshot
-
-Make sure no auto scale (explain why)
-Wand in center of volume - lab has tape marks
-You can use one marker or three markers too (explain here or separate file?)
-If correct the cameras will now be relative to the volume/grid (screenshot)
-
-Floor plane setting
-Make sure wand isn't on
-Pre-calculate the offset (specify this)
-
-Check the auto detect tolerance (2mm recommended, previously 9mm caused errors)
-Floor plane set you start with auto detect
-
-Make sure markers scattered in clusters (3 to a cluster, not too far from each other)
-screenshot of cluster
-Make sure to mention about error being multiplied over larger volumes so multiple clusters more accurate
-Make sure multiple clusters if larger volume but you can get away with 3 if floor is level
-Mostly matters where floor isn't level
-Auto detect into Start
-Click every marker to ensure proper floor plane calculation
-
-Go to 3d orthogonal -X, confirm markers are level with the grid
-
-You're ready for capture!
-
-# TODO
-
-Somewhere else need instructions on how to enable and connect/remove/troubleshoot disconnected/missing cameras as it is referenced in this guide
-
-***System state probably doesn't belong in this guide, maybe in the intro UI guide/landing page guide or something?***
-**Same for tools/system preparation sections**
-
-Move to 3_5 [SP2_4_advanced_configuration](Public%20Files/Vicon%20System%20Documentation/system_preparation/2_calibrating/SP2_4_advanced_configuration.md)
-* Cameras can be calibrated independently of each other
-  *you can recalibrate specific cams to reintroduce to the vol-plane after reset or setting loss/bumping, a full setup recalibration is not needed*
-
-
-![calibration_start_2_selecting](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp2_1_calibration_process/calibration_start_2_selecting.png)
-
-text
-
-![calibration_start_3_camera_selection](Public%20Files/Vicon%20System%20Documentation/_assets/system_preparation/sp2_1_calibration_process/calibration_start_3_camera_selection.png)
-
-text
-## Questions to Answer for docs revision
-
-**At least 3 cameras need to see a marker - does this have an impact on camera health based on wand wave position?**
-
-- **To confirm**
-  *You will always achieve better results by showing the wand to both sides of the volume at the same time, rather than separately to one side then the other.*
-
-| **Is camera healing tool part of tracker?** | Yes, tracker functionality only |
-| ------------------------------------------- | ------------------------------- |
-|                                             |                                 |
-
-#### Get rid of calibration error docs?
-| **what causes markers to flicker in camera view - is it when they're closer to each other?<br>**                                                                                                | It is not when they're close, it's when the cameras aren't fully tracking e.g. a small or irregular grayscale blob due to a reflection                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-
-# More Note Dump
-# TODO
-Ensure notes about resetting calibration in calibration docs
-
-Note you check 3d calibration after the feedback finishes not before, it doesn't update until then
-
-*calibration allows cameras to determine their relative positions and focal lengths* <-- focal lengths?
-## Reference Links
-* **https://help.vicon.com/space/Nexus218/406488171/Calibrate+Vicon+cameras**
-	  not in [Vicon Resources & Links](Private%20Files/Vicon%20Resources%20&%20Links.md)
-

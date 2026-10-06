@@ -41,10 +41,11 @@
 - [System Preparation - Masking Cameras](Public%20Files/Documentation/1_1_masking.md)
 - [System Preparation - Calibrating Cameras](Public%20Files/Documentation/1_2_calibration_process.md)
 - [System Preparation - Setting Origin and Plane](Public%20Files/Documentation/1_3_set_origin_and_plane.md)
-- [Capture - Setting up a Database](Public%20Files/Documentation/2_1_database_setup.md)
-- [Capture - Setting up Subjects](Public%20Files/Documentation/2_2_subject_setup.md)
-- [Capture - Setting up Labelling Skeletons](Public%20Files/Documentation/2_3_skeleton_setup.md)
-- [Capture - Capturing a Trial](Public%20Files/Documentation/3_1_trial_capture.md)
+- [Capture Preparation - Setting up a Database](Public%20Files/Documentation/2_1_database_setup.md)
+- [Capture Preparation - Setting up Labelling Skeletons](Public%20Files/Documentation/2_2_skeleton_setup.md)
+- [Capture Preparation - Setting up Subjects](Public%20Files/Documentation/2_3_subject_setup.md)
+
+<u><span class="info-text">PDF copies are saved within:</span></u> `Documentation/PDF`
 
 ---
 ### `Experiments`
